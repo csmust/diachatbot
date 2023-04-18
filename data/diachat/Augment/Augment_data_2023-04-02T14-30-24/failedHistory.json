@@ -1,0 +1,225 @@
+{'utteranceId': 1355, 'conversationId': 204, 'sequenceNo': 4, 'utterance': '什么原因让你想去检查呢', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskHow', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '检查', 'pos': '8-10'}]}]}
+{
+  "utteranceId": 1355,
+  "conversationId": 204,
+  "sequenceNo": 4,
+  "utterance": "你为什么想要进行检查呢？",
+  "agentRole": "Doctor",
+  "annotation": [
+    {
+      "act_label": "AskReason",
+      "slot_values": [
+        {
+          "domain": "检查目的",
+          "slot": "检查原因",
+          "value": null,
+          "pos": "8-10"
+        }
+      ]
+    }
+  ]
+}
+{'utteranceId': 1434, 'conversationId': 218, 'sequenceNo': 3, 'utterance': '就呆着的时候有时候疼有时候不疼', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '呆着的时候', 'pos': '1-6'}]}]}
+{
+{
+    "utteranceId": 1434,
+    "conversationId": 218,
+    "sequenceNo": 3,
+    "utterance": "有时候疼有时候不疼",
+    "agentRole": "User",
+    "annotation": [
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "症状",
+                    "slot": "疼痛",
+                    "value": "有时候疼有时候不疼",
+                    "pos": "1-10"
+                }
+            ]
+        }
+    ]
+}
+{'utteranceId': 1472, 'conversationId': 224, 'sequenceNo': 9, 'utterance': '明白了，那醋泡黄豆和姜片这种民间偏方可以用吗？我妈妈现在有时候也吃醋泡的花生，但是太酸了，对牙齿又不太好', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '醋泡黄豆', 'pos': '5-9'}, {'domain': '饮食', 'slot': '饮食名', 'value': '姜片', 'pos': '10-12'}, {'domain': '饮食', 'slot': '饮食名', 'value': '醋泡的花生', 'pos': '35-40'}]}]}
+{'utteranceId': 1472, 'conversationId': 224, 'sequenceNo': 9, 'utterance': '请'conversationId': 224, 'sequenceNo': 9, 'utterance': '请问醋泡黄豆和姜片这种民间偏方是否适合我?我妈妈有时吃醋泡花生,但酸味太重,对牙齿也不太好。', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '醋泡黄豆', 'pos': '3-7'}, {'domain': '饮食', 'slot': '饮食名', 'value': '姜片', 'pos': '8-10'}, {'domain': '饮食', 'slot': '饮食名', 'value': '醋泡的花生', 'pos': '26-31'}]}]}
+{'utteranceId': 1496, 'conversationId': 231, 'sequenceNo': 1, 'utterance': '我现在没有吃药，不需要吃药吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '没有吃药', 'pos': '3-7'}, {'domain': '行为', 'slot': '时间', 'value': '现在', 'pos': '1-3'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '吃药', 'pos': '5-7'}]}]}
+{'utteranceId': 1496, 'conversationId': 231, 'sequenceNo': 1, 'utterance': '我现在没有吃药吃药，需要吃药吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '没有吃药', 'pos': '3-7'}, {'domain': '行为', 'slot': '时间', 'value': '现在', 'pos': '1-3'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行'slot_values': [{'domain': '行为', : [{'domain': '行为', 'slot': '行为名', 'value': '吃药', 'pos': '5-7'}, {'domain': '信息', 'slot 'slot': '需求', 'value': '需要', 'pos': '8-10'}]}]}
+{'utteranceId': 1497, 'conversationId': 231, 'sequenceNo': 2, 'utterance': '前期是吗？', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '前期', 'pos': '0-2'}]}]}
+{'utteranceId': 1497, 'conversationId': 231, 'sequenceNo': 2, 'utterance': '您是说是说病情在早期阶早期阶段?', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '病情', 'pos': '3-5'}, '}, {'domain': '时间', 'slot': '阶段', 'value': '早期', 'pos': '9-11'}]}]}
+{'utteranceId': 1498, 'conversationId': 231, 'sequenceNo': 3, 'utterance': '是啊，饮食控制，空腹血糖5.2，一个星期以前差的7.2', 'agentRole': 'User', 'annotation': [{'act_label': 'Assure', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '饮食控制', 'pos': '3-7'}, {'domain': '问题', 'slot': '血糖值', 'value': '5.2', 'pos': '12-15'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '8-10'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '7.2', 'pos': '24-27'}, {'domain': '问题', 'slot': '时间', 'value': '个星期以前', 'pos': '17-22'}]}]}
+{'utteranceId': 1498, 'conversationId': 231, 'sequenceNo': 3, 'utterance': '我已经进行了饮食控制，我的空腹血糖是5.2。一个星期以前我的血糖值是7.2。', 'agentRole': 'User', 'annotation': [{'act_label': 'Assure', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '饮食控制', 'pos': '16-20'}, {'domain': '问题', 'slot': '血糖值', 'value': '5.2', 'pos': '28-31'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '21-23'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', ', 'value': '7.2', 'pos': '44-47'}, {'domain': '问题', 'slot': '时间', 'value': '一个星期以前', 'pos': '34-41'}]}]}
+{'utteranceId': 1499, 'conversationId': 231, 'sequenceNo': 4, 'utterance': '前期可以饮食加运动治疗，控制好的话，你就不用戴上糖尿病的帽子了，控制不好的话，戴上就不好摘下了。好好控制吧，加油！，不错哦，5.2.一定保持，继续加油。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'GeneralAdvice', 'slot_values': [{'domain': '饮食', 'slot': '', 'value': '', 'pos': ''}, {'domain': '运动', 'slot': '', 'value': '', 'pos': ''}, {'domain': '行为', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 1499, 'conversationId': 231, 'sequenceNo': 4, 'utterance': '前期可以饮食加运动治疗，控制好的话，你就不用戴上糖尿病的帽子了，控，控制不好的话，戴上就不好摘下了。好好控制吧，加油！，不错哦，5.2.一定保持，继续加油。', 'agentRole': 'Doctor', 'annotation': {'act_label': 'GeneralAdvice', 'slot_values': [{'domain': '饮食', 'slot': '治疗方法', 'value': '饮食加运动', 'pos': ''}, {'domain': '运动', 'slot': '治疗方法', 'value': '饮食加运动', 'pos': ''}, {'domain': '行为', 'slot': '治疗效果', 'value': '控制好的话，就不用戴上糖尿病的帽子了，控制不好的话，戴上就不好摘下了', 'pos': ''}]}}}
+{'utteranceId': 1500, 'conversationId': 232, 'sequenceNo': 1, 'utterance': '医生血压怎么不好降', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '血压怎么不好降', 'pos': '-1-7'}]}]}
+{
+    "utteranceId": 1500,
+    "conversationId": 232,
+    "sequenceNo": 1,1,
+    "utterance": "我的血糖一直很高，有什么方法能控制吗？",
+    "agentRole": "User",
+    "annotation": [{
+        "act_label": "Inform",
+        "slot_values": [{
+            "domain": "问题",
+            "slot": "症状",
+            "value": "血糖高",
+            "pos": "-1-3"
+        }, {
+            "domain": "方法",
+            "slot": "控制",
+            "value": "有什么方法能控制",
+            "pos": "10-20"
+        }]
+    }]
+}
+{'utteranceId': 1503, 'conversationId': 232, 'sequenceNo': 4, 'utterance': '脉压差这么低？', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskHow', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '脉压差', 'pos': '0-3'}, {'domain': '治疗', 'slot': '检查值', 'value': '低', 'pos': '5-6'}]}]}
+{'utteranceId': 1503, 'conversationId': 232, 'sequenceNo': 4, 'utterance': '脉压差低了多少?', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskMeasure', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '脉压差', 'pos': '0-3'}, {'domain': '治疗', 'slot': '量化值', 'value': '多 '多少', 'pos': '6-8'}, {'domain': '治疗', 'slot, 'slot':'slot': '检查值', 'value': '低', 'pos': '5-6'}]}]}
+{'utteranceId': 1504, 'conversationId': 232, 'sequenceNo': 5, 'utterance': '什么意思，我的意思我的高血压徘徊在140-150低血压徘徊在85-100', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '高血压', 'pos': '11-14'}, {'domain': '治疗', 'slot': '检查值', 'value': '140-150', 'pos': '17-24'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '低血压', 'pos': '24-27'}, {'domain': '治疗', 'slot': '检查值', 'value': '85-100', 'pos': '30-36'}]}]}
+{'utteranceId': 1504, 'conversationId': 232, 'sequenceNo': 5, 'utterance': '我的高血压在140-150之间，低血压在85-100之间，您能告诉我这和糖尿病有什么关系吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '高血压', 'pos': '3-6'}, {'domain': '治疗', 'slot': '检查值', 'value': '140-150',-150', 'pos': '7-13'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '低血压', 'pos': '14-17'}, {'domain': '治疗', 'slot': '检查值', 'value': '85-100', 'pos': '18-24'}]}]}
+{'utteranceId': 1505, 'conversationId': 232, 'sequenceNo': 6, 'utterance': '这回明白了', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 1505, 'conversationId': 232, 'sequenceNo': {'utteranceId': 1505, 'conversationId': 232, 'sequenceNo': 6, 'utterance': '您明白了吗?', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 1509, 'conversationId': 232, 'sequenceNo': 10, 'utterance': '那确实是高了，要控制了。吃的有降压的药吗', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '治疗', 'slot': '药品类型', 'value': '降压的药', 'pos': '15-19'}, {'domain': '治疗', 'slot': '药品', 'value': '?', 'pos': ''}]}, {'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '控制', 'pos': '8-10'}]}]}
+{'utteranceId': 1509, 'conversationId': 232, 'sequenceNo': 10, 'utterance': '您的血糖确实偏高，需要控制。您目前有服用降糖药吗？', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '治疗', 'slot': '药品类型', 'value': '降糖药', 'pos': '19-23'}, {'domain': '治疗', 'slot': '药品', 'value': '?', 'pos': ''}]}, {'act_label': 'Advice','Advice', 'slot_values': [{'domain': '行为'为', 'slot': '行为名', 'value': '控制', 'pos': '8-10'}]}]}
+{'utteranceId': 1510, 'conversationId': 232, 'sequenceNo': 11, 'utterance': '吃了早上没吃量了', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 1510, 'conversationId': 232, 232, 'sequenceNo': 11, 'utterance': '今天早上我吃了早饭,但是感觉没有吃很多', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': 'diet', 'slot': 'meal', 'value': 'breakfast', 'pos': 'time'}, {'domain': 'diet', 'slot': 'amount', 'value': 'less than usual', 'pos': 'quantity'}]}]}
+{'utteranceId': 1519, 'conversationId': 233, 'sequenceNo': 6, 'utterance': '平常多少', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '平常', 'pos': '0-2'}, {'domain': '问题', 'slot': '血糖值', 'value': '?', 'pos': ''}]}]}
+{'utteranceId': 1519, 'conversationId': 233, 'sequenceNo': 6, 'utterance': '您通常血糖水平是多少?', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '通常', 'pos': '2-4'}, {'domain': '问题': '2-4'}, {'domain': '问题', 'slot': '血糖值', 'value': '', 'pos': '5-5'}]}]}
+{'utteranceId': 1520, 'conversationId': 233, 'sequenceNo': 7, 'utterance': '之前偶尔测都是良好，七点多，，我感觉我夏天低血糖的情况多，五点多四点多，冬天都高，我天一冷就没热量，手脚都是冰的，走路四十分钟都不出汗，是不是热量没消耗', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '之前偶尔', 'pos': '0-4'}, {'domain': '问题', 'slot': '血糖值', 'value': '七点多', 'pos': '10-13'}]}, {'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '热量没消耗', 'pos': '71-76'}]}]}
+{'utteranceId': 1520, 'conversationId': 233, 'sequenceNo': 7, 'utterance': '之前偶尔检查血糖都正常，但我最近发现夏天低血糖的情况比较多，大约在五点到七点之间，而冬天则经常高血糖。当天气变冷时，我会感到没有热量，手脚也会变得很冷，即使走路四十分钟也不会出汗。这是因为热量没有消耗完吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '之前偶尔', 'pos': '0-4'}, {'domain': '问题', 'slot': '血糖值', 'value': '正常', 'pos': '7-9'}, {'domain': '问题', 'slot': '时间', 'value': '夏天', 'pos': '18-20'}, {'domain': '问题', 'slot': '血糖状态', 'value': '低血糖', 'pos': '28-31'}, {'domain': '问题', 'slot': '时间', 'value': '冬天', 'pos': '35-37'}, {'domain': '问题', 'slot': '血糖状态', 'value': '高血糖', 'pos': '43-46'}]}, {'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '热量没消耗', 'pos':  '66'66-71'}'}]}]}
+{'utteranceId': 1524, 'conversationId': 233, 'sequenceNo': 11, 'utterance': '我看看是不是血压引起的血糖高？，我没有运动完就测血压的', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '血压', 'pos': '6-8'}, {'domain': '问题', 'slot': '症状', 'value': '血糖高', 'pos': '11-14'}]}, {'act_label': 'Deny', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 1524, 'conversationId': 233, 'sequenceNo': 11, 'utterance': '我没有运动完就测血糖的，是不是血糖高跟血压有关系？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '血糖高', 'pos': '8-11'}, {'domain': domain': domain': '问题', 'slot': '症状', 'value': '血压', 'pos': '15-17'}]}, {'act_label': 'Deny', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 1525, 'conversationId': 233, 'sequenceNo': 12, 'utterance': '想验证的话，可以同时测量就行了。时间段固定，测量次数固定。建立个表格，方便记录。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '同时测量', 'pos': '8-12'}]}]}
+{'utteranceId': 1525, 'conversationId': 233, 'sequenceNo': 12, 'utterance': '您可以在固定的时间段内,测量血糖和血压。同时测量可以更好地了解两者之间的关系,并且建议您记录数据以便更好地追踪。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '血'血糖和糖和血压'血压', 'pos': '19-24'}, {'domain': '治疗', 'slot': '频率', 'value': '固定的时间段内', 'pos': '6-13'}, {'domain': '治疗', 'slot': '记录方式', 'value': '建立表格记录', 'pos': '37-45'}]}]}
+{'utteranceId': 1526, 'conversationId': 233, 'sequenceNo': 13, 'utterance': '我想问下喝豆浆会升高血糖吗', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '豆浆', 'pos': '5-7'}, {'domain': '问题', 'slot': '症状', 'value': '升高血糖', 'pos': '8-12'}]}]}
+{'utteranceId': 1526, 'conversationId': 233, 'sequenceNo': 13, 'utterance': '请问喝豆浆会不会使我的血糖升高呢?', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value 'value': 'value':  '豆'豆浆'浆', 'pos': '3-5'}-5'}-5'}, {'domain': '问题', 'slot': '症状', 'value': '升高血糖', 'pos': '13-17'}]}]}
+{'utteranceId': 1532, 'conversationId': 236, 'sequenceNo': 3, 'utterance': '么意思不懂', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 1532, 'conversationId': 236, 'sequenceNo': 3, 'utterance': '我不太明白', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain':': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 1539, 'conversationId': 237, 'sequenceNo': 2, 'utterance': '可以的蔬菜水果', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Assure', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 1539, 'conversationId': 237, 'sequenceNo': 2, 'utterance': '您可以多吃一些蔬菜水果,这有助于控制血糖', 'agentRole': 'Doctor', 'annotation': ': [{'act_label': 'Assure', 'slot_values': [{'domain': 'diet', 'slot': 'food', 'value': '蔬菜水果', 'pos': 'NN'}]}]}
+{'utteranceId': 1548, 'conversationId': 239, 'sequenceNo': 1, 'utterance': '想问一下医生，我最近老是吃完饭之后想吐，却又吐不出来是什么情况，我在学校待了二十天了，应该算是适应学校的饭菜了，怎么还想吐呢也是糖友吗？，是啊', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '想吐，却又吐不出来', 'pos': '17-26'}, {'domain': '行为', 'slot': '时间', 'value': '最近', 'pos': '8-10'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '糖友', 'pos': '66-68'}]}, {'act_label': 'AskWhy', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 1548, 'conversationId': 239, 'sequenceNo': 1, 'utterance': '想问一下医生，我最近老是吃完饭之后想吐，却又吐不出来是什么情况，我在学校待了二十天了，应该算是适应学校的饭菜了，怎么还想吐呢，我是否得了糖尿病呢？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot':': '行为名', 'value': '想吐，却又吐不出来', 'pos': '17-26'}, {'domain': '行为', 'slot': '时间', 'value': '最近', 'pos': '8-10'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '糖尿病', 'pos': '54-57'}]}, {'act_label': 'AskWhy', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 1550, 'conversationId': 239, 'sequenceNo': 3, 'utterance': '打针，预混的两针', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '打针', 'pos': '0-2'}]}]}
+{'utteranceId': 1550, 'conversationId': 239, 'sequenceNo': 3, 'utterance': '我需要打预混两针的胰岛素注射', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{{'utteranceId': 1550, 'conversationId': 239, 'sequenceNo': 3, 'utterance': '我需要打两针预混胰岛素', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '打针', 'pos': '0-2'}, {'domain': '药品', 'slot': '药品名', 'value': '预混胰岛素', 'pos': '5-10'}]}]}
+{'utteranceId': 1551, 'conversationId': 239, 'sequenceNo': 4, 'utterance': '这种情况以后去检查过吗', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '检查', 'pos': '7-9'}]}]}
+{'utteranceId': 1551, 'conversationId': 239, 'sequenceNo': 4, 'utterance': '您之前是否进行过糖尿病的检查?', 'agentRole': 'Doctor', 'annotation': [{'act'act_label': 'AskForSure', 'slot_values': [{'domain': '糖尿病', 'slot': '检查类型', 'value': '糖尿病检查', 'pos': '7-9'}]}]}
+{'utteranceId': 1552, 'conversationId': 239, 'sequenceNo': 5, 'utterance': '没有，在学校呢就没去，这是什么情况呢', 'agentRole': 'User', 'annotation': [{'act_label': 'Deny', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'AskWhy', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{
+  "utteranceId": 1552,
+  "conversationId": 239,
+  "sequenceNo": 5,
+  "utterance": "我在学校的时候没去过医院检查过糖尿病，不太清楚这种情况是什么意思。",
+  "agentRole": "User",
+  "annotation": [
+    {
+      "act_label": "Deny",
+      "slot_values": [
+        {
+          "domain": "",
+          "slot": "",
+          "value": "",
+          "pos": ""
+                }
+      ]
+    },
+    {
+      "act_label": "AskWhy",
+      "slot_values": [
+        {
+{
+          "domain": "",
+          "slot": "",
+          "value": "",
+          "pos": ""
+        }
+      ]
+    }
+  ]
+}
+{'utteranceId': 1557, 'conversationId': 240, 'sequenceNo': 3, 'utterance': '有2周了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '持续时长', 'value': '2周', 'pos': '1-3'}]}]}
+{'utteranceId': 1557, 'conversationId': 240, 'sequenceNo': 3, 'utterance': '我已经有糖尿病2周了'了', , 了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '疾病', 'slot': '名称', 'value': '糖尿病', 'pos': '我已经有糖尿病'}, {'domain': '症状', 'slot': '持续时间', 'value': '2周', 'pos': '2周了'}]}]}
+{'utteranceId': 1566, 'conversationId': 242, 'sequenceNo': 3, 'utterance': '我现在打四针。三短一长。午餐晚餐固定主食120克米饭。午餐晚餐后的血糖还可以。就是早餐特别难搞定', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '用药（治疗）频率', 'value': '四针', 'pos': '4-6'}, {'domain': '治疗', 'slot': '用药（治疗）频率', 'value': '三短一长', 'pos': '7-11'}, {'domain': '饮食', 'slot': '饮食名', 'value': '米饭', 'pos': '24-26'}, {'domain': '饮食', 'slot': '时间', 'value': '午餐', 'pos': '12-14'}, {'domain': '饮食', 'slot': '时间', 'value': '晚餐', 'pos': '14-16'}, {'domain': '饮食', 'slot': '饮食量', 'value': '120克', 'pos': '20-24'}, {'domain': '问题', 'slot': '时间', 'value': '午餐', 'pos': '27-32'}, {'domain': '问题', 'slot': '时间', 'value': '晚餐', 'pos': '14-16'}, {'domain': '问题', 'slot': '血糖值', 'value': '可以', 'pos': '36-38'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '早餐', 'pos': '41-43'}, {'domain': '问题', 'slot': '血糖值', 'value': '难搞定', 'pos': '45-48'}]}]}
+{'utteranceId': 1566, 'conversationId': 242, 'sequenceNo': 3, 'utterance': '我现在每天打四次胰岛素，其中三次短效，一次长效。午餐和晚餐我都吃120克米饭作为主食，血糖控制得还可以，但早餐的血糖特别难控制。', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药物使用频率', 'value': '四次', 'pos': '6-8'}, {'domain': '治疗', 'slot': '药物种类', 'value': '胰岛素', 'pos': '9-12'}, {'domain': '治疗', 'slot': '药物种类', 'value': '短效胰岛素', 'pos': '13-17'}, {'domain': '治疗', 'slot': '药物种类', 'value': '长效胰岛素', 'pos': '18-22'}, {'domain': '饮食', 'slot': '食品名称', 'value': '米饭', 'pos': '29-31'}, {'domain': '饮食', 'slot': '时间', 'value': '午餐', 'pos': '23-25'}, {'domain': '饮食', 'slot': '时间', 'value': '晚餐', 'pos': '25-27'}, {'domain': '饮食', 'slot': '食品数量', 'value': '120克', 'pos': ': '32-36'}, {'domain': '问题', 'slot': '时间', 'value': '早餐', 'pos': '42-44'}, {'domain': '问题', 'slot': '血糖值', 'value': '难控制', 'pos': '53-56'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '特别难控制', 'pos': '42-48'}, {'domain': '问题', 'slot': '时间', 'value': '早餐', 'pos': '33-35'}]}]}
+{'utteranceId': 1570, 'conversationId': 242, 'sequenceNo': 7, 'utterance': '运动都是饭后散步20-30分钟。饮食早餐一般是一盒牛奶一个鸡蛋一根玉米。之前有吃过牛奶燕麦,鸡蛋。还有饺子。，午餐晚餐都是120克米饭或者荞麦饭。大概70-90克瘦肉,鸡肉或者排骨,鱼。还有青菜。，在外面吃饭就把控不住,不知道吃了多少', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '运动', 'slot': '时间', 'value': '饭后', 'pos': '4-6'}, {'domain': '运动', 'slot': '运动名', 'value': '散步', 'pos': '6-8'}, {'domain': '运动', 'slot': '持续时长', 'value': '20-30分钟', 'pos': '8-15'}, {'domain': '饮食', 'slot': '时间', 'value': '早餐', 'pos': '18-20'}, {'domain': '饮食', 'slot': '饮食名', 'value': '牛奶', 'pos': '25-27'}, {'domain': '饮食', 'slot': '饮食量', 'value': '一盒', 'pos': '23-25'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '鸡蛋', 'pos': '29-31'}, {'domain': '饮食', 'slot': '饮食量', 'value': '一个', 'pos': '27-29'}, {'domain': '饮食', 'slot': '时间', 'value': '早餐', 'pos': '18-20'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '玉米', 'pos': '33-35'}, {'domain': '饮食', 'slot': '饮食量', 'value': '一根', 'pos': '31-33'}, {'domain': '饮食', 'slot': '时间', 'value': '早餐', 'pos': '18-20'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '时间', 'value': '之前', 'pos': '36-38'}, {'domain': '饮食', 'slot': '饮食名', 'value': '牛奶燕麦', 'pos': '41-45'}, {'domain': '饮食', 'slot': '饮食名', 'value': '鸡蛋', 'pos': '29-31'}, {'domain': '饮食', 'slot': '饮食名', 'value': '饺子', 'pos': '51-53'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '米饭', 'pos': '65-67'}, {'domain': '饮食', 'slot': '饮食名', 'value': '荞麦饭', 'pos': '69-72'}, {'domain': '饮食', 'slot': '饮食量', 'value': '120克', 'pos': '61-65'}, {'domain': '饮食', 'slot': '时间', 'value': '午餐', 'pos': '55-57'}, {'domain': '饮食', 'slot': '时间', 'value': '晚餐', 'pos': '57-59'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '瘦肉', 'pos': '81-83'}, {'domain': '饮食', 'slot': '饮食名', 'value': '鸡肉', 'pos': '84-86'}, {'domain': '饮食', 'slot': '饮食名', 'value': '排骨', 'pos': '88-90'}, {'domain': '饮食', 'slot': '饮食名', 'value': '鱼', 'pos': '91-92'}, {'domain': '饮食', 'slot': '饮食量', 'value': '70-90克', 'pos': '75-81'}, {'domain': '饮食', 'slot': '时间', 'value': '午餐', 'pos': '55-57'}, {'domain': '饮食', 'slot': '时间', 'value': '晚餐', 'pos': '57-59'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '青菜', 'pos': '95-97'}]}]}
+{'utteranceId': 1570, 'conversationId': 242, 'sequenceNo': 7, 'utterance': '运动都是饭后散步20-30分钟。饮食早餐一般是一盒牛奶一个鸡蛋一根玉米。之前有吃过牛奶燕麦,鸡蛋。还有饺子。午餐晚餐都是120克米饭或者荞麦饭。大概70-90克瘦肉,鸡肉或者排骨,鱼。还有青菜。在外面吃饭就把控不住,不知道吃了多少', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '运动', 'slot': '时间', 'value': '饭后', 'pos': '4-6'}, {'domain': '运动', 'slot': '运动名', 'value': '散步', 'pos': '6-8'}, {'domain': '运动', 'slot': '持'持续时长', 'value': '20-30分钟', 'pos': '8-15'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '时间', 'value': '早餐', 'pos': '18-20'}, {'domain': '饮食', 'slot': '饮食名', 'value': '牛奶', 'pos': '25-27'}, {'domain': '饮食', 'slot': '饮食量', 'value': '一盒', 'pos': '23-25'}, {'domain': '饮食', 'slot': '饮食名', 'value': '鸡蛋', 'pos': '29-31'}, {'domain': '饮食', 'slot': '饮食名', 'value': '玉米', 'pos': '33-35'}, {'domain': '饮食', 'slot': '饮食量', 'value': '一根', 'pos': '31-33'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '牛奶燕麦', 'pos': '41-45'}, {'domain': '饮食', 'slot': '饮食名', 'value': '鸡蛋', 'pos': '29-31'}, {'domain': '饮食', 'slot': '饮食名', 'value': '饺子', 'pos': '51-53'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '米饭', 'pos': '65-67'}, {'domain': '饮食', 'slot': '饮食名', 'value': '荞麦饭', 'pos': '69-72'}, {'domain': '饮食', 'slot': '饮食量', 'value': '120'120克', , 'pos': '61-65'}, {'domain': '饮食', 'slot': '时间', 'value': '午餐', 'pos': '55-57'}, {'domain': '饮食', 'slot': '时间', 'value': '晚餐', 'pos':':  '57-59'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '瘦肉', 'pos': '81-83'}, {'domain': '饮食', 'slot': '饮食名', 'value': '鸡肉', 'pos': '84-86'}, {'domain': '饮食', 'slot': '饮食名', 'value': '排骨', 'pos': '88-90'}, {'domain': '饮食', 'slot
+{'utteranceId': 1577, 'conversationId': 242, 'sequenceNo': 14, 'utterance': '你23-25号餐后高。现在下来了，如果是5左右，可以减一个单位试一试，鸡蛋。蘑菇。豆制品都可以的', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '23-25号', 'pos': '1-7'}, {'domain': '问题', 'slot': '血糖值', 'value': '高', 'pos': '9-10'}]}, {'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '鸡蛋', 'pos': '35-37'}, {'domain': '饮食', 'slot': '饮食名', 'value': '蘑菇', 'pos': '38-40'}, {'domain': '饮食', 'slot': '饮食名', 'value': '豆制品', 'pos': '41-44'}]}]}
+{
+    "utteranceId": 1577,
+    "conversationId": 242,
+    "sequenceNo": 14,
+    "utterance": "您的血糖在23-25号餐后比较高。现在已经降下来了，如果血糖是5左右，可以尝试减少一个单位胰岛素。建议您多食用鸡蛋、蘑菇和豆制品。",
+    "agentRole": "Doctor",
+    "annotation": [
+        {
+            "act_label": "Explanation",
+            "slot_values": [
+                {
+                    "domain": "问题",
+                    "slot": "时间",
+                    "value": "23-25号",
+                    "pos": "1-7"
+                },
+                {
+                    "domain": "问题",
+                    "slot": "血糖值",
+                    "value": "高",
+                    "pos": "9-10"
+                }
+            ]
+        },
+        {
+            "act_label": "Advice",
+            "slot_values": [
+                {
+                    "domain": "饮食",
+                    "slot": "饮食名",
+                    "value": "鸡蛋",
+                    "pos": "35-37"
+                },
+                {
+                    "domain": "饮食",
+                    "slot": "饮食名",
+                                        
+                                        "value"value": "蘑"蘑菇",
+                    "pos": "38-40"
+                },
+                {
+{
+                                        "domain": "饮食",
+                    "slot": "饮食名",
+                    "value": "豆制品",
+                    "pos": "41-44"
+                }
+            ]
+        }
+    ]
+}
+{'utteranceId': 1581, 'conversationId': 242, 'sequenceNo': 18, 'utterance': '我看你说的都是中等以上的运动。觉着你应该喜欢运动的，只是没想到是长跑运动员。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{
+  "utteranceId": 1581,
+  "conversationId": 242,
+  "sequenceNo": 18,
+  "utterance": "您看您平时运动量相对较高，应该很喜欢运动吧。不过我没想到您是个长跑运动员。",
+  "agentRole": "Doctor",
+  "annotation": [
+    {
+      "act_label"{
+  "utteranceId": 1581,
+  "conversationId": 242,
+  "sequenceNo": 18,
+  "utterance": "您的言谈举止中透露出您是个喜欢运动的人，您运动的强度一般以上。",
+  "agentRole": "Doctor",
+  "annotation": [
+    {
+      "act_label": "Chitchat",
+      "slot_values": [
+        {
+          "domain": "",
+          "slot": "",
+          "value": "",
+          "pos": ""
+        }
+      ]
+    }
+  ]
+}

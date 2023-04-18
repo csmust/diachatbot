@@ -1,0 +1,4 @@
+LAST_ADD_CRF=True
+L_1 = 0.1
+L_2 = 0.9
+CRF_LEARNING_RATE = 1e-2

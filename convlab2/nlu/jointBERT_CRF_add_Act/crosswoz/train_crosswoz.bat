@@ -1,0 +1,1 @@
+python train.py --config_path ./configs/crosswoz_all_context.json

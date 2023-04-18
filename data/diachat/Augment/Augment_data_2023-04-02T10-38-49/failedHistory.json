@@ -1,0 +1,612 @@
+{'utteranceId': 123, 'conversationId': 10, 'sequenceNo': 5, 'utterance': '在医院每次都是7点。每次去医院还是多吃了，大部分8点多家里，医院大部分是6-7', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '时间', 'value': '在医院', 'pos': '0-3'}, {'domain': '治疗', 'slot': '检查值', 'value': '7点', 'pos': '7-9'}, {'domain': '饮食', 'slot': '饮食量', 'value': '多', 'pos': '17-18'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '家里', 'pos': '27-29'}, {'domain': '问题', 'slot': '血糖值', 'value': '8点多', 'pos': '24-27'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '6-7', 'pos': '36-39'}, {'domain': '问题', 'slot': '时间', 'value': '医院', 'pos': '29-32'}]}]}
+{'utteranceId': 123, 'conversationId': 10, 'sequenceNo': 5, 'utterance': '每次去医院都是早上7点，我一般都会在医院多吃一些东西，所以血糖值大部分是在8点左右测试的。在家的话，血糖值一般在8点多左右。', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '时间', 'value': '医院', 'pos': '3-5'}, {'{
+    "utteranceId": 123,
+    "conversationId": 10,
+    "sequenceNo": 5,
+    "utterance": "在医院每次都是7点。每次去医院还是多吃了，大部分8点多家里，医院大部分是6-7",
+    "agentRole": "User",
+    "annotation": [
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "治疗",
+                    "slot": "时间",
+                    "value": "在医院",
+                    "pos": "0-3"
+                },
+                {
+                    "domain": "治疗",
+,
+                    "slot": "检查值",
+                    "value": "7点",
+                    "pos": "7-9"
+                },
+                {
+                    "domain": "饮食",
+                    "slot": "饮食量",
+                    "value": "多",
+                    "pos": "17-18"
+                }
+            ]
+        },
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "问题",
+                    "slot": "时间",
+                    "value": "家里",
+                    "pos": "22-24"
+                },
+                {
+                    "domain": "问题",
+                    "slot": "血糖值",
+                    "value": "8点多",
+                    "pos": "24"24-27"
+                }
+            ]
+        },},
+
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "问题",
+                    "slot": "血糖值",
+                    "value": "6-7",
+                    "pos": "36-39"
+                },
+                {
+                    "domain": "问题",
+                    "slot": "时间",
+                    "value": "医院",
+                    "pos": "32-34"
+                }
+            ]
+        }
+    ]
+}
+{'utteranceId': 124, 'conversationId': 10, 'sequenceNo': 6, 'utterance': '长期的糖尿病患者，血糖控制在8左右是比较满意的，建议你运动上小窝加强一些，在运动稍微的加量，这样有利把血液的血糖转化为肌糖原，这样就可以降低血糖', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'GeneralExplanation', 'slot_values': [{'domain': '问题', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '运动', 'pos': '27-29'}, {'domain': '行为', 'slot': '效果', 'value': '稍微的加量', 'pos': '40-45'}]}, {'act_label': 'GeneralExplanation', 'slot_values': [{'domain': '问题', 'slot': '', 'value': '', 'pos': ''}]}]}
+{
+    'utteranceId': 124, 
+    'conversationId': 10, 
+    'sequenceNo': 6, 
+    'utterance': '长期的糖尿病患者，血糖控制在8左右是比较满意的，建议你运动上小窝加强一些，在运动稍微的加量，这样有利把血液的血糖转化为肌糖原，这样就可以降低血糖', 
+    'agentRole': 'Doctor', 
+    'annotation': [
+        {
+            'act_label': 'GeneralExplanation', 
+            'slot_values': [
+                {
+                    'domain': '疾病', 
+                    'slot': '疾病名', 
+                    'value': '糖尿病', 
+                    'pos': '3-6'
+                }, 
+                {
+                    'domain': '治疗', 
+                    'slot': '目标', 
+                    'value': '血糖控制', 
+                    'pos': '10-14'
+                }, 
+                {
+                    'domain': '治疗', 
+                    'slot': '目标值', 
+                    'value': '8', 
+                    'pos': '19-19'
+                }
+            ]
+        }, 
+        {
+            'act_label': 'Advice', 
+            'slot_values': [
+                {
+                    'domain': '行为', 
+                    'slot': '行为名', 
+                    'value': '运动', 
+                    'pos': '21-23'
+                }, 
+                {
+                    'domain': '行为', 
+                    'slot': '强度', 
+                    'value':'value': '小窝加强', 
+                    'pos': '24-28'
+                }, 
+                {
+                    'domain': '行为', 
+                    'slot': '效果', 
+                    'value': '转化为肌糖原', 
+                    'pos': '44-49'
+                }
+            ]
+        }, 
+        {
+            'act_label': 'GeneralExplanation', 
+            'slot_values': [
+                {
+                    'domain': '治疗', 
+                    'slot': '效果', 
+                    'value': '降低血糖', 
+                    'pos': '53-57'
+                }
+            ]
+        }
+    ]
+}
+{'utteranceId': 147, 'conversationId': 13, 'sequenceNo': 5, 'utterance': '好。今天测6.9我吃药都很少低于7的，几乎没有过。餐后跟吃药差不多8-9之间。中午可以在6-7之间，不要血糖稳定？', 'agentRole': 'User', 'annotation': [{'act_label': 'Accept', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '6.9', 'pos': '5-8'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '餐后', 'pos': '25-27'}, {'domain': '问题', 'slot': '血糖值', 'value': '8-9之间', 'pos': '33-38'}, {'domain': '问题', 'slot': '状态', 'value': '吃药', 'pos': '9-11'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '6-7之间', 'pos': '44-49'}, {'domain': '问题', 'slot': '时间', 'value': '中午', 'pos': '39-41'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '血糖稳定', 'pos': '52-56'}]}]}
+{'utteranceId': 147, 'conversationId': 13, 'sequenceNo': 5, 'utterance': '好。我的血糖测量值为6.9，我吃药后血糖很少低于7，几乎没有过。餐后血糖测量值大约在8-9之间，跟吃药时差不多。我想知道如何保持血糖稳定，中午的血糖测量值大约在6-7之间可以吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'Accept', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '6.9', 'pos': '13-16'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '状态', 'value': '吃药', 'pos': '28-30'}, {'domain': '问题', 'slot': '时间', 'value': '餐后', 'pos': '35-37'}, {'domain': '问题', 'slot': '血糖值', 'value': '8-9之间', 'pos': '43-48'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '中午', 'pos': '56-58'}, {'domain': '问题', 'slot': '血糖值', 'value': '6-7之间', 'pos': '50-55'}-55'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '血糖稳定', 'pos': '61-65'}]}]}
+{'utteranceId': 491, 'conversationId': 47, 'sequenceNo': 1, 'utterance': '中午吃了一碗半熟饭4个肉圆3量左右的肉，一小时8.6两小时7.7三小时5.6', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '中午', 'pos': '0-2'}, {'domain': '饮食', 'slot': '饮食名', 'value': '熟饭', 'pos': '6-9'}, {'domain': '饮食', 'slot': '饮食量', 'value': '一碗半', 'pos': '4-7'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '肉圆', 'pos': '11-13'}, {'domain': '饮食', 'slot': '饮食量', 'value': '4个', 'pos': '9-11'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '肉', 'pos': '11-12'}, {'domain': '饮食', 'slot': '饮食量', 'value': '3量左右', 'pos': '13-17'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '一小时', 'pos': '20-23'}, {'domain': '问题', 'slot': '血糖值', 'value': '8.6', 'pos': '23-26'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '两小时', 'pos': '26-29'}, {'domain': '问题', 'slot': '血糖值', 'value': '7.7', 'pos': '29-32'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '三小时', 'pos': '32-35'}, {'domain': '问题', 'slot': '血糖值', 'value': '5.6', 'pos': '35-38'}]}]}
+{'utteranceId': 491, 'conversationId': 47, 'sequenceNo': 1, 'utterance': '我中午吃了一碗半熟饭、4个肉圆和3量左右的肉。一小时后我的血糖是8.6，两小时后是7.7，三小时后是5.6。', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '中午', 'pos': '0-2'}, {'domain': '饮食', 'slot': '饮食名', 'value': '熟饭', 'pos': '6-9'}, {'domain': '饮食', 'slot': '饮食量', 'value': '一碗半', 'pos': '4-7'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '肉圆', 'pos': '11-13'}, {'domain': '饮食', 'slot': '饮食量', 'value': '4个', 'pos': '9-11'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '肉', 'pos': '19-20'}, {'domain': '饮食', 'slot': '饮食量', 'value': '3量左右', 'pos': '21-25'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '一小时', 'pos': '28-31'}, {'domain': '问题', 'slot': '血糖值', 'value': '8.6', 'pos': '31-34'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '两小时', 'pos': '38-41'}, {'domain': '问题', 'slot':  '血糖值糖值',', 'value': '7.7', 'pos': '41-44'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '三小时', 'pos': '47-50'}, {'domain': '问题', 'slot': '血糖值', 'value': '5.6', 'pos': '50-53'}]}]}
+{'utteranceId': 575, 'conversationId': 63, 'sequenceNo': 4, 'utterance': '好好的控制，不要悲观，有的人30多年的糖尿病都没并发症', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 575, 'conversationId': 63, 'sequenceNo': 4, 'utterance': '好好控制血糖,不要灰心丧气,有些人即使患有糖尿病30多年也没有出现并发症', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '糖尿病', 'slot': '控制方法', 'value': '好好控制血糖', 'pos': ': '好好控制'}, {'domain': '糖尿病', 'slot': '情感', 'value': '不要灰心丧气', 'pos': '不要悲观'}, {'domain': '糖尿病', 'slot': '并发症', 'value': '没有出现并发症', 'pos': '没并发症'}]}]}
+{'utteranceId': 587, 'conversationId': 67, 'sequenceNo': 1, 'utterance': '如果饭后运动一定在7.8以下，有时候甚至到5.如果有事情不能运动，会在9以下。现在不吃药不打针。控制饮食，注意睡眠', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '运动', 'slot': '运动名', 'value': '运动', 'pos': '9-11'}, {'domain': '问题', 'slot': '时间', 'value': '饭后', 'pos': '7-9'}, {'domain': '问题', 'slot': '血糖值', 'value': '7.8以下', 'pos': '14-19'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '运动', 'slot': '运动名', 'value': '运动', 'pos': '9-11'}, {'domain': '问题', 'slot': '血糖值', 'value': '5', 'pos': '26-27'}, {'domain': '问题', 'slot': '时间', 'value': '有时候', 'pos': '20-23'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '不能运动', 'pos': '33-37'}, {'domain': '问题', 'slot': '血糖值', 'value': '9以下', 'pos': '40-43'}]}]}
+{'utteranceId': 587, 'conversationId': 67, 'sequenceNo': 1, 'utterance': '如果饭后血糖一定在7.8以下，有时候甚至到5。如果有事情不能运动，血糖会在9以下。现在不用胰岛素或口服药物。控制饮食，注意睡眠。', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '饭后', 'pos': '3-5'}, {'domain': '问题', 'slot': '血糖值', 'value': '7.8以下', 'pos': '10-15'}, {'domain': '运动', 'slot': '运动名', 'value': '运动', 'pos': '5...
+{'utteranceId': 625, 'conversationId': 72, 'sequenceNo': 3, 'utterance': '我三十岁，晚上睡前一两小时前有喝水，以前没出现，我发现糖也才半年。', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '基本信息', 'slot': '年龄', 'value': '三十岁', 'pos': '1-4'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '喝水', 'pos': '15-17'}, {'domain': '行为', 'slot': '时间', 'value': '晚上睡前一两小时', 'pos': '5-13'}]}, {'act_label': 'Deny', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '糖', 'pos': '27-28'}, {'domain': '问题', 'slot': '持续时长', 'value': '半年', 'pos': '30-32'}]}]}
+{
+    "utteranceId": 625,
+    "conversationId": 72,
+    "sequenceNo": 3,
+    "utterance": "我三十岁，晚上睡前一两小时前有喝水，以前没出现，我发现糖也才半年。",
+    "agentRole": "User",
+    "annotation": [
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "基本信息",
+                    "slot": "年龄",
+                    "value": "三十岁",
+                    "pos": "1-4"
+                }
+}
+            ]
+        },
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "行为",
+                    "slot": "行为名",
+                    "value": "喝水",
+                    "pos": "15-17"
+                },
+                {
+                    "domain": "行为",
+                    "slot": "时间",
+                    "value": "晚上睡前一两小时",
+                    "pos": "5-13"
+                }
+            ]
+        },
+        {
+            "act_label": "Deny",
+            "slot_values": [
+                {
+                    "domain": "",
+                    "slot": "",
+                    "value": "",
+                    "pos": ""
+                }
+            ]
+        },
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "问题",
+                    "slot": "疾病",
+                    "value": "糖尿病",
+                    "pos": "27-32"
+                },
+                {
+                    "domain": "问题",
+                    "slot": "持续时长",
+                    "value": "半年",
+                    "pos": "30-32"
+                }
+            ]
+        }
+    ]
+}
+{'utteranceId': 641, 'conversationId': 78, 'sequenceNo': 1, 'utterance': '医生，左肩胛疼，和糖尿病有关系吗', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '症状部位', 'value': '左肩胛', 'pos': '3-6'}, {'domain': '问题', 'slot': '症状', 'value': '疼', 'pos': '6-7'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '糖尿病', 'pos': '9-12'}]}]}
+{'utteranceId': 641, 'conversationId': 78, 'sequenceNo': 1, 'utterance': '医生，我左肩胛疼痛，这可能跟我患有糖尿病有关吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '症状部位', 'value': '左肩胛', 'pos': '3-6'}, {'domain': '问题', 'slot': '症状', 'value': '疼痛', 'pos': '7-9'}]}'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '病情', 'value': '糖尿病', 'pos': '15-18'}]}]}
+{'utteranceId': 661, 'conversationId': 83, 'sequenceNo': 11, 'utterance': '晚上8点以后就不喝水了，十点睡，晚上要起夜两次，血糖饭后常在8-10之间，是否可以加大运动量？我是一型吗，医生，去了好几家医院都没定型，说情况特殊。', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '时间', 'value': '晚上8点以后', 'pos': '0-6'}, {'domain': '行为', 'slot': '行为名', 'value': '不喝水', 'pos': '7-10'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '睡', 'pos': '14-15'}, {'domain': '行为', 'slot': '时间', 'value': '十点', 'pos': '12-14'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '起夜', 'pos': '19-21'}, {'domain': '行为', 'slot': '时间', 'value': '晚上', 'pos': '0-2'}, {'domain': '行为', 'slot': '频率', 'value': '两次', 'pos': '21-23'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '8-10之间', 'pos': '30-36'}, {'domain': '问题', 'slot': '时间', 'value': '饭后', 'pos': '26-28'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '运动', 'slot': '强度', 'value': '加大', 'pos': '41-43'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '一型', 'pos': '49-51'}]}]}
+{
+    "utteranceId": 661,
+    "conversationId": 83,
+    "sequenceNo": 11,
+    "utterance": "晚上8点以后就不喝水了，十点睡，晚上要起夜两次，血糖饭后常在8-10之间，是否可以加大运动量？我是一型吗，医生，去了好几家医院都没定型，说情况特殊。",
+    "agentRole": "User",
+    "annotation": [
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "行为",
+                    "slot": "时间",
+                    "value": "晚上8点以后",
+                    "pos": "0-6"
+                },
+                {
+                    "domain": "行为",
+                    "slot": "行为名",
+                    "value": "不喝水",
+                    "pos": "7-10"
+                }
+            ]
+        },
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "行为",
+                    "slot": "行为名",
+                    "value": "睡",
+                    "pos": "14-15"
+                },
+                {
+                    "domain": "行为",
+                    "slot": "时间",
+                    "value": "十点",
+                    "pos": "12-14"
+                }
+            ]
+        },
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "行为",
+                    "slot": "行为名",
+                    "value": "起夜",
+                    "pos": "19-21"
+                },
+                {
+                    "domain": "行为",
+                    "slot": "时间",
+                    "value": "晚上",
+                    "pos": "0-2"
+                },
+                {
+                    "domain": "行为",
+                    "slot": "频率",
+                    "value": "两次",
+                    "pos": "21-23"
+                }
+            ]
+        },
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "问题",
+                    "slot": "血糖值",
+                    "value": "8-10之间",
+                    "pos": "30-36"
+                },
+                {
+                    "domain": "问题",
+                    "slot": "时间",
+                    "value": "饭后",
+                    "pos": "26-28"
+                }
+            ]
+        },
+        {
+            "act_label": "Request",
+            "slot_values": [
+                {
+                    "domain": "运动",
+                    "slot": "强度",
+                    "value": "加大",
+                    "pos": "41-43"
+                }
+                }
+            ]
+}
+            ]
+        },
+            ]
+        },
+        ]
+        },
+        {
+
+        {
+            "act_label": "Request",
+            "slot_values": [
+                {
+                    "domain": "问题",
+                    "slot": "疾病",
+                    "value": "一型",
+                    "pos": "49-51"
+                }
+}
+            ]
+        }
+    ]
+}
+{'utteranceId': 693, 'conversationId': 87, 'sequenceNo': 3, 'utterance': '回家后我在吃上面挺注意，每天快走十几公里，出院一个多月体重减轻六公斤，现在体重是146斤,我今年41，抽烟的，平时没有客人一般不喝酒.让我感到困惑的是前十天我才开始自己测血糖，都正常了，这是为什么？我以为我老妈帮我买的血糖仪不好，前几天又去买了个罗氏的血糖仪，测下来还是正常，这是为什么？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '运动', 'slot': '运动名', 'value': '快走', 'pos': '14-16'}, {'domain': '运动', 'slot': '频率', 'value': '每天', 'pos': '12-14'}, {'domain': '运动', 'slot': '强度', 'value': '十几公里', 'pos': '16-20'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '基本信息', 'slot': '体重', 'value': '减轻六公斤', 'pos': '29-34'}, {'domain': '基本信息', 'slot': '体重', 'value': '146斤', 'pos': '40-44'}, {'domain': '基本信息', 'slot': '年龄', 'value': '41', 'pos': '48-50'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '抽烟', 'pos': '51-53'}, {'domain': '行为', 'slot': '行为名', 'value': '一般不喝酒', 'pos': '61-66'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '前十天', 'pos': '75-78'}, {'domain': '问题', 'slot': '血糖值', 'value': '正常', 'pos': '89-91'}]}, {'act_label': 'AskWhy', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{
+    "utteranceId": 693,
+    "conversationId": 87,
+    "sequenceNo": 3,
+    "utterance": "回家后我在吃上面挺注意，每天快走十几公里，出院一个多月体重减轻六公斤，现在体重是146斤,我今年41，抽烟的，平时没有客人一般不喝酒.让我感到困惑的是前十天我才开始自己测血糖，都正常了，这是为什么？我以为我老妈帮我买的血糖仪不好，前几天又去买了个罗氏的血糖仪，测下来还是正常，这是为什么？",
+    "agentRole": "User",
+    "annotation": [
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "运动",
+                    "slot": "运动名",
+                    "value": "快走",
+                    "pos": "12-14"
+                },
+                {
+                    "domain": "运动",
+                    "slot": "频率",
+                    "value": "每天",
+                    "pos": "12-14"
+                },
+                {
+                    "domain": "运动",
+                    "slot": "强度",
+                    "value": "十几公里",
+                    "pos": "14-18"
+                }
+            ]
+        },
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "基本信息",
+                    "slot": "体重",
+                    "value": "减轻六公斤",
+                    "pos": "21-26"
+                },
+                {
+                    "domain": "基本信息",
+                    "slot": "体重",
+                    "value": "146斤",
+                    "pos": "31-35"
+                },
+                {
+                    "domain": "基本信息",
+                    "slot": "年龄",
+                    "value": "41",
+                    "pos": "41-43"
+                }
+            ]
+        },
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "行为",
+                    "slot": "行为名",
+                    "value": "抽烟",
+                    "pos": "45-47"
+                                },},
+
+                {
+                {
+                    "domain": "行为",
+                    "slot": "饮酒",
+                    "value": "偶尔",
+                    "pos": "59-61"
+                }
+            ]
+        },
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "问题",
+                    "slot": "时间",
+                    "value": "前十天",
+                    "pos": "70-73"
+                },
+                {
+                    "domain": "问题",
+                    "slot": "血糖值",
+                    "value": "正常",
+                    "pos": "84-86"
+                }
+            ]
+        },
+        {
+            "act_label": "AskWhy",
+            "slot_values": [
+                {
+                    "domain": "",
+                    "slot": "",
+                    "value": "",
+                    "pos": ""
+                }
+            ]
+        }
+    ]
+}
+{'utteranceId': 751, 'conversationId': 109, 'sequenceNo': 2, 'utterance': '2型糖尿病的患者，肥胖到一定程度，减肥后会对血糖控制明显有效，但不应该说是痊愈', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Deny', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Explanation', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减肥', 'pos': '17-19'}, {'domain': '行为', 'slot': '效果', 'value': '血糖控制明显有效', 'pos': '22-30'}]}]}
+{'utteranceId': 751, 'conversationId': 109, 'sequenceNo': 2, 'utterance': '对于2型糖尿病的患者，如果肥胖到一定程度，减肥后可以明显改善血糖控制，但需要注意的是，减肥并不等同于痊愈。', 'agentRole': 'Doctor', 'annotation': [{'act_label'[{'act_label': 'Den: 'Deny', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Explanation', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减肥', 'pos': '26-28'}, {'domain': '行为', 'slot': '效果', 'value': '改善血糖控制', 'pos': '32-38'}, {'domain': '', 'slot': '注意事项', 'value': '减肥不等同于痊愈', 'pos': '40-48'}]}]}
+{'utteranceId': 755, 'conversationId': 110, 'sequenceNo': 4, 'utterance': '唐林就应该是我刚说的那种预防糖尿病周围神经病变的药物吧。您现在主要有哪些不适症状？', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '唐林', 'pos': '0-2'}, {'domain': '治疗', 'slot': '适应症', 'value': '预防糖尿病周围神经病变', 'pos': '12-23'}]}, {'act_label': 'AskFor', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '?', 'pos': ''}]}]}
+{'utteranceId': 755, 'conversationId': 110, 'sequenceNo': 4, 'utterance': '唐林是预防糖尿病周围神经病变的药物。请问您有哪些不适症状？', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '治疗'疗', , 'slot': '药品', 'value, 'value': 'value': '唐林', 'pos': '0-2'}, {'domain': '治疗', 'slot': '适应症', 'value': '预防糖尿病周围神经病变', 'pos': '6-17'}]}, {'act_label': 'AskFor', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '?', 'pos': ''}]}]}
+{'utteranceId': 784, 'conversationId': 115, 'sequenceNo': 1, 'utterance': '我昨天去检查，空腹5.48，吃了一个小苹果、一个包子，一片阿胶，一瓶牛奶，也没怎么运动，餐二变成2.47。昨天空腹查C肽是0.03，餐二0.06，是不是说明我的胰岛功能很差？我两个月前住院的时候C肽也只有0.02', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '7-9'}, {'domain': '问题', 'slot': '血糖值', 'value': '5.48', 'pos': '9-13'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '一个', 'pos': '16-18'}, {'domain': '饮食', 'slot': '饮食名', 'value': '小苹果', 'pos': '18-21'}, {'domain': '饮食', 'slot': '饮食量', 'value': '一个', 'pos': '16-18'}, {'domain': '饮食', 'slot': '饮食名', 'value': '包子', 'pos': '24-26'}, {'domain': '饮食', 'slot': '饮食量', 'value': '一片', 'pos': '27-29'}, {'domain': '饮食', 'slot': '饮食名', 'value': '阿胶', 'pos': '29-31'}, {'domain': '饮食', 'slot': '饮食量', 'value': '一瓶', 'pos': '32-34'}, {'domain': '饮食', 'slot': '饮食名', 'value': '牛奶', 'pos': '34-36'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '餐二', 'pos': '44-46'}, {'domain': '问题', 'slot': '血糖值', 'value': '2.47', 'pos': '48-52'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '昨天', 'pos': '1-3'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '7-9'}, {'domain': '治疗', 'slot': '检查项', 'value': 'C肽', 'pos': '58-60'}, {'domain': '治疗', 'slot': '检查值', 'value': '0.03', 'pos': '61-65'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '昨天', 'pos': '1-3'}, {'domain': '问题', 'slot': '时间', 'value': '餐二', 'pos': '44-46'}, {'domain': '治疗', 'slot': '检查项', 'value': 'C肽', 'pos': '58-60'}, {'domain': '治疗', 'slot': '检查值', 'value': '0.06', 'pos': '68-72'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状部位', 'value': '胰岛', 'pos': '80-82'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '两个月前', 'pos': '88-92'}, {'domain': '治疗', 'slot': '检查项', 'value': 'C肽', 'pos': '58-60'}, {'domain': '治疗', 'slot': '检查值', 'value': '0.02', 'pos': '102-106'}]}]}
+{'utteranceId': 784, 'conversationId': 115, 'sequenceNo': 1, 'utterance': '我昨天去检查，空腹血糖是5.48，吃了一个小苹果、一个包子、一片阿胶、一瓶牛奶，也没怎么运动，餐后2小时测量血糖是2.47。昨天空腹查C肽是0.03，餐后2小时查C肽是0.06，是不是说明我的胰岛功能很差？我两个月前住院的时候C肽也只有0.02', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '空腹血糖', 'pos': '7-12'}, {'domain': '问题', 'slot': '血糖值', 'value': '5.48', 'pos': '13-17'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '一个', 'pos': '20-22'}, {'domain': '饮食', 'slot': '饮食名', 'value': '小苹果', 'pos': '22-25'}, {'domain': '饮食', 'slot': '饮食量', 'value': '一个', 'pos': '27-29'}, {'domain': '饮食', 'slot': '饮食名', 'value': '包子', 'pos': '31-33'}, {'domain': '饮食', 'slot': '饮食量', 'value': '一片', 'pos': '34-36'}, {'domain': '饮食', 'slot': '饮食名', 'value': '阿胶', 'pos': '36-38'}, {'domain': '饮食', 'slot': '饮食量', 'value': '一瓶', 'pos': '39-41'}, {'domain': '饮食', 'slot': '饮食名', 'value': '牛奶', 'pos': '41-43'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '餐后2小时', 'pos': '45-51'}, {'domain': '问题', 'slot': '血糖值', 'value': '2.47', 'pos': '56-60'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '昨天', 'pos': '1-3'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '8-10'}, {'domain': '治疗', 'slot': '检查项', 'value': 'C肽', 'pos': '61-63'}, {'domain': '治疗', 'slot': '检查值', 'value': '0.03', 'pos': '64-68'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '昨天', 'pos': '1-3'}, {'domain': '问题', 'slot': '时间', 'value': '餐后2小时', 'pos': '45-51'}, {'domain': '治疗', 'slot': '检查项', 'value': 'C肽', 'pos': '61-63'}, {'domain': '治疗', 'slot': '检查值', 'value': '0.06', 'pos': '72-76'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状部位', 'value': '胰岛', 'pos': '82-84'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '两个月前', 'pos': '88-92'}, {'domain': '治疗', 'slot': '检查项', 'value
+{'utteranceId': 788, 'conversationId': 116, 'sequenceNo': 1, 'utterance': '发现1个月前(空腹6.4，餐后糖12.8，尿蛋白+1)，没吃药在锻炼请教今尿查午餐后2小时血糖7.3、、尿蛋白+1酮体+1重不重？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '1个月前', 'pos': '2-6'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '7-9'}, {'domain': '问题', 'slot': '血糖值', 'value': '6.4', 'pos': '9-12'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '餐后', 'pos': '13-15'}, {'domain': '问题', 'slot': '血糖值', 'value': '12.8', 'pos': '16-20'}, {'domain': '治疗', 'slot': '检查项', 'value': '尿蛋白', 'pos': '21-24'}, {'domain': '治疗', 'slot': '检查值', 'value': '+1', 'pos': '24-26'}, {'domain': '问题', 'slot': '时间', 'value': '1个月前', 'pos': '2-6'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '今', 'pos': '36-37'}, {'domain': '问题', 'slot': '时间', 'value': '午餐后2小时', 'pos': '39-45'}, {'domain': '问题', 'slot': '血糖值', 'value': '7.3', 'pos': '47-50'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '尿蛋白', 'pos': '21-24'}, {'domain': '治疗', 'slot': '检查值', 'value': '+1', 'pos': '24-26'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '酮体', 'pos': '57-59'}, {'domain': '治疗', 'slot': '检查值', 'value': '+1', 'pos': '24-26'}]}]}
+{'utteranceId': 788, 'conversationId': 116, 'sequenceNo': 1, 'utterance': '一个月前发现我空腹血糖是6.4，餐后糖是12.8，尿蛋白是+1。最近我在锻炼，今天查尿发现午餐后两小时的血糖是7.3，尿蛋白是+1，酮体是+1。请问这重不重要？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '一个月前', 'pos': '0-4'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '12-14'}, {'domain': '问题', 'slot': '血糖值', 'value': '6.4', 'pos': '15-18'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '餐后', 'pos': '21-23'}, {'domain': '问题', 'slot': '血糖值', 'value': '12.8', 'pos': '24-28'}, {'domain': '治疗', 'slot': '检查项', 'value': '尿蛋白', 'pos': '29-32'}, {'domain': '治疗', 'slot': '检查值', 'value': '+1', 'pos': '33-35'}, {'domain': '问题', 'slot': '时间', 'value': '一个月前', 'pos': '0-4'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '今天', 'pos': '38-40'}, {'domain': '问题', 'slot': '时间', 'value': '午餐后两小时', 'pos': '41-49'}, {'domain': '问题', 'slot': '血糖值',  'value'value':': '7.3', 'pos': '50-53'}]}, {'act_label': 'Inform', 'slot_values'_values': [{'domain': '治疗', 'slot': '检查项', 'value': '尿蛋白', 'pos': '29-32'}, {'domain': '治疗', 'slot': '检查值', 'value': '+1', 'pos': '33-35'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '酮体', 'pos': '56-58'}, {'domain': '治疗', 'slot': '检查值', 'value': '+1', 'pos': '65-67'}]}]}
+{'utteranceId': 793, 'conversationId': 116, 'sequenceNo': 6, 'utterance': '好的，高血压患者容易发生糖尿病，血压只要是血管硬化，时间长了，肾脏会有一定的损伤，所以您的尿蛋白和酮体可能与血压有很大的关系，血压、血糖又和体重密不可分，血脂也一定要复查。所以您的问题较多，现在最重要的是控制体重，就是科学减肥，低盐低脂低蛋白饮食，适量增加运动，把血压和血糖控制在正常范围，慢慢的这些指标就应该能改善的。糖化血红蛋白还可以，您把体重减下来后，肯定会更好的。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'GeneralExplanation', 'slot_values': [{'domain': '问题', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '控制体重', 'pos': '102-106'}, {'domain': '行为', 'slot': '行为名', 'value': '科学减肥', 'pos': '109-113'}, {'domain': '饮食', 'slot': '成份量', 'value': '低', 'pos': '114-115'}, {'domain': '饮食', 'slot': '成分', 'value': '盐', 'pos': '115-116'}, {'domain': '饮食', 'slot': '成份量', 'value': '低', 'pos': '114-115'}, {'domain': '饮食', 'slot': '成分', 'value': '脂', 'pos': '78-79'}, {'domain': '饮食', 'slot': '成份量', 'value': '低', 'pos': '114-115'}, {'domain': '饮食', 'slot': '成分', 'value': '蛋白', 'pos': '46-48'}, {'domain': '行为', 'slot': '行为名', 'value': '增加运动', 'pos': '126-130'}]}]}
+{'utteranceId': 793, 'conversationId': 116, 'sequenceNo': 6, 'utterance': '好的，高血压患者容易发生糖尿病，血压只要是血管硬化，时间长了，肾脏会有一定的损伤，所以您的尿蛋白和酮体可能与血压有很大的关系，血压、血糖又和体重密不可分，血脂也一定要复查。所以您的问题较多，现在最重要的是控制体重，就是科学减肥，低盐低脂低蛋白饮食，适量增加运动，把血压和血糖控制在正常范围，慢慢的这些指标就应该能改善的。糖化血红蛋白还可以，您把体重减下来后，肯定会更好的。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'GeneralExplanation', 'slot_values': [{'domain': '糖尿病', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '控制体重', 'pos': '102-106'}, {'domain': '饮食', 'slot': '成分', 'value': '盐', 'pos': '115-116'}, {'domain': '饮食', 'slot': '成分', 'value': '脂', 'pos': '78-79'}, {'domain': '饮食', 'slot': '成分', 'value': '蛋白', 'pos': '46-48'}, {'domain': '行为', 'slot': '行为名', 'value': '增加运动', 'pos': '126-130'}, {'domain': '饮食', 食', 'slot': '成分', 'value': '低', 'pos': '114-115'}]}]}
+{'utteranceId': 794, 'conversationId': 116, 'sequenceNo': 7, 'utterance': '降糖药没用，早30分种健步2公里、晚2公里，骑自行车，一月降了11斤体重，现空腹在5，8一6，0之间，餐后2在6，7一8，1之间。按糖病食谱吃了一个月。', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '运动', 'slot': '时间', 'value': '早', 'pos': '6-7'}, {'domain': '运动', 'slot': '持续时长', 'value': '30分种', 'pos': '7-11'}, {'domain': '运动', 'slot': '运动名', 'value': '健步', 'pos': '11-13'}, {'domain': '运动', 'slot': '强度', 'value': '2公里', 'pos': '13-16'}, {'domain': '运动', 'slot': '时间', 'value': '晚', 'pos': '17-18'}, {'domain': '运动', 'slot': '强度', 'value': '2公里', 'pos': '13-16'}, {'domain': '运动', 'slot': '运动名', 'value': '骑自行车', 'pos': '22-26'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '38-40'}, {'domain': '问题', 'slot': '血糖值', 'value': '5，8一6，0之间', 'pos': '41-50'}, {'domain': '问题', 'slot': '时间', 'value': '餐后2', 'pos': '51-54'}, {'domain': '问题', 'slot': '血糖值', 'value': '6，7一8，1之间', 'pos': '55-64'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '糖病食谱', 'pos': '66-70'}, {'domain': '饮食', 'slot': '时间', 'value': '一个月', 'pos': '72-75'}]}]}
+{'utteranceId': 794, 'conversationId': 116, 'sequenceNo': 7, 'utterance': '降糖药没用，早上步行2公里、晚上骑自行车2公里，一个月体重减轻11斤，现在空腹血糖在5.8至6.0之间，餐后2小时血糖在6.7至8.1之间。我按照糖尿病饮食标准饮食一个月了。', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '运动', 'slot': '时间', 'value': '早上', 'pos': '6-9'}, {'domain': '运动', 'slot': '运动名', 'value': '步行', 'pos': '9-11'}, {'domain': '运动', 'slot': '强度', 'value': '2公里', 'pos': '11-14'}, {'domain': '运动', 'slot': '时间', 'value': '晚上', 'pos': '15-18'}, {'domain': '运动', 'slot': '强度', 'value': '2公里', 'pos': '18-21'}, {'domain': '运动', 'slot': '运动名', 'value': '骑自行车', 'pos': '22-26'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '27-29'}, {'domain': '问题', 'slot': '血糖值', 'value': '5.8至6.0之间', 'pos': '30-38'}, {'domain': '问题', 'slot': '时间', 'value': '餐后2小时', 'pos': '39-45'}, {'domain': '问题', 'slot': '血糖值', 'value': '6.7至8.1之间', 'pos': '46-54'}]}, {'act_label': 'Inform', 'slot_values': [{[{'domain': '饮食', 'slot': '饮食名', 'value': '糖尿病饮食标准', 'pos': '58-66'}, {'domain': '饮食', 'slot': '时间', 'value': '一个月', 'pos': '68-71'}]}]}
+{'utteranceId': 810, 'conversationId': 119, 'sequenceNo': 1, 'utterance': '高血压5年，高血脂，脂肪肝，5年前血糖5.3，现一月前查耐糖测空5.4，半小时8.71小12.32小12.63小5.6。糖化血红蛋白1月前6.81昨查6.7。1月2次查都是尿蛋白+1。吃拜阿匹林和降压药现80----120', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '高血压', 'pos': '0-3'}, {'domain': '问题', 'slot': '持续时长', 'value': '5年', 'pos': '3-5'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '高血脂', 'pos': '6-9'}, {'domain': '问题', 'slot': '疾病', 'value': '脂肪肝', 'pos': '10-13'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.3', 'pos': '19-22'}, {'domain': '问题', 'slot': '时间', 'value': '5年前', 'pos': '14-17'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.4', 'pos': '32-35'}, {'domain': '问题', 'slot': '时间', 'value': '一月前', 'pos': '24-27'}, {'domain': '问题', 'slot': '时间', 'value': '空', 'pos': '31-32'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '8.7', 'pos': '39-42'}, {'domain': '问题', 'slot': '时间', 'value': '半小时', 'pos': '36-39'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '12.3', 'pos': '44-48'}, {'domain': '问题', 'slot': '时间', 'value': '1小', 'pos': '42-44'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '12.6', 'pos': '50-54'}, {'domain': '问题', 'slot': '时间', 'value': '2小', 'pos': '48-50'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.6', 'pos': '56-59'}, {'domain': '问题', 'slot': '时间', 'value': '3小', 'pos': '54-56'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '糖化血红蛋白', 'pos': '60-66'}, {'domain': '治疗', 'slot': '时间', 'value': '1月前', 'pos': '66-69'}, {'domain': '治疗', 'slot': '检查值', 'value': '6.81', 'pos': '69-73'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '糖化血红蛋白', 'pos': '60-66'}, {'domain': '治疗', 'slot': '检查值', 'value': '6.7', 'pos': '75-78'}, {'domain': '治疗', 'slot': '时间', 'value': '昨', 'pos': '73-74'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '尿蛋白', 'pos': '86-89'}, {'domain': '治疗', 'slot': '检查值', 'value': '+1', 'pos': '89-91'}, {'domain': '治疗', 'slot': '时间', 'value': '1月', 'pos': '66-68'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '拜阿匹林', 'pos': '93-97'}, {'domain': '治疗', 'slot': '药品', 'value': '降压药', 'pos': '98-101'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '血压', 'pos': ''}, {'domain': '治疗', 'slot': '检查值', 'value': '80----120', 'pos': '102-111'}, {'domain': '治疗', 'slot': '时间', 'value': '现', 'pos': '23-24'}]}]}
+{'utteranceId': 810, 'conversationId': 119, 'sequenceNo': 1, 'utterance': '我高血压已经有5年了，同时也有高血脂和脂肪肝。5年前我的血糖是5.3，最近一个月前查的耐糖测空是5.4，半小时后是8.71，1小时后是12.32，2小时后是12.63，3小时后是5.6。我的糖化血红蛋白一个月前是6.81，昨天查是6.7。最近两次尿检都显示尿蛋白+1。我现在正在吃拜阿匹林和降压药，目前血压在80到120之间。', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '高血压', 'pos': '1-4'}, {'domain': '问题', 'slot': '持续时长', 'value': '5年', 'pos': '5-7'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '高血脂', 'pos': '13-16'}, {'domain': '问题', 'slot': '疾病', 'value': '脂肪肝', 'pos': '17-20'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.3', 'pos': '25-28'}, {'domain': '问题', 'slot': '时间', 'value': '5年前', 'pos': '21-24'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.4', 'pos': '50-53'}, {'domain': '问题', 'slot': '时间', 'value': '一月前', 'pos': '38-41'}, {'domain': '问题', 'slot': '测试类型', 'value': '耐糖测空', 'pos': '42-47'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '8.71', 'pos': '58-62'}, {'domain': '问题', 'slot': '时间', 'value': '半小时后', 'pos': '54-58'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '12.32', 'pos': '75-80'}, {'domain': '问题', 'slot': '时间', 'value': '1小时后', 'pos': '70-75'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '12.63', 'pos': '94-99'}, {'domain': '问题', 'slot': '时间', 'value': '2小时后', 'pos': '89-94'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.6', 'pos': '114-117'}, {'domain': '问题', 'slot': '时间', 'value': '3小时后', 'pos': '109-114'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '糖化血红蛋白', 'pos': '123-129'}, {'domain': '治疗', 'slot': '时间', 'value': '一个月前', 'pos': '129-134'}, {'domain': '治疗', 'slot': '检查值', 'value': '6.81', 'pos': '135-139'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '糖化血红蛋白', 'pos
+{'utteranceId': 812, 'conversationId': 119, 'sequenceNo': 3, 'utterance': '那尿蛋白需怎治疗', 'agentRole': 'User', 'annotation': [{'act_label': 'AskHow', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '尿蛋白', 'pos': '1-4'}]}]}
+{'utteranceId': 812, 'conversationId': 119, 'sequenceNo': 3, 'utterance': '请问尿蛋白需要怎么治怎么治疗呢?'?', 'agentRole': 'User', 'annotation': [{'act_label': 'AskHow', 'slot_values': [{'domain': '治疗', 'slot': '检查项', 'value': '尿蛋白', 'pos': '3-6'}]}]}
+{'utteranceId': 834, 'conversationId': 122, 'sequenceNo': 3, 'utterance': '重和林m30精蛋白，早11中7.晚9晚二4.7睡前7.2凌晨3.7吃块饼干，空腹9.7。这段时间一直不正常，中饭后基本差不多。每天早晚都慢跑，可还是高。体重55公斤', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '重和林m30精蛋白', 'pos': '0-9'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '11', 'pos': '11-13'}, {'domain': '问题', 'slot': '时间', 'value': '早', 'pos': '10-11'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '7.', 'pos': '14-16'}, {'domain': '问题', 'slot': '时间', 'value': '中', 'pos': '13-14'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '9', 'pos': '17-18'}, {'domain': '问题', 'slot': '时间', 'value': '晚', 'pos': '16-17'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '4.7', 'pos': '20-23'}, {'domain': '问题', 'slot': '时间', 'value': '晚二', 'pos': '18-20'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '3.7', 'pos': '30-33'}, {'domain': '问题', 'slot': '时间', 'value': '凌晨', 'pos': '28-30'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '9.7', 'pos': '40-43'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '38-40'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '基本信息', 'slot': '体重', 'value': '55公斤', 'pos': '78-82'}]}, {'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '运动', 'slot': '运动名', 'value': '慢跑', 'pos': '68-70'}, {'domain': '运动', 'slot': '时间', 'value': '早晚', 'pos': '65-67'}, {'domain': '运动', 'slot': '频率', 'value': '每天', 'pos': '63-65'}]}]}
+{'utteranceId': 834, 'conversationId': 122, 'sequenceNo': 3, 'utterance': '我的血糖值一直不正常，中饭后基本差不多。我每天早晚都慢跑，但还是高。我最近吃的药是重和林m30精蛋白，早上11点、中午7点、晚上9点、晚上二点4.7、睡前7.2、凌晨3.7吃一块饼干，空腹9.7。我的体重是55公斤。', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '不正常', 'pos': '4-8'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '差不多', 'pos': '16-19'}, {'domain': '时间', 'slot': '时间', 'value': '中饭后', 'pos': '10-14'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '运动', 'slot': '运动名', 'value': '慢跑', 'pos': '38-40'}, {'domain': '时间', 'slot': '时间', 'value': '每天早晚', 'pos': '35-40'}, {'domain': '频率', 'slot': '频率', 'value': '每天', 'pos': '33-35'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '重和林m30精蛋白', 'pos': '29-38'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '11', 'pos': '39-41'}, {'domain': '时间', 'slot': '时间', 'value': '早上', 'pos': '38-40'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '7.', 'pos': '46-48'}, {'domain': '时间', 'slot': '时间',  'value': '中午', 'pos': '44-46'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '9', 'pos': '52-53'}, {'domain': '时间', 'slot': '时间', 'value': '晚上', 'pos': '50-52'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '4.7', 'pos': '57-60'}, {'domain': '时间', 'slot': '时间', 'value': '晚上二点', 'pos': '54-60'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '7.2', 'pos': '63-66'}, {'domain': '时间', 'slot': '时间', 'value':': '睡前', 'pos': '61-63'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '3.7', 'pos': '70-73'}, {'domain': '时间', 'slot': '时间', 'value': '凌晨', 'pos': '68-70'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '9.7', 'pos': '80-83'}, {'domain': '时间', 'slot': '时间', 'value': '空腹', 'pos': '78-80'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '基本信息', 'slot': '体重', 'value': '55公斤', 'pos': '97-101'}]}, {'act_label': 'Chitchat', 'slot_values': [{'domain': '', '
+{'utteranceId': 933, 'conversationId': 145, 'sequenceNo': 10, 'utterance': '能帮到您就好！呵呵', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 933, 'conversationId': 145, 'sequenceNo': 10, 'utterance': '您的血糖控制情况良好,请继续保持!', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Inform', ', 'slot_values': [{'domain': 'Diabetes', 'slot': 'BloodSugarControl', 'value': '良好', 'pos': 'adj'}]}]}
+{'utteranceId': 955, 'conversationId': 155, 'sequenceNo': 1, 'utterance': '你好我刚查出生病两个月了打优泌林3O比7o原早28晩12现在早打26晚打8个这几天早饭后打扫一下卫生在6以下晚饭后运动一小时就3点多低了中午7一9之间这样还要减剂量吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '优泌林3O比7o', 'pos': '13-21'}, {'domain': '治疗', 'slot': '时间', 'value': '原', 'pos': '21-22'}, {'domain': '治疗', 'slot': '用药量', 'value': '早28晩12', 'pos': '22-28'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '时间', 'value': '现在', 'pos': '28-30'}, {'domain': '治疗', 'slot': '用药量', 'value': '早打26晚打8个', 'pos': '30-38'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '早饭后', 'pos': '41-44'}, {'domain': '问题', 'slot': '血糖值', 'value': '6以下', 'pos': '51-54'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '晚饭后运动一小时', 'pos': '54-62'}, {'domain': '问题', 'slot': '血糖值', 'value': '3点多', 'pos': '63-66'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '中午', 'pos': '68-70'}, {'domain': '问题', 'slot': '血糖值', 'value': '7一9之间', 'pos': '70-75'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减剂量', 'pos': '79-82'}]}]}
+{'utteranceId': 955, 'conversationId': 155, 'sequenceNo': 1, 'utterance': '请问我的治疗方案是否需要减剂量？我查出糖尿病已经两个月了，现在早上打26个单位，晚上打8个单位，最近早饭后血糖在6以下，晚饭后运动一小时后血糖在3点多，中午血糖在7到9之间，我之前用的是优泌林3O比7o，用药量是早28晚12。', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '行为名', 'value': '减剂量', 'pos': '10-13'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot, 'slot': '药品', , 'value': '优泌林3O比7o', 'pos': '52-60'}, {'domain': '治疗', 'slot': '用药量', 'value': '早28晚12', 'pos': '61-67'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '时间', 'value': '现在', 'pos': '29-31'}, {'domain': '治疗', 'slot': '用药量', 'value': '早打26晚打8个', 'pos': '32-40'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '早饭后', 'pos': '43-46'}, {'domain': '问题', 'slot': '血糖值', 'value': '6以下', 'pos': '53-56'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '晚饭后运动一小时', 'pos': '56-64'}, {'domain': '问题', 'slot': '血糖值', 'value': '3点多', 'pos': '65-68'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '中午', 'pos': '70-72'}, {'domain': '问题', 'slot': '血糖值', 'value': '7一9之间', 'pos': '73-78'}]}]}
+{'utteranceId': 1023, 'conversationId': 165, 'sequenceNo': 2, 'utterance': '饮食更要注意，监测血压、血糖、血脂、尿蛋白的变化，要先查找呕吐的原因。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'GeneralAdvice', 'slot_values': [{'domain': '治疗', 'slot': '', 'value': '', 'pos': ''}]}]}
+{'utteranceId': 1023, 'conversationId': 165, 'sequenceNo': 2,: 2, 'utterance'ance': '您需要特别注意饮食,定期检查血压、血糖、血脂和尿蛋白水平,同时需要先了解呕吐的原因。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'GeneralAdvice', 'slot_values': [{'domain': '治疗', 'slot': '饮食', 'value': '特别注意', 'pos': '需要'}, {'domain': '检查项目', 'slot': '血压', 'value': '定期检查', 'pos': '需要'}, {'domain': '检查项目', 'slot': '血糖', 'value': '定期检查', 'pos': '需要'}, {'domain': '检查项目', 'slot': '血脂', 'value': '定期检查', 'pos': '需要'}, {'domain': '检查项目', 'slot': '尿蛋白', 'value': '定期检查', 'pos': '需要'}, {'domain': '症状描述', 'slot': '呕吐', 'value': '先了解原因', 'pos': '需要'}]}]}
+{'utteranceId': 1059, 'conversationId': 167, 'sequenceNo': 19, 'utterance': '有一段时间了。基本6到8左右，39，确诊4个月，诊断为2型，酮症酸中毒住院后确诊', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '6到8左右', 'pos': '9-14'}, {'domain': '基本信息', 'slot': '年龄', 'value': '39', 'pos': '15-17'}, {'domain': '问题', 'slot': '疾病', 'value': '2型', 'pos': '27-29'}, {'domain': '问题', 'slot': '持续时长', 'value': '4个月', 'pos': '20-23'}, {'domain': '基本信息', 'slot': '既往史', 'value': '酮症酸中毒', 'pos': '30-35'}]}]}
+{'utteranceId': 1059, 'conversationId': 167, 'sequenceNo': 19, 'utterance': '我被诊断为2型糖尿病已经有4个月了,血糖值一般在6到8之间,我今年39岁,之前住院时出现了酮症酸中毒的症状。', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '2型', 'pos': '9-11'}, {'domain': '问题', 'slot': '持续时'持续时长', 'value': '4个月', 'pos': '21-24'}, {'domain': '问题', 'slot': '血糖值', 'value': '6到8之间', 'pos': '28-33'}, {'domain': '基本信息', 'slot': '年龄', 'value': '39岁', 'pos': '34-37'}, {'domain': '基本信息', 'slot': '既往史', 'value': '酮症酸中毒', 'pos': '48-53'}]}]}
+{'utteranceId': 1061, 'conversationId': 167, 'sequenceNo': 21, 'utterance': '我天天测，睡前吃0.5二甲缓释，早餐后也是0.5二甲，睡前是不是还可以加0.25二甲缓释呢，优泌乐25早12晚10，这几天晚餐后貌似高些', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '时间', 'value': '睡前', 'pos': '5-7'}, {'domain': '治疗', 'slot': '用药量', 'value': '0.5', 'pos': '8-11'}, {'domain': '治疗', 'slot': '药品', 'value': '二甲缓释', 'pos': '11-15'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '时间', 'value': '早餐后', 'pos': '16-19'}, {'domain': '治疗', 'slot': '用药量', 'value': '0.5', 'pos': '8-11'}, {'domain': '治疗', 'slot': '药品', 'value': '二甲', 'pos': '11-13'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '优泌乐25', 'pos': '46-51'}, {'domain': '治疗', 'slot': '时间', 'value': '早', 'pos': '16-17'}, {'domain': '治疗', 'slot': '用药量', 'value': '12', 'pos': '52-54'}, {'domain': '治疗', 'slot': '时间', 'value': '晚', 'pos': '54-55'}, {'domain': '治疗', 'slot': '用药量', 'value': '10', 'pos': '55-57'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '治疗', 'slot': '用药量', 'value': '加0.25', 'pos': '35-40'}, {'domain': '治疗', 'slot': '药品', 'value': '二甲缓释', 'pos': '11-15'}]}]}
+{'utteranceId': 1061, 'conversationId': 167, 'sequenceNo': 21, 'utterance': '请问我睡前还可以加0.25二甲缓释吗？我每天测血糖，睡前吃0.5二甲缓释，早餐后也是0.5二甲，我还在服用优泌乐25，早上12片，晚上10片，最近晚餐后血糖好像有点高。', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '治疗', 'slot': '用药量', 'value': '加0.25', 'pos': '9-14'}, {'domain': '治疗', 'slot': '药品', 'value': '二甲缓释', 'pos': '15-19'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '时间', 'value': '睡前', 'pos': '17-19'}, {'domain': '治疗', 'slot': '用药量', 'value': '0.5', 'pos': '20-23'}, {'domain': '治疗', 'slot': '药品', 'value': '二甲缓释', 'pos': '23-27'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '时间', 'value': '早餐后', 'pos': '29-32'}, {'domain': '治疗', 'slot': '用药量', 'value': '0.5', 'pos': '33-36'}, {'domain': '治疗', 'slot': '药品', 'value': '二甲', 'pos': '36-38'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '优泌乐25', 'pos': '62-67'}, {'domain': '治疗', 'slot': '时间', 'value': '早', 'pos': '48-49'}, {'domain': '治疗', 'slot': '用药量', 'value': '12', 'pos': '68-70'}, {'domain': '治疗', 'slot': '时间', 'value': '晚', 'pos': '70-71'}, {'domain'domain': '治'治疗'疗', 'slot': '用药量', 'value': '10', 'pos': '72-74'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '症状', 'slot': '时间', 'value': '最近', 'pos': '76-78'}, {'domain': '症状', 'slot': '症状描述', 'value': '晚餐后血糖好像有点高', 'pos': '79-89'}]}]}
+{'utteranceId': 1189, 'conversationId': 187, 'sequenceNo': 8, 'utterance': '蛋白分为植物蛋白和动物蛋白。少吃含蛋白的食物，控制好量', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AdviceNot', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '植物蛋白和动物蛋白', 'pos': '4-13'}, {'domain': '饮食', 'slot': '饮食量', 'value': '吃', 'pos': '14-16'}, {'domain': '饮食', 'slot': '成分', 'value': '蛋白', 'pos': '0-2'}]}]}
+{
+    "utteranceId": 1189, 
+    "conversationId": 187, 
+    "sequenceNo": 8, 
+    "utterance": "少吃含蛋白的食物，控制好量", 
+    "agentRole": "Doctor", 
+    "annotation": [
+        {
+            "act_label": "AdviceNot", 
+            "slot_values": [
+                {
+                    "domain": "饮食", 
+                    "slot": "饮食名", 
+                    "value": "含蛋白的食物", 
+                    "pos": "2-9"
+                }, 
+                {
+                    "domain": "饮食", 
+                    "slot": "饮食量", 
+                    "value": "少吃", 
+                    "pos": "0-2"
+                }, 
+                {
+                    "domain": "饮食", 
+                    "slot": "控制量", 
+                    "value": "好", 
+                    "pos": "10-11"
+                }
+            ]
+                }
+}
+        ]
+}
+{'utteranceId': 1244, 'conversationId': 194, 'sequenceNo': 3, 'utterance': '后来我在群里咨询医生，她建议我减药，我从3月1日起减了一片中午的二甲双胍，这十几天自测血糖5.2左右，体重又轻了3斤，我想问的是:我还能再减这个药吗？只吃格列齐特缓释片有效吗？我高160，48岁，吃药前113斤，现在才100斤了，不想再瘦了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '3月1日起', 'pos': '20-25'}, {'domain': '行为', 'slot': '行为名', 'value': '减', 'pos': '15-16'}, {'domain': '治疗', 'slot': '用药量', 'value': '一片', 'pos': '27-29'}, {'domain': '治疗', 'slot': '药品', 'value': '二甲双胍', 'pos': '32-36'}, {'domain': '问题', 'slot': '血糖值', 'value': '5.2左右', 'pos': '45-50'}, {'domain': '基本信息', 'slot': '体重', 'value': '轻了3斤', 'pos': '54-58'}, {'domain': '问题', 'slot': '时间', 'value': '这十几天', 'pos': '37-41'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减', 'pos': '15-16'}, {'domain': '治疗', 'slot': '药品', 'value': '这个药', 'pos': '70-73'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '只吃', 'pos': '75-77'}, {'domain': '治疗', 'slot': '药品', 'value': '格列齐特缓释片', 'pos': '77-84'}, {'domain': '基本信息', 'slot': '身高', 'value': '160', 'pos': '90-93'}, {'domain': '基本信息', 'slot': '年龄', 'value': '48岁', 'pos': '94-97'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '基本信息', 'slot': '体重', 'value': '113斤', 'pos': '101-105'}, {'domain': '问题', 'slot': '时间', 'value': '吃药前', 'pos': '98-101'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '基本信息', 'slot': '体重', 'value': '100斤', 'pos': '109-113'}, {'domain': '问题', 'slot': '时间', 'value': '现在', 'pos': '106-108'}]}]}
+{
+    "utteranceId": 1244,
+    "conversationId": 194,
+    "sequenceNo": 3,
+    "utterance": "我在群里问医生，她建议我减药，我从三月一号开始减少中午的二甲双胍，这十几天我的血糖自测在5.2左右，体重又轻了三斤，我想问一下，我还能继续减药吗？如果只吃格列齐特缓释片会有效吗？我的身高是160厘米，我今年48岁，吃药前我的体重是113斤，现在只有100斤了，我不想再瘦了。",
+    "agentRole": "User",
+    "annotation": [
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "问题",
+                    "slot": "时间",
+                    "value": "三月一号",
+                    "pos": "23-28"
+                },
+                {
+                    "domain": "行为",
+                    "slot": "行为名",
+                    "value": "减少",
+                    "pos": "18-20"
+                },
+                {
+                    "domain": "治疗",
+                    "slot": "用药量",
+                    "value": "中午的一片",
+                    "pos": "30-36"
+                },
+                {
+                    "domain": "治疗",
+                    "slot": "药品",
+                    "value": "二甲双胍",
+                    "pos": "39-43"
+                },
+                {
+                    "domain": "问题",
+                    "slot": "血糖值",
+                    "value": "5.2左右",
+                    "pos": "52-57"
+                },
+                {
+                    "domain": "基本信息",
+                    "slot": "体重",
+                    "value":  "轻"轻了三斤了三斤",
+                    "pos": "60-64"
+                },
+                {
+                    "domain": "问题"问题",
+",
+                    "slot
+                    "slot":                     "slot": "时间",
+                    "value": "这十几天",
+                    "pos": "37-43"
+                }
+            ]
+        },
+        {
+            "act_label": "AskForSure",
+            "slot_values": [
+                {
+                    "domain": "行为",
+                    "slot": "行为名",
+                    "value": "减少药量",
+                    "pos": "18-23"
+                },
+                {
+                    "domain": "治疗",
+                    "slot": "药品",
+                    "value": "二甲双胍",
+                    "pos": "68-72"
+                }
+            ]
+        },
+        {
+            "act_label": "AskForSure",
+            "slot_values": [
+                {
+                    "domain": "行为",
+                    "slot": "行为名",
+                    "value": "只吃",
+                    "pos": "74-77"
+                },
+                {
+                    "domain": "治疗",
+                    "slot": "药品",
+                    "value": "格列齐特缓释片",
+                    "pos": "77-84"
+                },
+                {
+                    "domain": "基本信息",
+                    "slot": "身高",
+                    "value": "160厘米",
+                    "pos": "88-93"
+                },
+                {
+                    "domain": "基本信息",
+                    "slot": "年龄",
+                    "value": "48岁",
+                    "pos": "94-97"
+                }
+            ]
+        },
+        {
+            "act_label": "Inform",
+            "slot_values": [
+                {
+                    "domain": "基本信息",
+                    "slot": "体重",
+                    "value": "113斤",
+                    "pos": "100-104"
+                },
+                {
+                    "domain": "问题",
+                    "slot": "时间",
+                    "value": "吃{'utteranceId': 1244, 'conversationId': 194, 'sequenceNo': 3, 'utterance': '请问医生，我目前在吃二甲双胍，但最近自测血糖5.2左右，体重又轻了3斤。我想减少药物的用量，从3月1日起已经减少了一片中午的二甲双胍，这十几天自测血糖仍然稳定，体重也没有再减轻。请问我还能再减少这个药物的用量吗？只吃格列齐特缓释片能否有效控制血糖？我的身高是160cm，年龄是48岁，目前体重100斤，之前吃药前是113斤，我不想再瘦下去了。', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '二甲双胍', 'pos': '12-16'}, {'domain': '问题', 'slot': '血糖值', 'value': '5.2左右', 'pos': '23-28'}, {'domain': '基本信息', 'slot': '体重', 'value': '轻了3斤', 'pos': '32-36'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '用药量', 'value': '一片', 'pos': '70-72'}, {'domain': '治疗', 'slot': '药品', 'value': '二甲双胍', 'pos': '75-79'}, {'domain': '问题', 'slot': '血糖值', 'value': '稳定', 'pos': '84-86'}, {'domain': '基本信息', 'slot': '体重', 'value': '没有再减轻', 'pos': '92-98'}, {'domain': '问题', 'slot': '时间', 'value': '这十几天', 'pos': '55-59'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '这个药物', 'pos': '109-113'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '只吃', 'pos': '12-14'}, {'domain': '治疗', 'slot': '药品', 'value': '格列齐特缓释片', 'pos': '14-21'}, {'domain': '问题', 'slot': '身高', 'value': '160cm', 'pos': '27-31'}, {'domain': '问题', 'slot': '年龄', 'value': '48岁', 'pos': '33-36'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '基本信息', 'slot': '体重', 'value': '113斤', 'pos': '39-43'}, {'domain': '问题', 'slot': '时间', 'value': '吃药前', 'pos': '36-39'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '基本信息', 'slot': '体重', 'value': '100斤', 'pos': '50-54'}, {'domain': '问题', 'slot': '时间', 'value': '现在', 'pos': '44-48'}]}]}
+{'utteranceId': 1280, 'conversationId': 196, 'sequenceNo': 1, 'utterance': '你好大夫我刚确时有尿蛋白2个+尿微量蛋白正常，住院三天后正常了，现在出院快三个月了查两次都正常了，请问一下是肾并发吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '尿蛋白2', 'pos': '9-13'}, {'domain': '问题', 'slot': '疾病', 'value': '尿微量蛋白正常', 'pos': '15-22'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '肾并发', 'pos': '54-57'}]}]}
+{'utteranceId': 1280, 'conversationId': 196, 'sequenceNo': 1, 'utterance': '请问大夫，我最近查尿蛋白和尿微量蛋白，住院三天后就正常了，现在出院快三个月了查两次都正常，这是肾并发症吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '肾并发症', 'pos': '44-48'}, {'domain': '问题', 'slot': '症状', 'value': '尿蛋白', 'pos': '8-10'}, {'domain': '问题', 'slot': '症状', 'value': '尿微量蛋白', 'pos': '11-17夫，我最近查尿蛋白和尿微量蛋白，住院三天后就正常了，现在出院快三个月了查两次都正常，这是肾并发症吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '肾并发症', 'pos': '44-48'}, {'domain': '问题', 'slot': '症状', 'value': '尿蛋白', 'pos': '8-10'}, {'domain': '问题', 'slot': '症状', 'value': '尿微量蛋白', 'pos': '11-17'}白和尿微量蛋白，住院三天后就正常了，现在出院快三个月了查两次都正常，这是肾并发症吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '肾并发症', 'pos': '44-48'}, {'domain': '问题', 'slot': '症状', 'value': '尿蛋白', 'pos': '8-10'}, {'domain': '问题', 'slot': '症状', 'value': '尿微量蛋白', 'pos': '11-17'}]}吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '疾病', 'value': '肾并发症', 'pos': '44-48'}, {'domain': '问题', 'slot': '症状', 'value': '尿蛋白', 'pos': '8-10'}, {'domain': '问题', 'slot': '症状', 'value': '尿微量蛋白', 'pos': '11-17'}]}]}

@@ -1,0 +1,1215 @@
+[
+  {
+    "conversationId": 177,
+    "type": [
+      "知识科普"
+    ],
+    "agentId": "283800975",
+    "utterances": [
+      {
+        "utteranceId": 1112,
+        "conversationId": 177,
+        "sequenceNo": 1,
+        "utterance": "请问一下大夫，预混可以和速效一起打吗？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "一起打",
+                "pos": "10-16"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1113,
+        "conversationId": 177,
+        "sequenceNo": 2,
+        "utterance": "不行，预混里通常已经添加了速效成分，再加速效就会过量了",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Deny",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 178,
+    "type": [
+      "医生诊断"
+    ],
+    "agentId": "283800975",
+    "utterances": [
+      {
+        "utteranceId": 1114,
+        "conversationId": 178,
+        "sequenceNo": 1,
+        "utterance": "大夫我以前打预混优泌林30比70早打28晚打8餐前加1片阿卡波糖，现在刚换回预混优泌林30比70但效果还不如以前，我可以继续打预混优泌林30比70吗？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "预混优泌林30比70",
+                "pos": "28-38"
+              },
+              {
+                "domain": "治疗",
+                "slot": "效果",
+                "value": "还不如以前",
+                "pos": "42-47"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "预混优泌林30比70",
+                "pos": "9-19"
+              },
+              {
+                "domain": "治疗",
+                "slot": "时间",
+                "value": "以前",
+                "pos": "6-8"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "阿卡波糖",
+                "pos": "42-46"
+              },
+              {
+                "domain": "治疗",
+                "slot": "用药量",
+                "value": "1片",
+                "pos": "40-42"
+              },
+              {
+                "domain": "治疗",
+                "slot": "时间",
+                "value": "餐前",
+                "pos": "37-39"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1115,
+        "conversationId": 178,
+        "sequenceNo": 2,
+        "utterance": "你已经进行3+1治疗多久了？",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "AskFor",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "持续时长",
+                "value": "?",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1116,
+        "conversationId": 178,
+        "sequenceNo": 3,
+        "utterance": "已经打了3天了，药量太大了16.10.10.23",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "持续时间",
+                "value": "3天",
+                "pos": "2-4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1117,
+        "conversationId": 178,
+        "sequenceNo": 4,
+        "utterance": "低血糖会频繁出现吗？",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "低血糖",
+                "pos": "0-3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1118,
+        "conversationId": 178,
+        "sequenceNo": 5,
+        "utterance": "虽然我有糖尿病，但是我现在的血糖控制得很好",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Deny",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1119,
+        "conversationId": 178,
+        "sequenceNo": 6,
+        "utterance": "那在您使用预混药物时，您的血糖是否有波动？",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "AskFor",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "使用预混药物时",
+                "pos": "2-9"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "?",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1120,
+        "conversationId": 178,
+        "sequenceNo": 7,
+        "utterance": "为什么我控制不好血糖值在5一10之间呢？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskWhy",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "3十1",
+                "pos": "16-19"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "5一10之间",
+                "pos": "11-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1121,
+        "conversationId": 178,
+        "sequenceNo": 8,
+        "utterance": "三天后再观察，注意饮食和适当运动，这样能更好地适应治疗。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "注意饮食及合理的运动",
+                "pos": "12-22"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 179,
+    "type": [
+      "医生诊断"
+    ],
+    "agentId": "2462010348",
+    "utterances": [
+      {
+        "utteranceId": 1122,
+        "conversationId": 179,
+        "sequenceNo": 1,
+        "utterance": "请问医生，晚餐前血糖高是因为中餐前胰岛素量多了吗？因为中餐前后血糖都还可以，就晚餐前高",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "高",
+                "pos": "9-10"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "晚餐前",
+                "pos": "5-8"
+              }
+            ]
+          },
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "检查项",
+                "value": "胰岛素",
+                "pos": "16-19"
+              },
+              {
+                "domain": "治疗",
+                "slot": "检查值",
+                "value": "多",
+                "pos": "20-21"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "还可以",
+                "pos": "34-37"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "中餐前后",
+                "pos": "27-31"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "高",
+                "pos": "9-10"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "晚餐前",
+                "pos": "5-8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1123,
+        "conversationId": 179,
+        "sequenceNo": 2,
+        "utterance": "需要考虑你的饮食习惯、运动情况、加餐情况以及用药情况等因素。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "GeneralExplanation",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              },
+              {
+                "domain": "运动",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              },
+              {
+                "domain": "治疗",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1124,
+        "conversationId": 179,
+        "sequenceNo": 3,
+        "utterance": "伏格列波糖是一种降糖药，与胰岛素的用量无关。您能具体说明一下吗？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品类型",
+                "value": "降糖药",
+                "pos": "9-12"
+              },
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "伏格列波糖",
+                "pos": "15-20"
+              }
+            ]
+          },
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "检查项",
+                "value": "胰岛素",
+                "pos": "53-56"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1125,
+        "conversationId": 179,
+        "sequenceNo": 4,
+        "utterance": "请问您每天需要服用几次药物？每次需要服用多少量？",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "AskFor",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "用药（治疗）频率",
+                "value": "?",
+                "pos": ""
+              }
+            ]
+          },
+          {
+            "act_label": "AskFor",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "用药量",
+                "value": "?",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1126,
+        "conversationId": 179,
+        "sequenceNo": 5,
+        "utterance": "What is the sum of 3 and 1?",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "math",
+                "slot": "operation",
+                "value": "addition",
+                "pos": "VERB"
+              },
+              {
+                "domain": "math",
+                "slot": "num",
+                "value": "3",
+                "pos": "NUM"
+              },
+              {
+                "domain": "math",
+                "slot": "num",
+                "value": "1",
+                "pos": "NUM"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1127,
+        "conversationId": 179,
+        "sequenceNo": 6,
+        "utterance": "你不是在服用伏格列波糖吗？",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "medication",
+                "value": "伏格列波糖",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1128,
+        "conversationId": 179,
+        "sequenceNo": 7,
+        "utterance": "对呀，就是降糖的那个药伏格，您是说伏格是导致这一现象的原因吗医生",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "伏格",
+                "pos": "23-28"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1129,
+        "conversationId": 179,
+        "sequenceNo": 8,
+        "utterance": "你有在午饭和晚餐之间吃东西吗？",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "时间",
+                "value": "午饭和晚餐之间",
+                "pos": "1-8"
+              },
+              {
+                "domain": "饮食",
+                "slot": "饮食名",
+                "value": "吃东西",
+                "pos": "9-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1130,
+        "conversationId": 179,
+        "sequenceNo": 9,
+        "utterance": "有时候吃两块饼干",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食名",
+                "value": "饼干",
+                "pos": "9-11"
+              },
+              {
+                "domain": "饮食",
+                "slot": "饮食量",
+                "value": "两块",
+                "pos": "3-5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 180,
+    "type": [
+      "知识科普"
+    ],
+    "agentId": "3268440",
+    "utterances": [
+      {
+        "utteranceId": 1131,
+        "conversationId": 180,
+        "sequenceNo": 1,
+        "utterance": "餐一正常血糖值最高是多少？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskFor",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "餐一",
+                "pos": "0-2"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "正常",
+                "pos": "3-5"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "最高",
+                "pos": "6-8"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "是多少",
+                "pos": "9-12"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1132,
+        "conversationId": 180,
+        "sequenceNo": 2,
+        "utterance": "餐2的血糖值为7.8--11.0",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Explanation",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "7.8--11.0",
+                "pos": "5-14"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "餐2",
+                "pos": "0-2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 181,
+    "type": [
+      "知识科普"
+    ],
+    "agentId": "962793046",
+    "utterances": [
+      {
+        "utteranceId": 1133,
+        "conversationId": 181,
+        "sequenceNo": 1,
+        "utterance": "请问需要多久复查一次？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskFor",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "检查项",
+                "value": "复查",
+                "pos": "5-7"
+              },
+              {
+                "domain": "治疗",
+                "slot": "用药（治疗）频率",
+                "value": "?",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1134,
+        "conversationId": 181,
+        "sequenceNo": 2,
+        "utterance": "根据病的程度不同、身体素质等因素，医生会有不同的安排，一般治疗需要持续3个月到半年的时间。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Explanation",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "用药（治疗）频率",
+                "value": "3个月到半年",
+                "pos": "18-24"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1135,
+        "conversationId": 181,
+        "sequenceNo": 3,
+        "utterance": "我只查了两个月，出院复查了两次半年，是比较勤快的查了",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1136,
+        "conversationId": 181,
+        "sequenceNo": 4,
+        "utterance": "医生说了就要听，了解自己的身体也是好事。群里估计80%对自己的病情很了解的，甚至比医生知道的还多。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1137,
+        "conversationId": 181,
+        "sequenceNo": 5,
+        "utterance": "医生在我出院时让我复查了15天，其他时间没有明确要求，我自己去复查了",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "checkup_time",
+                "value": "15天",
+                "pos": "time"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1138,
+        "conversationId": 181,
+        "sequenceNo": 6,
+        "utterance": "恩，前提是你之前住过院的。出院后都要复查的。如果您的身体情况允许，明天我可以为您安排检查，然后半年检查一次，可以吗？",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "healthcare",
+                "slot": "frequency",
+                "value": "半年一次",
+                "pos": "time"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1139,
+        "conversationId": 181,
+        "sequenceNo": 7,
+        "utterance": "我总是血糖低，尿量减少，需要检查肾功能",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "血糖低",
+                "pos": "3-6"
+              },
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "尿量减少",
+                "pos": "9-13"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "检查项",
+                "value": "肾功能",
+                "pos": "19-22"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1140,
+        "conversationId": 181,
+        "sequenceNo": 8,
+        "utterance": "好的，我会为您安排查肾功能的检查。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Assure",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          },
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "检查项",
+                "value": "肾功能",
+                "pos": "4-7"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1141,
+        "conversationId": 181,
+        "sequenceNo": 9,
+        "utterance": "就是肌酐值比较高",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "medical",
+                "slot": "creatinine_value",
+                "value": "high",
+                "pos": "adj"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 183,
+    "type": [
+      "血糖波动"
+    ],
+    "agentId": "59561745",
+    "utterances": [
+      {
+        "utteranceId": 1142,
+        "conversationId": 183,
+        "sequenceNo": 1,
+        "utterance": "医生好，问一下，我早上空腹正常，后来没吃东西，到中午为什么血糖还会升高？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "正常",
+                "pos": "13-15"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "早上空腹",
+                "pos": "9-13"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "没吃东西",
+                "pos": "18-22"
+              },
+              {
+                "domain": "行为",
+                "slot": "时间",
+                "value": "后来",
+                "pos": "16-18"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "升高",
+                "pos": "34-36"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "中午",
+                "pos": "24-26"
+              }
+            ]
+          },
+          {
+            "act_label": "AskWhy",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1143,
+        "conversationId": 183,
+        "sequenceNo": 2,
+        "utterance": "什么时候进行的测试？",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "AskFor",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "测试",
+                "pos": "6-7"
+              },
+              {
+                "domain": "行为",
+                "slot": "时间",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1144,
+        "conversationId": 183,
+        "sequenceNo": 3,
+        "utterance": "我是中午十二点了测的，早上空腹5.7，十二点测的居然8.3，期间没吃东西",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "时间",
+                "value": "中午十二点",
+                "pos": "2-7"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "5.7",
+                "pos": "15-18"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "早上空腹",
+                "pos": "11-15"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "8.3",
+                "pos": "21-24"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "十二点测的",
+                "pos": "4-11"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "没吃东西",
+                "pos": "30-34"
+              },
+              {
+                "domain": "行为",
+                "slot": "时间",
+                "value": "期间",
+                "pos": "28-30"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1145,
+        "conversationId": 183,
+        "sequenceNo": 4,
+        "utterance": "您今天早上有没有吃早餐？",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食名",
+                "value": "早餐",
+                "pos": "6-8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1146,
+        "conversationId": 183,
+        "sequenceNo": 5,
+        "utterance": "我刚刚吃过早餐了，不过我本来想断食一天的呢",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Deny",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1147,
+        "conversationId": 183,
+        "sequenceNo": 6,
+        "utterance": "在饥饿的情况下，肾上腺素分泌会增加，这也会导致血糖升高。此外，机体中的肌糖原也会转化为葡萄糖，供身体使用，从而导致血糖升高。除了药物治疗之外，合理的饮食和运动也非常重要。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "GeneralExplanation",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              },
+              {
+                "domain": "问题",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1148,
+        "conversationId": 183,
+        "sequenceNo": 7,
+        "utterance": "哦，也就是说，唐人饿了也不行，对吧？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1149,
+        "conversationId": 183,
+        "sequenceNo": 8,
+        "utterance": "没错。人体每时每刻都需要血糖（血液中的葡萄糖）来提供能量，而食物特别是主食类食物进入人体后，会被消化转化为葡萄糖并被身体吸收入血液，然后被运送到各个脏器为身体提供能量。如果摄入的碳水化合物（主食）过少，身体会缺乏能量来源，这时身体必须动用脂肪和蛋白质来提供能量。脂肪分解会产生酮体，可能导致酮症酸中毒。如果肌肉糖原不足，身体会动用内部蛋白质来提供能量，这会导致消瘦、乏力、抵抗力低下，也会极易感染各种疾病。因此，不建议您不吃早餐。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "GeneralExplanation",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              },
+              {
+                "domain": "治疗",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              },
+              {
+                "domain": "饮食",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 1150,
+        "conversationId": 183,
+        "sequenceNo": 9,
+        "utterance": "谢谢医生，我会记住的",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Accept",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

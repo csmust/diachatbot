@@ -1,0 +1,4 @@
+        if turn_dict["agentRole"]=="User":
+            message='改写utterance的患者说话内容，并修改annotation的标注，以满足原来的标注关系。只输出json结构的结果，不用解释为什么:\n'+str(turn_dict)
+        else:
+            message='改写utterance的医生说话内容，并修改annotation的标注，以满足原来的标注关系。只输出json结构的结果，不用解释为什么:\n'+str(turn_dict)
