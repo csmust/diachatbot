@@ -1,0 +1,172 @@
+[
+  {
+    "conversationId": 417,
+    "type": [
+      "医生诊断"
+    ],
+    "agentId": "295790421",
+    "utterances": [
+      {
+        "utteranceId": 2871,
+        "conversationId": 417,
+        "sequenceNo": 1,
+        "utterance": "长时间服用控制血糖的药物，对身体有害吗，老师？还有我服用很多药。",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskFor",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "服用控制血糖的药物",
+                "pos": "2-10"
+              },
+              {
+                "domain": "行为",
+                "slot": "持续时长",
+                "value": "长时间",
+                "pos": "0-2"
+              },
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "?",
+                "pos": ""
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "用药量",
+                "value": "很多",
+                "pos": "24-26"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 2872,
+        "conversationId": 417,
+        "sequenceNo": 2,
+        "utterance": "请问您需要什么治疗药品？",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "AskFor",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "?",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 2873,
+        "conversationId": 417,
+        "sequenceNo": 3,
+        "utterance": "虚寒停，利脑心，黄葵，，，利歌列丁，，付格列波、糖分散片",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "虚寒停",
+                "pos": "0-3"
+              },
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "利脑心",
+                "pos": "4-7"
+              },
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "黄葵",
+                "pos": "8-10"
+              },
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "利歌列丁",
+                "pos": "13-17"
+              },
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "付格列波",
+                "pos": "19-23"
+              },
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "糖分散片",
+                "pos": "24-28"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 2874,
+        "conversationId": 417,
+        "sequenceNo": 4,
+        "utterance": "降糖药虽然会有一些副作用，但是不吃的话，血糖高了会有急性并发症和慢性并发症，这些都是很危险的。建议您尽量少用药，同时结合生活方式的调整，可以减少用药。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Explanation",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "降糖药",
+                "pos": "0-3"
+              }
+            ]
+          },
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "用药量",
+                "value": "少用",
+                "pos": "41-43"
+              },
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "生活方式的调整",
+                "pos": "47-54"
+              }
+            ]
+          },
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "减少用药",
+                "pos": "-1-4"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

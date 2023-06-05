@@ -12,11 +12,11 @@ import zipfile
 import torch
 import  torch.nn.functional as F
 from transformers import AdamW, get_linear_schedule_with_warmup
-from convlab2.nlu.jointBERTCRFLSTM.diachat.dataloader import Dataloader
+from dataloader import Dataloader
 
 from datetime import datetime
 from mylogger import Logger
-
+from AutomaticWeightedLoss import AutomaticWeightedLoss
 from model_config import *
 
 cross_best_f1=0
@@ -77,7 +77,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
     #     print(name)
     #     print("是否被训练: ",para.requires_grad)
     model.to(DEVICE)
-    
+    awl = AutomaticWeightedLoss(2)
     if config['model']['finetune']:
         no_decay = ["bias", 'LayerNorm.weight']
         crf = ["crf"]
@@ -101,7 +101,9 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
              'weight_decay': config['model']['weight_decay'],"lr":LSTM_LEARNING_RATE},
             
             {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in attention) and p.requires_grad],
-             'weight_decay': config['model']['weight_decay'],"lr":2e-2},
+             'weight_decay': config['model']['weight_decay'],"lr":2e-2}
+            
+            # ,{'params': awl.parameters(), 'weight_decay': 0}
              
         ]
         # print(optimizer_grouped_parameters.name)
@@ -120,6 +122,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
     check_step = config['model']['check_step']
     batch_size = config['model']['batch_size']
     model.zero_grad()
+    # optimizer.zero_grad()
     train_slot_loss, train_intent_loss = 0, 0
     best_val_f1 = 0.
 
@@ -149,20 +152,16 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
         else:
             train_slot_loss += slot_loss.item()
             train_intent_loss += intent_loss.item()
-            
-            loss = alpha * slot_loss + (1-alpha) * intent_loss
-            loss.backward()
-
-            tmp = torch.Tensor([slot_loss,intent_loss])/ (batch_size ** 0.5)
-            tmpl=F.softmax(tmp,dim=-1)
-
-            alpha = alpha - lr * (tmpl[0].item()-tmpl[1].item())
+            loss_sum = awl(slot_loss, intent_loss)
+            # optimizer.zero_grad()  # 梯度清零1
+            loss_sum.backward()
         # print("end_time - start_time",end_time - start_time)
         torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
         optimizer.step()
         if config['model']['finetune']:
             scheduler.step()  # Update learning rate schedule
         model.zero_grad()
+        # optimizer.zero_grad()  # 梯度清零2
         if step % check_step == 0:
             train_slot_loss = train_slot_loss / check_step
             train_intent_loss = train_intent_loss / check_step

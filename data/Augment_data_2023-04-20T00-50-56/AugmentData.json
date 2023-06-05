@@ -1,0 +1,2221 @@
+[
+  {
+    "conversationId": 687,
+    "type": [
+      "心理沟通"
+    ],
+    "agentId": "2268903582",
+    "utterances": [
+      {
+        "utteranceId": 4502,
+        "conversationId": 687,
+        "sequenceNo": 1,
+        "utterance": "紧张情绪对血糖有很大的影响吗?",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "紧张情绪",
+                "pos": "0-4"
+              },
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "血糖",
+                "pos": "5-7"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4503,
+        "conversationId": 687,
+        "sequenceNo": 2,
+        "utterance": "紧张会引起血糖高，所以要放松，血糖就能降下来，因为紧张肾上腺分泌多，血糖就高",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Explanation",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "紧张",
+                "pos": "0-2"
+              },
+              {
+                "domain": "None",
+                "slot": "None",
+                "value": "所以要放松，血糖就能降下来",
+                "pos": "5-19"
+              },
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "紧张",
+                "pos": "24-26"
+              },
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "肾上腺分泌多",
+                "pos": "27-33"
+              },
+              {
+                "domain": "治疗",
+                "slot": "治疗方式",
+                "value": "放松",
+                "pos": "34-36"
+              },
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "血糖就高",
+                "pos": "37-41"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4504,
+        "conversationId": 687,
+        "sequenceNo": 3,
+        "utterance": "如何缓解焦虑情绪？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskFor",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "缓解焦虑情绪",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4505,
+        "conversationId": 687,
+        "sequenceNo": 4,
+        "utterance": "学会放松，听听舒缓的音乐，锻炼都可以放松，闭目遐想",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "放松",
+                "pos": "9-11"
+              },
+              {
+                "domain": "行为",
+                "slot": "方式",
+                "value": "学会",
+                "pos": "0-2"
+              },
+              {
+                "domain": "运动",
+                "slot": "方式",
+                "value": "锻炼",
+                "pos": "16-17"
+              },
+              {
+                "domain": "None",
+                "slot": "None",
+                "value": "听听舒缓的音乐，闭目遐想",
+                "pos": "5-15, 18-29"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4506,
+        "conversationId": 687,
+        "sequenceNo": 5,
+        "utterance": "经常在黑暗处看书会有眼睛并发症么",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "是否会有眼睛并发症",
+                "value": "经常在黑暗处看书",
+                "pos": "经常/频率+在哪里/地点+做什么/行为"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4507,
+        "conversationId": 687,
+        "sequenceNo": 6,
+        "utterance": "尽量在光线好的地方看书，避免近视",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 688,
+    "type": [
+      "医生诊断"
+    ],
+    "agentId": "1210697135",
+    "utterances": [
+      {
+        "utteranceId": 4508,
+        "conversationId": 688,
+        "sequenceNo": 1,
+        "utterance": "大夫我今天试了.早上短效12中效13.午餐依旧.餐2白糖13.3比以往高4是理论上不行还是实践上有缺欠",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "短效",
+                "pos": "8-10"
+              },
+              {
+                "domain": "治疗",
+                "slot": "用药量",
+                "value": "12",
+                "pos": "11-13"
+              },
+              {
+                "domain": "治疗",
+                "slot": "时间",
+                "value": "早上",
+                "pos": "14-16"
+              },
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "中效",
+                "pos": "17-19"
+              },
+              {
+                "domain": "治疗",
+                "slot": "用药量",
+                "value": "13",
+                "pos": "19-21"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "13.3",
+                "pos": "28-32"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "餐2",
+                "pos": "24-26"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4509,
+        "conversationId": 688,
+        "sequenceNo": 2,
+        "utterance": "您再试1-2天，胰岛素不宜经常调，机体需要适应过程",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "再试1-2天",
+                "pos": "1-7"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 689,
+    "type": [
+      "血糖波动"
+    ],
+    "agentId": "530809472",
+    "utterances": [
+      {
+        "utteranceId": 4510,
+        "conversationId": 689,
+        "sequenceNo": 1,
+        "utterance": "我现在一天只在晚上吃药，但是连续两个晚上血糖都偏低。",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "用药（治疗）频率",
+                "value": "一天只在晚上吃药",
+                "pos": "3-11"
+              },
+              {
+                "domain": "治疗",
+                "slot": "效果",
+                "value": "连续两个晚上血糖偏低",
+                "pos": "19-28"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4511,
+        "conversationId": 689,
+        "sequenceNo": 2,
+        "utterance": "那就停药吧",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "AdviceNot",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "药",
+                "pos": "3-4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4512,
+        "conversationId": 689,
+        "sequenceNo": 3,
+        "utterance": "可以吗？我怕又高，不过我现在有运动，一天三次，每次半小时，快走",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "运动",
+                "slot": "频率",
+                "value": "一天三次",
+                "pos": "18-22"
+              },
+              {
+                "domain": "运动",
+                "slot": "持续时长",
+                "value": "每次半小时",
+                "pos": "25-30"
+              },
+              {
+                "domain": "运动",
+                "slot": "运动名",
+                "value": "快走",
+                "pos": "31-33"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4513,
+        "conversationId": 689,
+        "sequenceNo": 4,
+        "utterance": "试试",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "None",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 690,
+    "type": [
+      "知识科普"
+    ],
+    "agentId": "414659790",
+    "utterances": [
+      {
+        "utteranceId": 4514,
+        "conversationId": 690,
+        "sequenceNo": 1,
+        "utterance": "我今天中午菜谱：白菜豆腐凉拌水萝卜",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食名",
+                "value": "白菜",
+                "pos": "8-10"
+              },
+              {
+                "domain": "饮食",
+                "slot": "饮食名",
+                "value": "豆腐",
+                "pos": "10-12"
+              },
+              {
+                "domain": "饮食",
+                "slot": "饮食名",
+                "value": "凉拌水萝卜",
+                "pos": "12-17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4515,
+        "conversationId": 690,
+        "sequenceNo": 2,
+        "utterance": "没有肉，可以吃肉啊，不吃肉，没有原料制造胰岛素了，我看了一个文献，说有的糖尿病，脆性糖尿病因为蛋白质摄入少，用胰岛素容易低血糖，所以适当吃一些肉，每天2-3两",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食名",
+                "value": "肉",
+                "pos": "2-3"
+              },
+              {
+                "domain": "饮食",
+                "slot": "饮食量",
+                "value": "2-3两",
+                "pos": "75-79"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4516,
+        "conversationId": 690,
+        "sequenceNo": 3,
+        "utterance": "恩，早上让我的妻子去买了，晚上再加一些瘦肉",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "食物",
+                "value": "瘦肉",
+                "pos": "n"
+              },
+              {
+                "domain": "时间",
+                "slot": "时段",
+                "value": "晚上",
+                "pos": "nt"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 691,
+    "type": [
+      "知识科普"
+    ],
+    "agentId": "1445061574",
+    "utterances": [
+      {
+        "utteranceId": 4518,
+        "conversationId": 691,
+        "sequenceNo": 1,
+        "utterance": "大夫，南瓜可以吃吗？怎么还有人说不能吃的，有点疑惑。",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食名",
+                "value": "南瓜",
+                "pos": "2-4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4519,
+        "conversationId": 691,
+        "sequenceNo": 2,
+        "utterance": "有人说能吃，有人说吃多了也血糖高，我认为少吃，南瓜是发物。您的血压降下来了吗，辽宁-黑土：注意冬天衣服不要穿紧身的，容易导致血压高，穿宽松的，棉布的",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食量",
+                "value": "少吃",
+                "pos": "20-22"
+              }
+            ]
+          },
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "None",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4520,
+        "conversationId": 691,
+        "sequenceNo": 3,
+        "utterance": "今天我换药了倍他乐克",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "倍他乐克",
+                "pos": "6-10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4521,
+        "conversationId": 691,
+        "sequenceNo": 4,
+        "utterance": "好的，怎么样了呢？",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "AskFor",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "效果",
+                "value": "?",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4522,
+        "conversationId": 691,
+        "sequenceNo": 5,
+        "utterance": "上午还行怎么到下午就不好",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "效果",
+                "value": "还行",
+                "pos": "2-4"
+              },
+              {
+                "domain": "治疗",
+                "slot": "时间",
+                "value": "上午",
+                "pos": "0-2"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "效果",
+                "value": "不好",
+                "pos": "10-12"
+              },
+              {
+                "domain": "治疗",
+                "slot": "时间",
+                "value": "下午",
+                "pos": "7-9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4523,
+        "conversationId": 691,
+        "sequenceNo": 6,
+        "utterance": "生理过程也是下午血压高，可以中午午休半小时",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "午休",
+                "pos": "14-16"
+              },
+              {
+                "domain": "行为",
+                "slot": "时间",
+                "value": "中午",
+                "pos": "14-16"
+              },
+              {
+                "domain": "行为",
+                "slot": "持续时长",
+                "value": "半小时",
+                "pos": "16-19"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4524,
+        "conversationId": 691,
+        "sequenceNo": 7,
+        "utterance": "药量不够，导致我白天失眠。",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "用药量",
+                "value": "不够",
+                "pos": "2-4"
+              }
+            ]
+          }
+        ]
+      },
+      "人工修改",
+      {
+        "utteranceId": 4526,
+        "conversationId": 691,
+        "sequenceNo": 9,
+        "utterance": "嗯",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "None",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4527,
+        "conversationId": 691,
+        "sequenceNo": 10,
+        "utterance": "您的心脏状况如何？如果您有心前区疼痛，建议适当减少运动量。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "心前区疼痛",
+                "pos": "9-13"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4528,
+        "conversationId": 691,
+        "sequenceNo": 11,
+        "utterance": "我现在心跳比较缓慢",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "心跳缓慢",
+                "pos": "3-6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4529,
+        "conversationId": 691,
+        "sequenceNo": 12,
+        "utterance": "您需要注意的是，倍他洛克可能会减慢您的心率。建议您多测一下脉搏，确保脉搏不少于50次。如果脉搏少于50次，需要调整治疗方案。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Explanation",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "倍他洛克",
+                "pos": "0-4"
+              },
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "减慢心率",
+                "pos": "4-8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4530,
+        "conversationId": 691,
+        "sequenceNo": 13,
+        "utterance": "我现在心跳不到60，张大夫如果换药得吃多少量，张大夫我每天下午加一片硝苯地平缓释片可以吗",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "硝苯地平缓释片",
+                "pos": "34-41"
+              },
+              {
+                "domain": "治疗",
+                "slot": "用药量",
+                "value": "一片",
+                "pos": "31-33"
+              },
+              {
+                "domain": "治疗",
+                "slot": "用药（治疗）频率",
+                "value": "每天下午",
+                "pos": "27-31"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4531,
+        "conversationId": 691,
+        "sequenceNo": 14,
+        "utterance": "缓释片是管一天的，这样增加药量，先看看倍他洛克的情况，我一会单独跟您聊",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药物名称",
+                "value": "缓释片",
+                "pos": "药量"
+              },
+              {
+                "domain": "治疗",
+                "slot": "药物名称",
+                "value": "倍他洛克",
+                "pos": "管理情况"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 692,
+    "type": [
+      "血糖波动"
+    ],
+    "agentId": "722949",
+    "utterances": [
+      "人工修改",
+      {
+        "utteranceId": 4534,
+        "conversationId": 692,
+        "sequenceNo": 2,
+        "utterance": "很好！请继续保持良好的饮食习惯和规律的运动",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              },
+              {
+                "domain": "运动",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4535,
+        "conversationId": 692,
+        "sequenceNo": 3,
+        "utterance": "因为今天中午吃的油饼，但没有运动",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食名",
+                "value": "油饼",
+                "pos": "8-10"
+              },
+              {
+                "domain": "饮食",
+                "slot": "时间",
+                "value": "今天中午",
+                "pos": "2-6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4536,
+        "conversationId": 692,
+        "sequenceNo": 4,
+        "utterance": "餐二10以下，或者4.4-8.3之间即可",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Explanation",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "餐次",
+                "value": "餐二",
+                "pos": "0-2"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "10以下",
+                "pos": "2-6"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "4.4-8.3之间",
+                "pos": "9-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4537,
+        "conversationId": 692,
+        "sequenceNo": 5,
+        "utterance": "中午走路20分钟的话餐二会到6.5-7，之间，我就是稍微减了减食量，主要针对晚上是少吃了一些，然后中午增加了饭后走路，我这样是好了还是？，吃一大个苹果两个小时测是6.1，这样是不是可以长期吃苹果，还有一次也是吃完苹果4.7",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          },
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食名",
+                "value": "苹果",
+                "pos": "73-75"
+              }
+            ]
+          },
+          {
+            "act_label": "AskHow",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食量",
+                "value": "稍微减了减",
+                "pos": "26-31"
+              },
+              {
+                "domain": "运动",
+                "slot": "运动名",
+                "value": "饭后走路",
+                "pos": "54-58"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4538,
+        "conversationId": 692,
+        "sequenceNo": 6,
+        "utterance": "每天吃一点",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Assure",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食建议",
+                "value": "少量多餐",
+                "pos": "m"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4539,
+        "conversationId": 692,
+        "sequenceNo": 7,
+        "utterance": "这25天减重10斤，我现在还超重50斤，但是血糖基本恢复正常前十几天空腹很正常就是餐二高近几天餐二也开始慢慢降低",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "减重10斤",
+                "pos": "3-8"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "基本信息",
+                "slot": "体重",
+                "value": "超重50斤",
+                "pos": "14-19"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4540,
+        "conversationId": 692,
+        "sequenceNo": 8,
+        "utterance": "每周减1斤，不要着急，慢慢来。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "减肥速度",
+                "value": "每周减1斤",
+                "pos": "时间"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4541,
+        "conversationId": 692,
+        "sequenceNo": 9,
+        "utterance": "大夫，我能不能不用吃药也可以达到这种效果？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "不吃药",
+                "pos": "8-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4542,
+        "conversationId": 692,
+        "sequenceNo": 10,
+        "utterance": "可以啊",
+        "agentRole": "医生",
+        "annotation": [
+          {
+            "act_label": "Assure",
+            "slot_values": [
+              {
+                "domain": "None",
+                "slot": "None",
+                "value": "None",
+                "pos": "None"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4543,
+        "conversationId": 692,
+        "sequenceNo": 11,
+        "utterance": "谢谢大夫，有没有一直跑步保持健康的朋友",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "运动",
+                "slot": "",
+                "value": "跑步保持健康",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4544,
+        "conversationId": 692,
+        "sequenceNo": 12,
+        "utterance": "也有不用客气的时候。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 693,
+    "type": [
+      "知识科普"
+    ],
+    "agentId": "706492343",
+    "utterances": [
+      {
+        "utteranceId": 4545,
+        "conversationId": 693,
+        "sequenceNo": 1,
+        "utterance": "大夫，最近这几天天气开始变冷了，我发现我的血糖突然就高了很多，这两者有没有关系呢？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "血糖和天气变化关系",
+                "value": "有",
+                "pos": "血糖 突然 高 多"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4546,
+        "conversationId": 693,
+        "sequenceNo": 2,
+        "utterance": "建议您注意保暖，因为我知道天冷时血压会高，所以冬天血压高的患者需要加量药物。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "注意保暖",
+                "pos": "4-8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4547,
+        "conversationId": 693,
+        "sequenceNo": 3,
+        "utterance": "之前餐二一直都是8-9之间，这两天突然就到12-13了，空腹也由6。0高到8。0了",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "8-9之间",
+                "pos": "8-13"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "餐二",
+                "pos": "2-4"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "12-13",
+                "pos": "21-26"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "这两天",
+                "pos": "14-17"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "8。0",
+                "pos": "37-40"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "空腹",
+                "pos": "28-30"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4548,
+        "conversationId": 693,
+        "sequenceNo": 4,
+        "utterance": "把该穿的衣裳都穿上，屋里用个电暖气等措施",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "把该穿的衣裳都穿上",
+                "pos": "1-9"
+              },
+              {
+                "domain": "None",
+                "slot": "None",
+                "value": "电暖气",
+                "pos": "12-14"
+              },
+              {
+                "domain": "None",
+                "slot": "None",
+                "value": "等措施",
+                "pos": "15-18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4549,
+        "conversationId": 693,
+        "sequenceNo": 5,
+        "utterance": "好的",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Accept",
+            "slot_values": [
+              {
+                "domain": "None",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4550,
+        "conversationId": 693,
+        "sequenceNo": 6,
+        "utterance": "冬天也要多吃一些热量高的食物，比如羊肉、牛肉等，可以帮助抵御寒冷。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食名",
+                "value": "热量高的食物",
+                "pos": "8-15"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4551,
+        "conversationId": 693,
+        "sequenceNo": 7,
+        "utterance": "谢谢你",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "你",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 694,
+    "type": [
+      "血糖波动"
+    ],
+    "agentId": "30736962",
+    "utterances": [
+      {
+        "utteranceId": 4552,
+        "conversationId": 694,
+        "sequenceNo": 1,
+        "utterance": "我查出来也一个多月了，空腹现在5.9，餐后5.6左右，这个是不是可以减药了？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "5.9",
+                "pos": "15-18"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "空腹",
+                "pos": "11-13"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "5.6",
+                "pos": "21-24"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "餐后",
+                "pos": "19-21"
+              }
+            ]
+          },
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "减药",
+                "pos": "34-36"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4553,
+        "conversationId": 694,
+        "sequenceNo": 2,
+        "utterance": "您控制得很好，可以在医生的指导下逐步减少用药量",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "逐步减少用药量",
+                "pos": "16-20"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4554,
+        "conversationId": 694,
+        "sequenceNo": 3,
+        "utterance": "我餐后一直比空腹低，就算我这餐吃了炸的东西或者吃汉堡可乐这样的也是5.6左右，我现在吃正常饮食没有控制，就是吃的少，我刚查出来的时候餐后25，我一直是吃药没打过针",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "25",
+                "pos": "59-61"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "餐后",
+                "pos": "1-3"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "刚查出来的时候",
+                "pos": "52-59"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4555,
+        "conversationId": 694,
+        "sequenceNo": 4,
+        "utterance": "效果还不错啊，有哪些方面比较显著呢？",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4556,
+        "conversationId": 694,
+        "sequenceNo": 5,
+        "utterance": "吃了一个星期的药血糖就降下来了就一直是6.多，这个月开始5.多了，我想是不是要减药了",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "6.多",
+                "pos": "19-22"
+              },
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "吃药",
+                "pos": "0-2"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "5.多",
+                "pos": "28-31"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "这个月",
+                "pos": "23-26"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4557,
+        "conversationId": 694,
+        "sequenceNo": 6,
+        "utterance": "可以逐渐降低",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "逐渐降低",
+                "pos": "8-11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4558,
+        "conversationId": 694,
+        "sequenceNo": 7,
+        "utterance": "我现在是随餐一粒格华止，早上随餐2粒达美康缓释片，把缓绎片减一粒还是把格华止减一顿呢？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "格华止",
+                "pos": "8-11"
+              },
+              {
+                "domain": "治疗",
+                "slot": "时间",
+                "value": "随餐",
+                "pos": "4-6"
+              },
+              {
+                "domain": "治疗",
+                "slot": "用药量",
+                "value": "一粒",
+                "pos": "6-8"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "达美康缓释片",
+                "pos": "18-24"
+              },
+              {
+                "domain": "治疗",
+                "slot": "用药量",
+                "value": "2粒",
+                "pos": "16-18"
+              },
+              {
+                "domain": "治疗",
+                "slot": "时间",
+                "value": "早上随餐",
+                "pos": "12-16"
+              }
+            ]
+          },
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "减缓释片一粒",
+                "pos": "25-32"
+              },
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "减格华止一顿",
+                "pos": "34-41"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4559,
+        "conversationId": 694,
+        "sequenceNo": 8,
+        "utterance": "格华止减",
+        "agentRole": "医生",
+        "annotation": [
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "格华止",
+                "pos": "0-3"
+              },
+              {
+                "domain": "治疗",
+                "slot": "用药量",
+                "value": "减",
+                "pos": "3-4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4560,
+        "conversationId": 694,
+        "sequenceNo": 9,
+        "utterance": "好的，我减少了早餐的摄入量？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "时间",
+                "value": "早餐的",
+                "pos": "3-6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4561,
+        "conversationId": 694,
+        "sequenceNo": 10,
+        "utterance": "看你午餐前血糖低还是午餐后",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "低",
+                "pos": "7-8"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "午餐前",
+                "pos": "2-5"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "午餐后",
+                "pos": "10-13"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4562,
+        "conversationId": 694,
+        "sequenceNo": 11,
+        "utterance": "明白了，我上次吃完药只吃了一个鸡蛋，完了就跟我姐出去玩了，回去后就浑身哆嗦是不是因为早上吃的太少了？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
+              }
+            ]
+          },
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食量",
+                "value": "少",
+                "pos": "47-48"
+              },
+              {
+                "domain": "饮食",
+                "slot": "时间",
+                "value": "早上",
+                "pos": "42-44"
+              },
+              {
+                "domain": "饮食",
+                "slot": "效果",
+                "value": "浑身哆嗦",
+                "pos": "33-37"
+              }
+            ]
+          },
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食名",
+                "value": "鸡蛋",
+                "pos": "15-17"
+              },
+              {
+                "domain": "饮食",
+                "slot": "饮食量",
+                "value": "一个",
+                "pos": "13-15"
+              },
+              {
+                "domain": "饮食",
+                "slot": "时间",
+                "value": "吃完药",
+                "pos": "7-10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4563,
+        "conversationId": 694,
+        "sequenceNo": 12,
+        "utterance": "有可能，没吃饭就别吃药。今天就到这里，明天见！",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Chitchat",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食建议",
+                "value": "忌空腹吃药",
+                "pos": "没吃饭"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 695,
+    "type": [
+      "血糖波动"
+    ],
+    "agentId": "530809472",
+    "utterances": [
+      {
+        "utteranceId": 4564,
+        "conversationId": 695,
+        "sequenceNo": 1,
+        "utterance": "我昨晚没吃药，睡前7.9早上空腹就到7.6了，餐2就上了10.2我是不是不可以停药呢",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "时间",
+                "value": "昨晚",
+                "pos": "1-3"
+              },
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "没吃药",
+                "pos": "3-6"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "睡前",
+                "pos": "7-9"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "7.9",
+                "pos": "9-12"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "早上空腹",
+                "pos": "12-16"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "7.6",
+                "pos": "18-21"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "餐2",
+                "pos": "23-25"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "10.2",
+                "pos": "28-32"
+              }
+            ]
+          },
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "停药",
+                "pos": "39-41"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4565,
+        "conversationId": 695,
+        "sequenceNo": 2,
+        "utterance": "请问您正在使用哪些药物？",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "AskFor",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "?",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4566,
+        "conversationId": 695,
+        "sequenceNo": 3,
+        "utterance": "我买了降糖保健药",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品类型",
+                "value": "保健降糖药",
+                "pos": "7-12"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4567,
+        "conversationId": 695,
+        "sequenceNo": 4,
+        "utterance": "如果要饮食运动，需要1年的时间调整，不会那么快，科学管理，要减药也不能快，慢慢减，每次减一点，还是吃上吧",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "GeneralAdvice",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "",
+                "value": "科学管理",
+                "pos": "16-19"
+              },
+              {
+                "domain": "运动",
+                "slot": "",
+                "value": "需要1年的时间调整",
+                "pos": "6-14"
+              }
+            ]
+          },
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "减药",
+                "pos": "30-32"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "conversationId": 696,
+    "type": [
+      "血糖波动"
+    ],
+    "agentId": "414659790",
+    "utterances": [
+      {
+        "utteranceId": 4568,
+        "conversationId": 696,
+        "sequenceNo": 1,
+        "utterance": "昨天晚上空腹5.5今天早上空腹6.3早餐二7.9中餐二10.5我是不是要增加下胰岛素的量？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "Inform",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "昨天晚上空腹",
+                "pos": "0-6"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "5.5",
+                "pos": "6-9"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "今天早上空腹",
+                "pos": "9-15"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "6.3",
+                "pos": "15-18"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "早餐二",
+                "pos": "18-21"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "7.9",
+                "pos": "21-24"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "中餐二",
+                "pos": "24-27"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "10.5",
+                "pos": "27-31"
+              }
+            ]
+          },
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "胰岛素",
+                "pos": "39-42"
+              },
+              {
+                "domain": "治疗",
+                "slot": "用药量",
+                "value": "增加",
+                "pos": "36-38"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4569,
+        "conversationId": 696,
+        "sequenceNo": 2,
+        "utterance": "您可以再观察3天，如果还高，再调，胰岛素3-5天调一次，老调会不舒服",
+        "agentRole": "Doctor",
+        "annotation": {
+          "act_label": "",
+          "slot_values": {
+            "domain": "治疗",
+            "treatment": "胰岛素",
+            "frequency": "3-5天",
+            "duration": "3天",
+            "side_effect": "老调会不舒服"
+          }
+        }
+      },
+      {
+        "utteranceId": 4570,
+        "conversationId": 696,
+        "sequenceNo": 3,
+        "utterance": "谢谢医生，我记得您上次说，餐二是指从吃下第一口开始算2小时，而不是吃完后2小时，是这样吗？",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskFor",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "餐二",
+                "pos": "12-14"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "?",
+                "pos": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4571,
+        "conversationId": 696,
+        "sequenceNo": 4,
+        "utterance": "嗯",
+        "agentRole": "Doctor",
+        "annotation": {
+          "act_label": "None",
+          "slot_values": {},
+          "domain": "None"
+        }
+      }
+    ]
+  },
+  {
+    "conversationId": 697,
+    "type": [
+      "血糖波动"
+    ],
+    "agentId": "1445061574",
+    "utterances": [
+      {
+        "utteranceId": 4572,
+        "conversationId": 697,
+        "sequenceNo": 1,
+        "utterance": "大夫我昨天空腹测了2次9.0，7，7，今天早上空腹4.8.这几天有时就感觉腿无力，怎么会这样，今天空腹是不是低血糖了。",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "昨天",
+                "pos": "4-6"
+              },
+              {
+                "domain": "问题",
+                "slot": "状态",
+                "value": "空腹",
+                "pos": "6-8"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "9.0",
+                "pos": "12-15"
+              },
+              {
+                "domain": "问题",
+                "slot": "时间",
+                "value": "今天",
+                "pos": "20-22"
+              },
+              {
+                "domain": "问题",
+                "slot": "状态",
+                "value": "空腹",
+                "pos": "23-25"
+              },
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "4.8",
+                "pos": "26-29"
+              },
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "腿无力",
+                "pos": "38-41"
+              },
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "低血糖",
+                "pos": "55-58"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4573,
+        "conversationId": 697,
+        "sequenceNo": 2,
+        "utterance": "您可能因为血糖过低导致身体无力，我建议您可以试着吃一些饼干。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Explanation",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "身体无力",
+                "pos": "15-18"
+              },
+              {
+                "domain": "问题",
+                "slot": "症状",
+                "value": "血糖过低",
+                "pos": "9-14"
+              }
+            ]
+          },
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "饮食",
+                "slot": "饮食名",
+                "value": "饼干",
+                "pos": "24-26"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4574,
+        "conversationId": 697,
+        "sequenceNo": 3,
+        "utterance": "不吃药血糖低是好还是不好",
+        "agentRole": "User",
+        "annotation": [
+          {
+            "act_label": "AskForSure",
+            "slot_values": [
+              {
+                "domain": "问题",
+                "slot": "血糖值",
+                "value": "较低",
+                "pos": "5-6"
+              },
+              {
+                "domain": "问题",
+                "slot": "状态",
+                "value": "有益",
+                "pos": "7-8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "utteranceId": 4575,
+        "conversationId": 697,
+        "sequenceNo": 4,
+        "utterance": "说明您已经控制了饮食，运动过量了，应该休息一下。",
+        "agentRole": "Doctor",
+        "annotation": [
+          {
+            "act_label": "Advice",
+            "slot_values": [
+              {
+                "domain": "行为",
+                "slot": "行为名",
+                "value": "休息",
+                "pos": "28-30"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

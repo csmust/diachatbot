@@ -376,14 +376,14 @@
             "act_label": "Inform",
             "slot_values": [
               {
-                "domain": "医疗",
-                "slot": "药物名称",
-                "value": "药物",
+                "domain": "治疗",
+                "slot": "药品",
+                "value": "药品",
                 "pos": "1-2"
               },
               {
-                "domain": "医疗",
-                "slot": "服用时间",
+                "domain": "治疗",
+                "slot": "时间",
                 "value": "三个月",
                 "pos": "7-10"
               }
@@ -449,15 +449,15 @@
             "slot_values": [
               {
                 "domain": "饮食",
-                "slot": "control",
-                "value": "积极的控制",
-                "pos": "a"
+                "slot": "",
+                "value": "",
+                "pos": ""
               },
               {
                 "domain": "运动",
-                "slot": "control",
-                "value": "积极的控制",
-                "pos": "a"
+                "slot": "",
+                "value": "",
+                "pos": ""
               }
             ]
           }
@@ -581,8 +581,8 @@
                 "pos": "7-10"
               },
               {
-                "domain": "范围",
-                "slot": "范围",
+                "domain": "问题",
+                "slot": "血糖值",
                 "value": "3.9到7.8",
                 "pos": "18-24"
               }

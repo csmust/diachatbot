@@ -12,6 +12,7 @@ import os
 from convlab2.nlu.jointBERT_CRF.diachat.preprocess import preprocess
 from convlab2.nlu.jointBERT_CRF.diachat.train import train 
 from sklearn.model_selection import RepeatedKFold
+# from collections import defaultdict
 
 def set_seed(seed):
     random.seed(seed)
@@ -28,9 +29,15 @@ def gen_kfold(k,data):
         test_data=[ data[i] for i in test_index]
         with open(data_dir+"all_data_stric.json", 'r',encoding='utf-8') as f:
             augment_clean_data = json.load(f)
+        #避免某些conversationId出现次数过多
+        # random.shuffle(augment_clean_data)
+
+        # d = defaultdict(int)
         for augment_data in augment_clean_data:
             if augment_data['conversationId'] not in [ test_data_per['conversationId'] for test_data_per in test_data]:
-                train_data.append(augment_data)
+                # if d[augment_data['conversationId']]<1:
+                    train_data.append(augment_data)
+                # d[augment_data['conversationId']]+=1
 
         yield  train_data , test_data
 

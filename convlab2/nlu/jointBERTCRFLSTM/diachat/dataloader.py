@@ -49,6 +49,12 @@ class Dataloader:
 
             d[4] = self.tokenizer.encode('[CLS] ' + ' [SEP] '.join(d[4]))
             self.max_context_len = max(self.max_context_len, len(d[4]))
+            if len(d[4])>512:
+                d[4]=d[4][:512]
+            # if self.max_context_len >512:
+            #     print(self.tokenizer.decode(d[4]))
+                # exit(0)
+                
             context_len.append(len(d[4]))
 
             if use_bert_tokenizer:

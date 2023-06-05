@@ -5,7 +5,7 @@ import zipfile
 import sys
 from collections import Counter
 from transformers import BertTokenizer
-
+from transformers import AutoTokenizer
 
 
 
@@ -19,7 +19,7 @@ def read_zipped_json(filepath, filename):
 
 
 # 预处理函数
-def preprocess(mode,tokenizerpath,CROSS_TRAIN=False):
+def preprocess(mode,tokenizerpath,CROSS_TRAIN=True):
     assert mode == 'All' or mode == 'User' or mode == 'Doctor' 
     cur_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(cur_dir, '../../../../data/diachat/')
@@ -40,6 +40,9 @@ def preprocess(mode,tokenizerpath,CROSS_TRAIN=False):
     all_tag = []
     all_act=[]
     all_domain=[]
+    all_golden=[]
+    all_dis=[]
+    all_strdis=[]
 
     context_size = 3
 
@@ -78,6 +81,7 @@ def preprocess(mode,tokenizerpath,CROSS_TRAIN=False):
                 tokens = tokenizer.tokenize(utterance)
 
                 golden = []
+                dis=[]
 
                 span_info = []
                 intents = []
@@ -85,16 +89,10 @@ def preprocess(mode,tokenizerpath,CROSS_TRAIN=False):
                 act=[]
 
                 for i in turn['annotation']:
-                    value2index={}
                     for j in i['slot_values']:
                         if j['value'] is not None and j['value'] != '' and j['value'] != '？' and j['value'] != '?':
                             if j['value'] in utterance:
-                                # if j['value'] not in value2index:
-                                #     idx = utterance.index(j['value'])   # 有点小bug  value【吃药】 在utterance中重复出现时候比如 "我现在没有吃药，不需要吃药吗？" 我们需要标注后一个吃药时
-                                # else:
-                                #     idx = utterance.index(j['value'],value2index[j['value']]+1)
-                                # value2index[j['value']]=idx
-                                idx = utterance.index(j['value'])  
+                                idx = utterance.index(j['value'])   # 有点小bug  value【吃药】 在utterance中重复出现时候比如 "我现在没有吃药，不需要吃药吗？" 我们需要标注后一个吃药时
                                 idx = len(tokenizer.tokenize(utterance[:idx]))
                                 span_info.append((
                                     '+'.join([i['act_label'], j['domain'], j['slot']]), idx,
@@ -122,6 +120,9 @@ def preprocess(mode,tokenizerpath,CROSS_TRAIN=False):
                             golden.append([i['act_label'], j['domain'], j['slot'], j['value']])
                             domain.append(j['domain'])
                             act.append(i['act_label'])
+                        temp=[i['act_label'], j['domain'], j['slot']]
+                        if temp not in dis:
+                            dis.append(temp.copy())
 
                 tags = []
                 for j, _ in enumerate(tokens):
@@ -145,6 +146,20 @@ def preprocess(mode,tokenizerpath,CROSS_TRAIN=False):
                 all_tag += tags
                 all_domain+=domain
                 all_act+=act
+                for i in golden:
+                    if i not in all_golden:
+                        all_golden += [i.copy()]
+                for j in dis:
+                    '''j=  [
+                            "Inform",
+                            "饮食",
+                            "饮食名"
+                        ],'''
+                    strj=j[0]+"-"+j[1]+"-"+j[2]
+                    all_strdis.append(strj)
+                    if j not in all_dis:
+                        all_dis += [j.copy()]
+                    
 
                 context.append(turn['utterance'])
 
@@ -152,6 +167,10 @@ def preprocess(mode,tokenizerpath,CROSS_TRAIN=False):
         all_tag = [x[0] for x in dict(Counter(all_tag)).items()]
         all_domain=[x[0] for x in dict(Counter(all_domain)).items()]
         all_act=[x[0] for x in dict(Counter(all_act)).items()]
+        # all_golden = [x[0] for x in dict(Counter(all_golden)).items()]
+        strdis_count=dict(sorted(dict(Counter(all_strdis)).items(),key=lambda x:x[1]))
+        print(strdis_count)
+        
 
 
         print('loaded {}, size {}'.format(key, len(processed_data[key])))
@@ -170,6 +189,12 @@ def preprocess(mode,tokenizerpath,CROSS_TRAIN=False):
               ensure_ascii=False)
     json.dump(all_act, open(os.path.join(processed_data_dir, 'act_vocab.json'), 'w', encoding='utf-8'), indent=2,
               ensure_ascii=False)
+    json.dump(all_golden, open(os.path.join(processed_data_dir, 'golden_vocab.json'), 'w', encoding='utf-8'), indent=2,
+                ensure_ascii=False)
+    json.dump(all_dis, open(os.path.join(processed_data_dir, 'dis_vocab.json'), 'w', encoding='utf-8'), indent=2,
+                ensure_ascii=False)
+    json.dump(strdis_count, open(os.path.join(processed_data_dir, 'strdis_count.json'), 'w', encoding='utf-8'), indent=2,
+                ensure_ascii=False)
 
 if __name__ == '__main__':
     '''

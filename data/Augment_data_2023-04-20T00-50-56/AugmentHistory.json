@@ -1,0 +1,3889 @@
+,[
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1Nzk5OTc=",
+      "messageId": 405579997,
+      "creationTime": 1681923133531085,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4502, 'conversationId': 687, 'sequenceNo': 1, 'utterance': '紧张情绪对血糖影响很大么?', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '紧张情绪', 'pos': '0-4'}, {'domain': '问题', 'slot': '症状', 'value': '血糖', 'pos': '5-7'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4502, 'conversationId': 687, 'sequenceNo': 1, 'utterance': '紧张情绪对血糖影响很大么?', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '紧张情绪', 'pos': '0-4'}, {'domain': '问题', 'slot': '症状', 'value': '血糖', 'pos': '5-7'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405579997",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTc5OTk3OjQwNTU3OTk5Nw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1ODAwMTE=",
+      "messageId": 405580011,
+      "creationTime": 1681923133562109,
+      "text": "{'utteranceId': 4502, 'conversationId': 687, 'sequenceNo': 1, 'utterance': '紧张情绪对血糖有很大的影响吗?', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '紧张情绪', 'pos': '0-4'}, {'domain': '问题', 'slot': '症状', 'value': '血糖', 'pos': '5-7'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4502, 'conversationId': 687, 'sequenceNo': 1, 'utterance': '紧张情绪对血糖有很大的影响吗?', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '紧张情绪', 'pos': '0-4'}, {'domain': '问题', 'slot': '症状', 'value': '血糖', 'pos': '5-7'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问紧张情绪和血糖之间的关系是怎样的？",
+        "有什么方法可以缓解紧张情绪对血糖的影响吗？",
+        "您能否告诉我一些关于血糖和健康的知识？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405580011",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTgwMDExOjQwNTU4MDAxMQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1ODE2Nzg=",
+      "messageId": 405581678,
+      "creationTime": 1681923143155704,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405581678",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTgxNjc4OjQwNTU4MTY3OA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1ODE3MDE=",
+      "messageId": 405581701,
+      "creationTime": 1681923143263450,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4503, 'conversationId': 687, 'sequenceNo': 2, 'utterance': '紧张会引起血糖高，所以要放松，血糖就能降下来，因为紧张肾上腺分泌多，血糖就高', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '紧张', 'pos': '0-2'}, {'domain': '问题', 'slot': '症状', 'value': '肾上腺分泌多，血糖就高', 'pos': '27-38'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4503, 'conversationId': 687, 'sequenceNo': 2, 'utterance': '紧张会引起血糖高，所以要放松，血糖就能降下来，因为紧张肾上腺分泌多，血糖就高', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '紧张', 'pos': '0-2'}, {'domain': '问题', 'slot': '症状', 'value': '肾上腺分泌多，血糖就高', 'pos': '27-38'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405581701",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTgxNzAxOjQwNTU4MTcwMQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1ODE3MDc=",
+      "messageId": 405581707,
+      "creationTime": 1681923143284036,
+      "text": "{'utteranceId': 4503, 'conversationId': 687, 'sequenceNo': 2, 'utterance': '紧张会引起血糖高，所以要放松，血糖就能降下来，因为紧张肾上腺分泌多，血糖就高', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '紧张', 'pos': '0-2'}, {'domain': 'None', 'slot': 'None', 'value': '所以要放松，血糖就能降下来', 'pos': '5-19'}, {'domain': '问题', 'slot': '症状', 'value': '紧张', 'pos': '24-26'}, {'domain': '问题', 'slot': '症状', 'value': '肾上腺分泌多', 'pos': '27-33'}, {'domain': '治疗', 'slot': '治疗方式', 'value': '放松', 'pos': '34-36'}, {'domain': '问题', 'slot': '症状', 'value': '血糖就高', 'pos': '37-41'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4503, 'conversationId': 687, 'sequenceNo': 2, 'utterance': '紧张会引起血糖高，所以要放松，血糖就能降下来，因为紧张肾上腺分泌多，血糖就高', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '紧张', 'pos': '0-2'}, {'domain': 'None', 'slot': 'None', 'value': '所以要放松，血糖就能降下来', 'pos': '5-19'}, {'domain': '问题', 'slot': '症状', 'value': '紧张', 'pos': '24-26'}, {'domain': '问题', 'slot': '症状', 'value': '肾上腺分泌多', 'pos': '27-33'}, {'domain': '治疗', 'slot': '治疗方式', 'value': '放松', 'pos': '34-36'}, {'domain': '问题', 'slot': '症状', 'value': '血糖就高', 'pos': '37-41'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问如何放松？",
+        "紧张是否会引起其他症状？",
+        "有哪些治疗方式可以降低血糖？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405581707",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTgxNzA3OjQwNTU4MTcwNw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1ODQ4MjI=",
+      "messageId": 405584822,
+      "creationTime": 1681923164494067,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405584822",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTg0ODIyOjQwNTU4NDgyMg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1ODQ4NDI=",
+      "messageId": 405584842,
+      "creationTime": 1681923164598031,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4504, 'conversationId': 687, 'sequenceNo': 3, 'utterance': '需要如何调节紧张焦虑的情绪？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '?', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4504, 'conversationId': 687, 'sequenceNo': 3, 'utterance': '需要如何调节紧张焦虑的情绪？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '?', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405584842",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTg0ODQyOjQwNTU4NDg0Mg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1ODQ4NTc=",
+      "messageId": 405584857,
+      "creationTime": 1681923164615148,
+      "text": "{'utteranceId': 4504, 'conversationId': 687, 'sequenceNo': 3, 'utterance': '如何缓解焦虑情绪？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '缓解焦虑情绪', 'pos': ''}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4504, 'conversationId': 687, 'sequenceNo': 3, 'utterance': '如何缓解焦虑情绪？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '缓解焦虑情绪', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问有哪些方法可以缓解焦虑情绪？",
+        "你能否提供一些缓解焦虑情绪的建议？",
+        "如何避免焦虑情绪的出现？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405584857",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTg0ODU3OjQwNTU4NDg1Nw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1ODU4MDM=",
+      "messageId": 405585803,
+      "creationTime": 1681923171658401,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405585803",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTg1ODAzOjQwNTU4NTgwMw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1ODU4MDg=",
+      "messageId": 405585808,
+      "creationTime": 1681923171747331,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4505, 'conversationId': 687, 'sequenceNo': 4, 'utterance': '学会放松，听听舒缓的音乐，锻炼都可以放松，闭目遐想', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '放松', 'pos': '9-11'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4505, 'conversationId': 687, 'sequenceNo': 4, 'utterance': '学会放松，听听舒缓的音乐，锻炼都可以放松，闭目遐想', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '放松', 'pos': '9-11'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405585808",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTg1ODA4OjQwNTU4NTgwOA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1ODU4MTI=",
+      "messageId": 405585812,
+      "creationTime": 1681923171758856,
+      "text": "{'utteranceId': 4505, 'conversationId': 687, 'sequenceNo': 4, 'utterance': '学会放松，听听舒缓的音乐，锻炼都可以放松，闭目遐想', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '放松', 'pos': '9-11'}, {'domain': '行为', 'slot': '方式', 'value': '学会', 'pos': '0-2'}, {'domain': '运动', 'slot': '方式', 'value': '锻炼', 'pos': '16-17'}, {'domain': 'None', 'slot': 'None', 'value': '听听舒缓的音乐，闭目遐想', 'pos': '5-15, 18-29'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4505, 'conversationId': 687, 'sequenceNo': 4, 'utterance': '学会放松，听听舒缓的音乐，锻炼都可以放松，闭目遐想', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '放松', 'pos': '9-11'}, {'domain': '行为', 'slot': '方式', 'value': '学会', 'pos': '0-2'}, {'domain': '运动', 'slot': '方式', 'value': '锻炼', 'pos': '16-17'}, {'domain': 'None', 'slot': 'None', 'value': '听听舒缓的音乐，闭目遐想', 'pos': '5-15, 18-29'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问如何学会放松？",
+        "有没有其他方式可以放松？",
+        "锻炼对身体有什么好处？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405585812",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTg1ODEyOjQwNTU4NTgxMg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1ODgwMDU=",
+      "messageId": 405588005,
+      "creationTime": 1681923185826270,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405588005",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTg4MDA1OjQwNTU4ODAwNQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1ODgwMzQ=",
+      "messageId": 405588034,
+      "creationTime": 1681923185975364,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4506, 'conversationId': 687, 'sequenceNo': 5, 'utterance': '经常在黑暗处看书会有眼睛并发症么', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4506, 'conversationId': 687, 'sequenceNo': 5, 'utterance': '经常在黑暗处看书会有眼睛并发症么', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405588034",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTg4MDM0OjQwNTU4ODAzNA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU1ODgwOTQ=",
+      "messageId": 405588094,
+      "creationTime": 1681923186237279,
+      "text": "{'utteranceId': 4506, 'conversationId': 687, 'sequenceNo': 5, 'utterance': '经常在黑暗处看书会有眼睛并发症么', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '问题', 'slot': '是否会有眼睛并发症', 'value': '经常在黑暗处看书', 'pos': '经常/频率+在哪里/地点+做什么/行为'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4506, 'conversationId': 687, 'sequenceNo': 5, 'utterance': '经常在黑暗处看书会有眼睛并发症么', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '问题', 'slot': '是否会有眼睛并发症', 'value': '经常在黑暗处看书', 'pos': '经常/频率+在哪里/地点+做什么/行为'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405588094",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NTg4MDk0OjQwNTU4ODA5NA=="
+  }
+],[
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MDIyMzc=",
+      "messageId": 405602237,
+      "creationTime": 1681923279367403,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4515, 'conversationId': 690, 'sequenceNo': 2, 'utterance': '没有肉，可以吃肉啊，不吃肉，没有原料制造胰岛素了，我看了一个文献，说有的糖尿病，脆性糖尿病因为蛋白质摄入少，用胰岛素容易低血糖，所以适当吃一些肉，每天2-3两', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '肉', 'pos': '2-3'}, {'domain': '饮食', 'slot': '饮食量', 'value': '2-3两', 'pos': '75-79'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4515, 'conversationId': 690, 'sequenceNo': 2, 'utterance': '没有肉，可以吃肉啊，不吃肉，没有原料制造胰岛素了，我看了一个文献，说有的糖尿病，脆性糖尿病因为蛋白质摄入少，用胰岛素容易低血糖，所以适当吃一些肉，每天2-3两', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '肉', 'pos': '2-3'}, {'domain': '饮食', 'slot': '饮食量', 'value': '2-3两', 'pos': '75-79'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405602237",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjAyMjM3OjQwNTYwMjIzNw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MDIyNDQ=",
+      "messageId": 405602244,
+      "creationTime": 1681923279406527,
+      "text": "{'utteranceId': 4515, 'conversationId': 690, 'sequenceNo': 2, 'utterance': '没有肉，可以吃肉啊，不吃肉，没有原料制造胰岛素了，我看了一个文献，说有的糖尿病，脆性糖尿病因为蛋白质摄入少，用胰岛素容易低血糖，所以适当吃一些肉，每天2-3两', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '肉', 'pos': '2-3'}, {'domain': '饮食', 'slot': '饮食量', 'value': '2-3两', 'pos': '75-79'}]}]}\n\n修改后：\n\n{'utteranceId': 4515, 'conversationId': 690, 'sequenceNo': 2, 'utterance': '没有肉，可以吃肉啊，不吃肉，没有原料制造胰岛素了，我看了一个文献，说有的糖尿病，脆性糖尿病因为蛋白质摄入少，用胰岛素容易低血糖，所以适当吃一些肉，每天2-3两', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '肉', 'pos': '2-3'}, {'domain': '饮食', 'slot': '饮食量', 'value': '2-3两', 'pos': '75-79'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4515, 'conversationId': 690, 'sequenceNo': 2, 'utterance': '没有肉，可以吃肉啊，不吃肉，没有原料制造胰岛素了，我看了一个文献，说有的糖尿病，脆性糖尿病因为蛋白质摄入少，用胰岛素容易低血糖，所以适当吃一些肉，每天2-3两', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '肉', 'pos': '2-3'}, {'domain': '饮食', 'slot': '饮食量', 'value': '2-3两', 'pos': '75-79'}]}]}\n\n修改后：\n\n{'utteranceId': 4515, 'conversationId': 690, 'sequenceNo': 2, 'utterance': '没有肉，可以吃肉啊，不吃肉，没有原料制造胰岛素了，我看了一个文献，说有的糖尿病，脆性糖尿病因为蛋白质摄入少，用胰岛素容易低血糖，所以适当吃一些肉，每天2-3两', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '肉', 'pos': '2-3'}, {'domain': '饮食', 'slot': '饮食量', 'value': '2-3两', 'pos': '75-79'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问，这种情况下，每天吃多少肉比较合适呢？",
+        "有没有其他饮食建议可以分享？",
+        "请问，这种情况下，还需要注意哪些方面的饮食？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405602244",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjAyMjQ0OjQwNTYwMjI0NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MDcwNjc=",
+      "messageId": 405607067,
+      "creationTime": 1681923307888420,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405607067",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjA3MDY3OjQwNTYwNzA2Nw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MDcwOTE=",
+      "messageId": 405607091,
+      "creationTime": 1681923307995983,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4516, 'conversationId': 690, 'sequenceNo': 3, 'utterance': '恩，早上让媳妇买去了，晚上加点瘦肉', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4516, 'conversationId': 690, 'sequenceNo': 3, 'utterance': '恩，早上让媳妇买去了，晚上加点瘦肉', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405607091",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjA3MDkxOjQwNTYwNzA5MQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MDcwOTg=",
+      "messageId": 405607098,
+      "creationTime": 1681923308021182,
+      "text": "{'utteranceId': 4516, 'conversationId': 690, 'sequenceNo': 3, 'utterance': '恩，早上让我的妻子去买了，晚上再加一些瘦肉', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '饮食', 'slot': '食物', 'value': '瘦肉', 'pos': 'n'}, {'domain': '时间', 'slot': '时段', 'value': '晚上', 'pos': 'nt'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4516, 'conversationId': 690, 'sequenceNo': 3, 'utterance': '恩，早上让我的妻子去买了，晚上再加一些瘦肉', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '饮食', 'slot': '食物', 'value': '瘦肉', 'pos': 'n'}, {'domain': '时间', 'slot': '时段', 'value': '晚上', 'pos': 'nt'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问你能帮我标注一下这句话吗？",
+        "你能告诉我如何修改annotation中的domain吗？",
+        "我想知道你是如何改写utterance的，能否给我一些例子？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405607098",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjA3MDk4OjQwNTYwNzA5OA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MDg3NjA=",
+      "messageId": 405608760,
+      "creationTime": 1681923317764336,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405608760",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjA4NzYwOjQwNTYwODc2MA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MDg3ODM=",
+      "messageId": 405608783,
+      "creationTime": 1681923317910997,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4518, 'conversationId': 691, 'sequenceNo': 1, 'utterance': '大夫南瓜可以吃吗？怎么还有说不能吃的，有点', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '南瓜', 'pos': '2-4'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4518, 'conversationId': 691, 'sequenceNo': 1, 'utterance': '大夫南瓜可以吃吗？怎么还有说不能吃的，有点', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '南瓜', 'pos': '2-4'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405608783",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjA4NzgzOjQwNTYwODc4Mw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MDg3OTA=",
+      "messageId": 405608790,
+      "creationTime": 1681923317947548,
+      "text": "{'utteranceId': 4518, 'conversationId': 691, 'sequenceNo': 1, 'utterance': '大夫，南瓜可以吃吗？怎么还有人说不能吃的，有点疑惑。', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '南瓜', 'pos': '2-4'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4518, 'conversationId': 691, 'sequenceNo': 1, 'utterance': '大夫，南瓜可以吃吗？怎么还有人说不能吃的，有点疑惑。', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '南瓜', 'pos': '2-4'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "南瓜有哪些营养成分？",
+        "南瓜的食用方法有哪些？",
+        "有哪些食物不能和南瓜一起食用？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405608790",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjA4NzkwOjQwNTYwODc5MA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTAyMzI=",
+      "messageId": 405610232,
+      "creationTime": 1681923326738317,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405610232",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjEwMjMyOjQwNTYxMDIzMg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTAyNDM=",
+      "messageId": 405610243,
+      "creationTime": 1681923326811816,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4519, 'conversationId': 691, 'sequenceNo': 2, 'utterance': '有人说能吃，有人说吃多了也血糖高，我认为少吃，南瓜是发物。您的血压降下来了吗，辽宁-黑土：注意冬天衣服不要穿紧身的，容易导致血压高，穿宽松的，棉布的', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '少吃', 'pos': '20-22'}]}, {'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4519, 'conversationId': 691, 'sequenceNo': 2, 'utterance': '有人说能吃，有人说吃多了也血糖高，我认为少吃，南瓜是发物。您的血压降下来了吗，辽宁-黑土：注意冬天衣服不要穿紧身的，容易导致血压高，穿宽松的，棉布的', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '少吃', 'pos': '20-22'}]}, {'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405610243",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjEwMjQzOjQwNTYxMDI0Mw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTAyNjE=",
+      "messageId": 405610261,
+      "creationTime": 1681923326926904,
+      "text": " {'utteranceId': 4519, 'conversationId': 691, 'sequenceNo': 2, 'utterance': '有人说能吃，有人说吃多了也血糖高，我认为少吃，南瓜是发物。您的血压降下来了吗，辽宁-黑土：注意冬天衣服不要穿紧身的，容易导致血压高，穿宽松的，棉布的', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '少吃', 'pos': '20-22'}]}, {'act_label': 'Chitchat', 'slot_values': [{'domain': 'None', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": " {'utteranceId': 4519, 'conversationId': 691, 'sequenceNo': 2, 'utterance': '有人说能吃，有人说吃多了也血糖高，我认为少吃，南瓜是发物。您的血压降下来了吗，辽宁-黑土：注意冬天衣服不要穿紧身的，容易导致血压高，穿宽松的，棉布的', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '少吃', 'pos': '20-22'}]}, {'act_label': 'Chitchat', 'slot_values': [{'domain': 'None', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问南瓜的其他营养价值是什么？",
+        "您能否给我一些关于血压的建议？",
+        "您认为穿什么样的衣服对血压有帮助？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405610261",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjEwMjYxOjQwNTYxMDI2MQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTI4MTU=",
+      "messageId": 405612815,
+      "creationTime": 1681923342009043,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405612815",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjEyODE1OjQwNTYxMjgxNQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTI4MzQ=",
+      "messageId": 405612834,
+      "creationTime": 1681923342095813,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4520, 'conversationId': 691, 'sequenceNo': 3, 'utterance': '今天我换药了倍他乐克', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '倍他乐克', 'pos': '6-10'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4520, 'conversationId': 691, 'sequenceNo': 3, 'utterance': '今天我换药了倍他乐克', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '倍他乐克', 'pos': '6-10'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405612834",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjEyODM0OjQwNTYxMjgzNA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTI4NDY=",
+      "messageId": 405612846,
+      "creationTime": 1681923342110949,
+      "text": "{'utteranceId': 4520, 'conversationId': 691, 'sequenceNo': 3, 'utterance': '今天我换药了倍他乐克', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '倍他乐克', 'pos': '6-10'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4520, 'conversationId': 691, 'sequenceNo': 3, 'utterance': '今天我换药了倍他乐克', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '倍他乐克', 'pos': '6-10'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请帮我标注一下这句话中的行为和药品。",
+        "请问你能改写一下这句话吗？",
+        "这个药品有什么副作用吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405612846",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjEyODQ2OjQwNTYxMjg0Ng=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTQyMzE=",
+      "messageId": 405614231,
+      "creationTime": 1681923349849152,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405614231",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE0MjMxOjQwNTYxNDIzMQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTQyNTQ=",
+      "messageId": 405614254,
+      "creationTime": 1681923349943219,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4521, 'conversationId': 691, 'sequenceNo': 4, 'utterance': '奥，怎样了', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '?', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4521, 'conversationId': 691, 'sequenceNo': 4, 'utterance': '奥，怎样了', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '?', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405614254",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE0MjU0OjQwNTYxNDI1NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTQyNzY=",
+      "messageId": 405614276,
+      "creationTime": 1681923349957417,
+      "text": "{'utteranceId': 4521, 'conversationId': 691, 'sequenceNo': 4, 'utterance': '好的，怎么样了呢？', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '?', 'pos': ''}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4521, 'conversationId': 691, 'sequenceNo': 4, 'utterance': '好的，怎么样了呢？', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '?', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问这种治疗方式有哪些副作用吗？",
+        "您认为这种治疗方式对我的病情有帮助吗？",
+        "您能否给我推荐一些其他的治疗方式？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405614276",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE0Mjc2OjQwNTYxNDI3Ng=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTU1MDE=",
+      "messageId": 405615501,
+      "creationTime": 1681923356595692,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405615501",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE1NTAxOjQwNTYxNTUwMQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTU1NDI=",
+      "messageId": 405615542,
+      "creationTime": 1681923356769223,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4522, 'conversationId': 691, 'sequenceNo': 5, 'utterance': '上午还行怎么到下午就不好', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '还行', 'pos': '2-4'}, {'domain': '治疗', 'slot': '时间', 'value': '上午', 'pos': '0-2'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '不好', 'pos': '10-12'}, {'domain': '治疗', 'slot': '时间', 'value': '下午', 'pos': '7-9'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4522, 'conversationId': 691, 'sequenceNo': 5, 'utterance': '上午还行怎么到下午就不好', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '还行', 'pos': '2-4'}, {'domain': '治疗', 'slot': '时间', 'value': '上午', 'pos': '0-2'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '不好', 'pos': '10-12'}, {'domain': '治疗', 'slot': '时间', 'value': '下午', 'pos': '7-9'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405615542",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE1NTQyOjQwNTYxNTU0Mg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTU1ODM=",
+      "messageId": 405615583,
+      "creationTime": 1681923356916396,
+      "text": "{'utteranceId': 4522, 'conversationId': 691, 'sequenceNo': 5, 'utterance': '上午还行怎么到下午就不好', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '还行', 'pos': '2-4'}, {'domain': '治疗', 'slot': '时间', 'value': '上午', 'pos': '0-2'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '不好', 'pos': '10-12'}, {'domain': '治疗', 'slot': '时间', 'value': '下午', 'pos': '7-9'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4522, 'conversationId': 691, 'sequenceNo': 5, 'utterance': '上午还行怎么到下午就不好', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '还行', 'pos': '2-4'}, {'domain': '治疗', 'slot': '时间', 'value': '上午', 'pos': '0-2'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '不好', 'pos': '10-12'}, {'domain': '治疗', 'slot': '时间', 'value': '下午', 'pos': '7-9'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405615583",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE1NTgzOjQwNTYxNTU4Mw=="
+  }
+],[
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTQyNTQ=",
+      "messageId": 405614254,
+      "creationTime": 1681923349943219,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4521, 'conversationId': 691, 'sequenceNo': 4, 'utterance': '奥，怎样了', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '?', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4521, 'conversationId': 691, 'sequenceNo': 4, 'utterance': '奥，怎样了', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '?', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405614254",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE0MjU0OjQwNTYxNDI1NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTQyNzY=",
+      "messageId": 405614276,
+      "creationTime": 1681923349957417,
+      "text": "{'utteranceId': 4521, 'conversationId': 691, 'sequenceNo': 4, 'utterance': '好的，怎么样了呢？', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '?', 'pos': ''}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4521, 'conversationId': 691, 'sequenceNo': 4, 'utterance': '好的，怎么样了呢？', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskFor', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '?', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问这种治疗方式有哪些副作用吗？",
+        "您认为这种治疗方式对我的病情有帮助吗？",
+        "您能否给我推荐一些其他的治疗方式？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405614276",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE0Mjc2OjQwNTYxNDI3Ng=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTU1MDE=",
+      "messageId": 405615501,
+      "creationTime": 1681923356595692,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405615501",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE1NTAxOjQwNTYxNTUwMQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTU1NDI=",
+      "messageId": 405615542,
+      "creationTime": 1681923356769223,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4522, 'conversationId': 691, 'sequenceNo': 5, 'utterance': '上午还行怎么到下午就不好', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '还行', 'pos': '2-4'}, {'domain': '治疗', 'slot': '时间', 'value': '上午', 'pos': '0-2'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '不好', 'pos': '10-12'}, {'domain': '治疗', 'slot': '时间', 'value': '下午', 'pos': '7-9'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4522, 'conversationId': 691, 'sequenceNo': 5, 'utterance': '上午还行怎么到下午就不好', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '还行', 'pos': '2-4'}, {'domain': '治疗', 'slot': '时间', 'value': '上午', 'pos': '0-2'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '不好', 'pos': '10-12'}, {'domain': '治疗', 'slot': '时间', 'value': '下午', 'pos': '7-9'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405615542",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE1NTQyOjQwNTYxNTU0Mg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTU1ODM=",
+      "messageId": 405615583,
+      "creationTime": 1681923356916396,
+      "text": "{'utteranceId': 4522, 'conversationId': 691, 'sequenceNo': 5, 'utterance': '上午还行怎么到下午就不好', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '还行', 'pos': '2-4'}, {'domain': '治疗', 'slot': '时间', 'value': '上午', 'pos': '0-2'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '不好', 'pos': '10-12'}, {'domain': '治疗', 'slot': '时间', 'value': '下午', 'pos': '7-9'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4522, 'conversationId': 691, 'sequenceNo': 5, 'utterance': '上午还行怎么到下午就不好', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '还行', 'pos': '2-4'}, {'domain': '治疗', 'slot': '时间', 'value': '上午', 'pos': '0-2'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '效果', 'value': '不好', 'pos': '10-12'}, {'domain': '治疗', 'slot': '时间', 'value': '下午', 'pos': '7-9'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我可以帮你找到一些治疗方法吗？",
+        "你有没有其他时间段感觉不舒服？",
+        "你有没有其他症状？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405615583",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE1NTgzOjQwNTYxNTU4Mw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTg3MjE=",
+      "messageId": 405618721,
+      "creationTime": 1681923372300444,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405618721",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE4NzIxOjQwNTYxODcyMQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTg3NDI=",
+      "messageId": 405618742,
+      "creationTime": 1681923372428864,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4523, 'conversationId': 691, 'sequenceNo': 6, 'utterance': '生理过程也是下午血压高，可以中午午休半小时', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '午休', 'pos': '16-18'}, {'domain': '行为', 'slot': '时间', 'value': '中午', 'pos': '14-16'}, {'domain': '行为', 'slot': '持续时长', 'value': '半小时', 'pos': '18-21'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4523, 'conversationId': 691, 'sequenceNo': 6, 'utterance': '生理过程也是下午血压高，可以中午午休半小时', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '午休', 'pos': '16-18'}, {'domain': '行为', 'slot': '时间', 'value': '中午', 'pos': '14-16'}, {'domain': '行为', 'slot': '持续时长', 'value': '半小时', 'pos': '18-21'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405618742",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE4NzQyOjQwNTYxODc0Mg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MTg3NDc=",
+      "messageId": 405618747,
+      "creationTime": 1681923372444568,
+      "text": "{'utteranceId': 4523, 'conversationId': 691, 'sequenceNo': 6, 'utterance': '生理过程也是下午血压高，可以中午午休半小时', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '午休', 'pos': '14-16'}, {'domain': '行为', 'slot': '时间', 'value': '中午', 'pos': '14-16'}, {'domain': '行为', 'slot': '持续时长', 'value': '半小时', 'pos': '16-19'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4523, 'conversationId': 691, 'sequenceNo': 6, 'utterance': '生理过程也是下午血压高，可以中午午休半小时', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '午休', 'pos': '14-16'}, {'domain': '行为', 'slot': '时间', 'value': '中午', 'pos': '14-16'}, {'domain': '行为', 'slot': '持续时长', 'value': '半小时', 'pos': '16-19'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问午休对血压有什么影响吗？",
+        "有没有其他可以降低血压的方法？",
+        "请问您能否给我一些关于饮食和血压的建议？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405618747",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjE4NzQ3OjQwNTYxODc0Nw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MjEzMzY=",
+      "messageId": 405621336,
+      "creationTime": 1681923385204940,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405621336",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjIxMzM2OjQwNTYyMTMzNg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MjEzNTg=",
+      "messageId": 405621358,
+      "creationTime": 1681923385311295,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4524, 'conversationId': 691, 'sequenceNo': 7, 'utterance': '是不是药量不行，白天还没有睡的习惯', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '治疗', 'slot': '用药量', 'value': '不行', 'pos': '5-7'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4524, 'conversationId': 691, 'sequenceNo': 7, 'utterance': '是不是药量不行，白天还没有睡的习惯', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '治疗', 'slot': '用药量', 'value': '不行', 'pos': '5-7'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405621358",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjIxMzU4OjQwNTYyMTM1OA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MjEzNjQ=",
+      "messageId": 405621364,
+      "creationTime": 1681923385325583,
+      "text": "{\n  \"utteranceId\": 4524,\n  \"conversationId\": 691,\n  \"sequenceNo\": 7,\n  \"utterance\": \"药量不够，导致我白天失眠。\",\n  \"agentRole\": \"User\",\n  \"annotation\": [\n    {\n      \"act_label\": \"AskForSure\",\n      \"slot_values\": [\n        {\n          \"domain\": \"治疗\",\n          \"slot\": \"用药量\",\n          \"value\": \"不够\",\n          \"pos\": \"2-4\"\n        }\n      ]\n    }\n  ]\n}",
+      "author": "chinchilla",
+      "linkifiedText": "{\n  \"utteranceId\": 4524,\n  \"conversationId\": 691,\n  \"sequenceNo\": 7,\n  \"utterance\": \"药量不够，导致我白天失眠。\",\n  \"agentRole\": \"User\",\n  \"annotation\": [\n    {\n      \"act_label\": \"AskForSure\",\n      \"slot_values\": [\n        {\n          \"domain\": \"治疗\",\n          \"slot\": \"用药量\",\n          \"value\": \"不够\",\n          \"pos\": \"2-4\"\n        }\n      ]\n    }\n  ]\n}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我还有哪些药量需要注意？",
+        "你能否给我一些改善睡眠的建议？",
+        "我应该如何调整药量以改善睡眠？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405621364",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjIxMzY0OjQwNTYyMTM2NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MjIwMTc=",
+      "messageId": 405622017,
+      "creationTime": 1681923389683778,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405622017",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjIyMDE3OjQwNTYyMjAxNw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MjIwMjg=",
+      "messageId": 405622028,
+      "creationTime": 1681923389763102,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4525, 'conversationId': 691, 'sequenceNo': 8, 'utterance': '可以试试，但是糖尿病不建议吃倍他洛克。可以吃拜新同，但是可以引起心率快', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Advice', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '拜新同', 'pos': '22-25'}, {'domain': '问题', 'slot': '症状', 'value': '心率快', 'pos': '32-35'}]}, {'act_label': 'AdviceNot', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '倍他洛克', 'pos': '14-18'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4525, 'conversationId': 691, 'sequenceNo': 8, 'utterance': '可以试试，但是糖尿病不建议吃倍他洛克。可以吃拜新同，但是可以引起心率快', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Advice', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '拜新同', 'pos': '22-25'}, {'domain': '问题', 'slot': '症状', 'value': '心率快', 'pos': '32-35'}]}, {'act_label': 'AdviceNot', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '倍他洛克', 'pos': '14-18'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405622028",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjIyMDI4OjQwNTYyMjAyOA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MjIwMzE=",
+      "messageId": 405622031,
+      "creationTime": 1681923389777437,
+      "text": "抱歉，由于您提供的原始utterance已经非常明确和清晰，我无法对其进行改写。您可以提供一个需要改写的特定部分，我可以帮您进行改写。\n\n下面是修改annotation中slot_values标注内容，不改变act_label内容的json结果：\n\n{'utteranceId': 4525, 'conversationId': 691, 'sequenceNo': 8, 'utterance': '可以试试，但是糖尿病不建议吃倍他洛克。可以吃拜新同，但是可以引起心率快', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Advice', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '拜新同', 'pos': '22-25'}, {'domain': '问题', 'slot': '症状', 'value': '心率快', 'pos': '32-35'}]}, {'act_label': 'AdviceNot', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '倍他洛克', 'pos': '14-18'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "抱歉，由于您提供的原始utterance已经非常明确和清晰，我无法对其进行改写。您可以提供一个需要改写的特定部分，我可以帮您进行改写。\n\n下面是修改annotation中slot_values标注内容，不改变act_label内容的json结果：\n\n{'utteranceId': 4525, 'conversationId': 691, 'sequenceNo': 8, 'utterance': '可以试试，但是糖尿病不建议吃倍他洛克。可以吃拜新同，但是可以引起心率快', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Advice', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '拜新同', 'pos': '22-25'}, {'domain': '问题', 'slot': '症状', 'value': '心率快', 'pos': '32-35'}]}, {'act_label': 'AdviceNot', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '倍他洛克', 'pos': '14-18'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请帮我修改annotation中的其他标注内容。",
+        "请问您能否提供更多关于拜新同的信息？",
+        "您能否提供一些关于糖尿病的饮食建议？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405622031",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjIyMDMxOjQwNTYyMjAzMQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MjU0NjI=",
+      "messageId": 405625462,
+      "creationTime": 1681923413591726,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405625462",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjI1NDYyOjQwNTYyNTQ2Mg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MjU0NzU=",
+      "messageId": 405625475,
+      "creationTime": 1681923413677947,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4526, 'conversationId': 691, 'sequenceNo': 9, 'utterance': '哦', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4526, 'conversationId': 691, 'sequenceNo': 9, 'utterance': '哦', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405625475",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjI1NDc1OjQwNTYyNTQ3NQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MjU1MDU=",
+      "messageId": 405625505,
+      "creationTime": 1681923413877212,
+      "text": "{'utteranceId': 4526, 'conversationId': 691, 'sequenceNo': 9, 'utterance': '嗯', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': 'None', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4526, 'conversationId': 691, 'sequenceNo': 9, 'utterance': '嗯', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': 'None', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我需要修改我的utterance和annotation吗？",
+        "请问您能够帮我修改annotation中的domain吗？",
+        "我可以提供更多的utterance和annotation吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405625505",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjI1NTA1OjQwNTYyNTUwNQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MjY0NjE=",
+      "messageId": 405626461,
+      "creationTime": 1681923420534446,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405626461",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjI2NDYxOjQwNTYyNjQ2MQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MjY0ODE=",
+      "messageId": 405626481,
+      "creationTime": 1681923420602548,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4527, 'conversationId': 691, 'sequenceNo': 10, 'utterance': '心脏怎样？，如果有心前区痛，运动要减量', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '心前区痛', 'pos': '9-13'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4527, 'conversationId': 691, 'sequenceNo': 10, 'utterance': '心脏怎样？，如果有心前区痛，运动要减量', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '心前区痛', 'pos': '9-13'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405626481",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjI2NDgxOjQwNTYyNjQ4MQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MjY1MjM=",
+      "messageId": 405626523,
+      "creationTime": 1681923420787171,
+      "text": "{'utteranceId': 4527, 'conversationId': 691, 'sequenceNo': 10, 'utterance': '您的心脏状况如何？如果您有心前区疼痛，建议适当减少运动量。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '心前区疼痛', 'pos': '9-13'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4527, 'conversationId': 691, 'sequenceNo': 10, 'utterance': '您的心脏状况如何？如果您有心前区疼痛，建议适当减少运动量。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '心前区疼痛', 'pos': '9-13'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405626523",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjI2NTIzOjQwNTYyNjUyMw=="
+  }
+],[
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MzI5MjM=",
+      "messageId": 405632923,
+      "creationTime": 1681923455236479,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4530, 'conversationId': 691, 'sequenceNo': 13, 'utterance': '我现在心跳不到60，张大夫如果换药得吃多少量，张大夫我每天下午加一片硝苯地平缓释片可以吗', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '硝苯地平缓释片', 'pos': '34-41'}, {'domain': '治疗', 'slot': '用药量', 'value': '加一片', 'pos': '31-34'}, {'domain': '治疗', 'slot': '用药（治疗）频率', 'value': '每天下午', 'pos': '27-31'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4530, 'conversationId': 691, 'sequenceNo': 13, 'utterance': '我现在心跳不到60，张大夫如果换药得吃多少量，张大夫我每天下午加一片硝苯地平缓释片可以吗', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '硝苯地平缓释片', 'pos': '34-41'}, {'domain': '治疗', 'slot': '用药量', 'value': '加一片', 'pos': '31-34'}, {'domain': '治疗', 'slot': '用药（治疗）频率', 'value': '每天下午', 'pos': '27-31'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405632923",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjMyOTIzOjQwNTYzMjkyMw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MzI5NTQ=",
+      "messageId": 405632954,
+      "creationTime": 1681923455411483,
+      "text": "{'utteranceId': 4530, 'conversationId': 691, 'sequenceNo': 13, 'utterance': '我现在心跳不到60，张大夫如果换药得吃多少量，张大夫我每天下午加一片硝苯地平缓释片可以吗', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '硝苯地平缓释片', 'pos': '34-41'}, {'domain': '治疗', 'slot': '用药量', 'value': '一片', 'pos': '31-33'}, {'domain': '治疗', 'slot': '用药（治疗）频率', 'value': '每天下午', 'pos': '27-31'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4530, 'conversationId': 691, 'sequenceNo': 13, 'utterance': '我现在心跳不到60，张大夫如果换药得吃多少量，张大夫我每天下午加一片硝苯地平缓释片可以吗', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '硝苯地平缓释片', 'pos': '34-41'}, {'domain': '治疗', 'slot': '用药量', 'value': '一片', 'pos': '31-33'}, {'domain': '治疗', 'slot': '用药（治疗）频率', 'value': '每天下午', 'pos': '27-31'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我还需要注意什么吗？",
+        "这种药有什么副作用吗？",
+        "这种药需要空腹服用吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405632954",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjMyOTU0OjQwNTYzMjk1NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MzUzNDI=",
+      "messageId": 405635342,
+      "creationTime": 1681923471936508,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405635342",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjM1MzQyOjQwNTYzNTM0Mg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MzUzNDY=",
+      "messageId": 405635346,
+      "creationTime": 1681923471986626,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4531, 'conversationId': 691, 'sequenceNo': 14, 'utterance': '缓释片是管一天的，这样增加药量，先看看倍他洛克的情况，我一会单独跟您聊', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4531, 'conversationId': 691, 'sequenceNo': 14, 'utterance': '缓释片是管一天的，这样增加药量，先看看倍他洛克的情况，我一会单独跟您聊', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405635346",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjM1MzQ2OjQwNTYzNTM0Ng=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2MzUzNzY=",
+      "messageId": 405635376,
+      "creationTime": 1681923472187704,
+      "text": "{'utteranceId': 4531, 'conversationId': 691, 'sequenceNo': 14, 'utterance': '缓释片是管一天的，这样增加药量，先看看倍他洛克的情况，我一会单独跟您聊', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '治疗', 'slot': '药物名称', 'value': '缓释片', 'pos': '药量'}, {'domain': '治疗', 'slot': '药物名称', 'value': '倍他洛克', 'pos': '管理情况'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4531, 'conversationId': 691, 'sequenceNo': 14, 'utterance': '缓释片是管一天的，这样增加药量，先看看倍他洛克的情况，我一会单独跟您聊', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '治疗', 'slot': '药物名称', 'value': '缓释片', 'pos': '药量'}, {'domain': '治疗', 'slot': '药物名称', 'value': '倍他洛克', 'pos': '管理情况'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问，缓释片和倍他洛克的治疗效果如何？",
+        "您能否解释一下药物管理情况的含义？",
+        "我想了解一下，药物管理情况不佳会有什么后果？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405635376",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjM1Mzc2OjQwNTYzNTM3Ng=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Mzc1ODU=",
+      "messageId": 405637585,
+      "creationTime": 1681923485108114,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405637585",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjM3NTg1OjQwNTYzNzU4NQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Mzc2MDI=",
+      "messageId": 405637602,
+      "creationTime": 1681923485209942,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4533, 'conversationId': 692, 'sequenceNo': 1, 'utterance': '大夫25天前空腹9.3经过几天的适量运动和稍减食量现在已经恢复到空腹4.4-5.5之间餐二6.8-8之间偶尔8-9睡前基本保持在5左右是否正常餐二是否偏高，这期间未服用任何药物和打针，今天餐二7.8餐三5.7', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '6-8'}, {'domain': '问题', 'slot': '血糖值', 'value': '4.4-5.5之间', 'pos': '34-43'}, {'domain': '问题', 'slot': '时间', 'value': '餐二', 'pos': '43-45'}, {'domain': '问题', 'slot': '血糖值', 'value': '6.8-8之间', 'pos': '45-52'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '今天餐二', 'pos': '92-96'}, {'domain': '问题', 'slot': '血糖值', 'value': '7.8', 'pos': '96-99'}, {'domain': '问题', 'slot': '时间', 'value': '餐三', 'pos': '99-101'}, {'domain': '问题', 'slot': '血糖值', 'value': '5.7', 'pos': '101-104'}]}, {'act_label': 'AskHow', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4533, 'conversationId': 692, 'sequenceNo': 1, 'utterance': '大夫25天前空腹9.3经过几天的适量运动和稍减食量现在已经恢复到空腹4.4-5.5之间餐二6.8-8之间偶尔8-9睡前基本保持在5左右是否正常餐二是否偏高，这期间未服用任何药物和打针，今天餐二7.8餐三5.7', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '6-8'}, {'domain': '问题', 'slot': '血糖值', 'value': '4.4-5.5之间', 'pos': '34-43'}, {'domain': '问题', 'slot': '时间', 'value': '餐二', 'pos': '43-45'}, {'domain': '问题', 'slot': '血糖值', 'value': '6.8-8之间', 'pos': '45-52'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '今天餐二', 'pos': '92-96'}, {'domain': '问题', 'slot': '血糖值', 'value': '7.8', 'pos': '96-99'}, {'domain': '问题', 'slot': '时间', 'value': '餐三', 'pos': '99-101'}, {'domain': '问题', 'slot': '血糖值', 'value': '5.7', 'pos': '101-104'}]}, {'act_label': 'AskHow', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405637602",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjM3NjAyOjQwNTYzNzYwMg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Mzc2MTg=",
+      "messageId": 405637618,
+      "creationTime": 1681923485258357,
+      "text": "抱歉，由于您的输入内容格式不明确，我无法正确理解您的请求。请提供更详细的信息，以便我更好地回答您的问题。",
+      "author": "chinchilla",
+      "linkifiedText": "抱歉，由于您的输入内容格式不明确，我无法正确理解您的请求。请提供更详细的信息，以便我更好地回答您的问题。",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请将utterance和annotation中的餐二改为晚餐。",
+        "请将annotation中的domain改为'饮食'。",
+        "请将utterance中的“是否正常”改为“血糖是否正常”。"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405637618",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjM3NjE4OjQwNTYzNzYxOA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Mzg1NzQ=",
+      "messageId": 405638574,
+      "creationTime": 1681923489550465,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405638574",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjM4NTc0OjQwNTYzODU3NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Mzg1OTE=",
+      "messageId": 405638591,
+      "creationTime": 1681923489621884,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4534, 'conversationId': 692, 'sequenceNo': 2, 'utterance': '很好！请继续坚持', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4534, 'conversationId': 692, 'sequenceNo': 2, 'utterance': '很好！请继续坚持', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405638591",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjM4NTkxOjQwNTYzODU5MQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Mzg2MDI=",
+      "messageId": 405638602,
+      "creationTime": 1681923489637436,
+      "text": "{'utteranceId': 4534, 'conversationId': 692, 'sequenceNo': 2, 'utterance': '很好！请继续保持良好的饮食习惯和规律的运动', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '饮食', 'slot': '', 'value': '', 'pos': ''}, {'domain': '运动', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4534, 'conversationId': 692, 'sequenceNo': 2, 'utterance': '很好！请继续保持良好的饮食习惯和规律的运动', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '饮食', 'slot': '', 'value': '', 'pos': ''}, {'domain': '运动', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我可以问一下你的建议吗？",
+        "你有什么关于饮食和运动的建议吗？",
+        "你能告诉我如何保持良好的饮食习惯和规律的运动吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405638602",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjM4NjAyOjQwNTYzODYwMg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDAzOTQ=",
+      "messageId": 405640394,
+      "creationTime": 1681923499296013,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405640394",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQwMzk0OjQwNTY0MDM5NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDA0MDY=",
+      "messageId": 405640406,
+      "creationTime": 1681923499381517,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4535, 'conversationId': 692, 'sequenceNo': 3, 'utterance': '因为今天中午吃的油饼，但没有运动', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '油饼', 'pos': '8-10'}, {'domain': '饮食', 'slot': '时间', 'value': '今天中午', 'pos': '2-6'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4535, 'conversationId': 692, 'sequenceNo': 3, 'utterance': '因为今天中午吃的油饼，但没有运动', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '油饼', 'pos': '8-10'}, {'domain': '饮食', 'slot': '时间', 'value': '今天中午', 'pos': '2-6'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405640406",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQwNDA2OjQwNTY0MDQwNg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDA0MTI=",
+      "messageId": 405640412,
+      "creationTime": 1681923499394329,
+      "text": "{'utteranceId': 4535, 'conversationId': 692, 'sequenceNo': 3, 'utterance': '因为今天中午吃的油饼，但没有运动', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '油饼', 'pos': '8-10'}, {'domain': '饮食', 'slot': '时间', 'value': '今天中午', 'pos': '2-6'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4535, 'conversationId': 692, 'sequenceNo': 3, 'utterance': '因为今天中午吃的油饼，但没有运动', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '油饼', 'pos': '8-10'}, {'domain': '饮食', 'slot': '时间', 'value': '今天中午', 'pos': '2-6'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问您有什么其他的饮食习惯吗？",
+        "您平时有什么运动习惯吗？",
+        "您有什么其他的健康问题需要咨询吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405640412",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQwNDEyOjQwNTY0MDQxMg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDIzMTE=",
+      "messageId": 405642311,
+      "creationTime": 1681923510043184,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405642311",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQyMzExOjQwNTY0MjMxMQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDIzMjk=",
+      "messageId": 405642329,
+      "creationTime": 1681923510144720,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4536, 'conversationId': 692, 'sequenceNo': 4, 'utterance': '餐二10以下，或者4.4-8.3之间即可', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '餐二', 'pos': '0-2'}, {'domain': '问题', 'slot': '血糖值', 'value': '10以下', 'pos': '2-6'}, {'domain': '问题', 'slot': '血糖值', 'value': '4.4-8.3之间', 'pos': '9-18'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4536, 'conversationId': 692, 'sequenceNo': 4, 'utterance': '餐二10以下，或者4.4-8.3之间即可', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '餐二', 'pos': '0-2'}, {'domain': '问题', 'slot': '血糖值', 'value': '10以下', 'pos': '2-6'}, {'domain': '问题', 'slot': '血糖值', 'value': '4.4-8.3之间', 'pos': '9-18'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405642329",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQyMzI5OjQwNTY0MjMyOQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDIzNTQ=",
+      "messageId": 405642354,
+      "creationTime": 1681923510241058,
+      "text": "{'utteranceId': 4536, 'conversationId': 692, 'sequenceNo': 4, 'utterance': '餐二10以下，或者4.4-8.3之间即可', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '饮食', 'slot': '餐次', 'value': '餐二', 'pos': '0-2'}, {'domain': '问题', 'slot': '血糖值', 'value': '10以下', 'pos': '2-6'}, {'domain': '问题', 'slot': '血糖值', 'value': '4.4-8.3之间', 'pos': '9-18'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4536, 'conversationId': 692, 'sequenceNo': 4, 'utterance': '餐二10以下，或者4.4-8.3之间即可', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '饮食', 'slot': '餐次', 'value': '餐二', 'pos': '0-2'}, {'domain': '问题', 'slot': '血糖值', 'value': '10以下', 'pos': '2-6'}, {'domain': '问题', 'slot': '血糖值', 'value': '4.4-8.3之间', 'pos': '9-18'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问餐次的定义是什么？",
+        "这个建议适用于所有人吗？",
+        "请问还有其他需要注意的饮食方面吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405642354",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQyMzU0OjQwNTY0MjM1NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDMxNTc=",
+      "messageId": 405643157,
+      "creationTime": 1681923515953054,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405643157",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQzMTU3OjQwNTY0MzE1Nw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDMxNzQ=",
+      "messageId": 405643174,
+      "creationTime": 1681923516041904,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4537, 'conversationId': 692, 'sequenceNo': 5, 'utterance': '中午走路20分钟的话餐二会到6.5-7，之间，我就是稍微减了减食量，主要针对晚上是少吃了一些，然后中午增加了饭后走路，我这样是好了还是？，吃一大个苹果两个小时测是6.1，这样是不是可以长期吃苹果，还有一次也是吃完苹果4.7', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '苹果', 'pos': '73-75'}]}, {'act_label': 'AskHow', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '稍微减了减', 'pos': '26-31'}, {'domain': '运动', 'slot': '运动名', 'value': '饭后走路', 'pos': '54-58'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4537, 'conversationId': 692, 'sequenceNo': 5, 'utterance': '中午走路20分钟的话餐二会到6.5-7，之间，我就是稍微减了减食量，主要针对晚上是少吃了一些，然后中午增加了饭后走路，我这样是好了还是？，吃一大个苹果两个小时测是6.1，这样是不是可以长期吃苹果，还有一次也是吃完苹果4.7', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '苹果', 'pos': '73-75'}]}, {'act_label': 'AskHow', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '稍微减了减', 'pos': '26-31'}, {'domain': '运动', 'slot': '运动名', 'value': '饭后走路', 'pos': '54-58'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405643174",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQzMTc0OjQwNTY0MzE3NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDMyMDM=",
+      "messageId": 405643203,
+      "creationTime": 1681923516230518,
+      "text": "{'utteranceId': 4537, 'conversationId': 692, 'sequenceNo': 5, 'utterance': '中午走路20分钟的话餐二会到6.5-7，之间，我就是稍微减了减食量，主要针对晚上是少吃了一些，然后中午增加了饭后走路，我这样是好了还是？，吃一大个苹果两个小时测是6.1，这样是不是可以长期吃苹果，还有一次也是吃完苹果4.7', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '苹果', 'pos': '73-75'}]}, {'act_label': 'AskHow', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '稍微减了减', 'pos': '26-31'}, {'domain': '运动', 'slot': '运动名', 'value': '饭后走路', 'pos': '54-58'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4537, 'conversationId': 692, 'sequenceNo': 5, 'utterance': '中午走路20分钟的话餐二会到6.5-7，之间，我就是稍微减了减食量，主要针对晚上是少吃了一些，然后中午增加了饭后走路，我这样是好了还是？，吃一大个苹果两个小时测是6.1，这样是不是可以长期吃苹果，还有一次也是吃完苹果4.7', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '苹果', 'pos': '73-75'}]}, {'act_label': 'AskHow', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '稍微减了减', 'pos': '26-31'}, {'domain': '运动', 'slot': '运动名', 'value': '饭后走路', 'pos': '54-58'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405643203",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQzMjAzOjQwNTY0MzIwMw=="
+  }
+],[
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDIzMjk=",
+      "messageId": 405642329,
+      "creationTime": 1681923510144720,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4536, 'conversationId': 692, 'sequenceNo': 4, 'utterance': '餐二10以下，或者4.4-8.3之间即可', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '餐二', 'pos': '0-2'}, {'domain': '问题', 'slot': '血糖值', 'value': '10以下', 'pos': '2-6'}, {'domain': '问题', 'slot': '血糖值', 'value': '4.4-8.3之间', 'pos': '9-18'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4536, 'conversationId': 692, 'sequenceNo': 4, 'utterance': '餐二10以下，或者4.4-8.3之间即可', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '问题', 'slot': '时间', 'value': '餐二', 'pos': '0-2'}, {'domain': '问题', 'slot': '血糖值', 'value': '10以下', 'pos': '2-6'}, {'domain': '问题', 'slot': '血糖值', 'value': '4.4-8.3之间', 'pos': '9-18'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405642329",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQyMzI5OjQwNTY0MjMyOQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDIzNTQ=",
+      "messageId": 405642354,
+      "creationTime": 1681923510241058,
+      "text": "{'utteranceId': 4536, 'conversationId': 692, 'sequenceNo': 4, 'utterance': '餐二10以下，或者4.4-8.3之间即可', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '饮食', 'slot': '餐次', 'value': '餐二', 'pos': '0-2'}, {'domain': '问题', 'slot': '血糖值', 'value': '10以下', 'pos': '2-6'}, {'domain': '问题', 'slot': '血糖值', 'value': '4.4-8.3之间', 'pos': '9-18'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4536, 'conversationId': 692, 'sequenceNo': 4, 'utterance': '餐二10以下，或者4.4-8.3之间即可', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Explanation', 'slot_values': [{'domain': '饮食', 'slot': '餐次', 'value': '餐二', 'pos': '0-2'}, {'domain': '问题', 'slot': '血糖值', 'value': '10以下', 'pos': '2-6'}, {'domain': '问题', 'slot': '血糖值', 'value': '4.4-8.3之间', 'pos': '9-18'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问餐次的定义是什么？",
+        "这个建议适用于所有人吗？",
+        "请问还有其他需要注意的饮食方面吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405642354",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQyMzU0OjQwNTY0MjM1NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDMxNTc=",
+      "messageId": 405643157,
+      "creationTime": 1681923515953054,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405643157",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQzMTU3OjQwNTY0MzE1Nw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDMxNzQ=",
+      "messageId": 405643174,
+      "creationTime": 1681923516041904,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4537, 'conversationId': 692, 'sequenceNo': 5, 'utterance': '中午走路20分钟的话餐二会到6.5-7，之间，我就是稍微减了减食量，主要针对晚上是少吃了一些，然后中午增加了饭后走路，我这样是好了还是？，吃一大个苹果两个小时测是6.1，这样是不是可以长期吃苹果，还有一次也是吃完苹果4.7', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '苹果', 'pos': '73-75'}]}, {'act_label': 'AskHow', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '稍微减了减', 'pos': '26-31'}, {'domain': '运动', 'slot': '运动名', 'value': '饭后走路', 'pos': '54-58'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4537, 'conversationId': 692, 'sequenceNo': 5, 'utterance': '中午走路20分钟的话餐二会到6.5-7，之间，我就是稍微减了减食量，主要针对晚上是少吃了一些，然后中午增加了饭后走路，我这样是好了还是？，吃一大个苹果两个小时测是6.1，这样是不是可以长期吃苹果，还有一次也是吃完苹果4.7', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '苹果', 'pos': '73-75'}]}, {'act_label': 'AskHow', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '稍微减了减', 'pos': '26-31'}, {'domain': '运动', 'slot': '运动名', 'value': '饭后走路', 'pos': '54-58'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405643174",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQzMTc0OjQwNTY0MzE3NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDMyMDM=",
+      "messageId": 405643203,
+      "creationTime": 1681923516230518,
+      "text": "{'utteranceId': 4537, 'conversationId': 692, 'sequenceNo': 5, 'utterance': '中午走路20分钟的话餐二会到6.5-7，之间，我就是稍微减了减食量，主要针对晚上是少吃了一些，然后中午增加了饭后走路，我这样是好了还是？，吃一大个苹果两个小时测是6.1，这样是不是可以长期吃苹果，还有一次也是吃完苹果4.7', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '苹果', 'pos': '73-75'}]}, {'act_label': 'AskHow', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '稍微减了减', 'pos': '26-31'}, {'domain': '运动', 'slot': '运动名', 'value': '饭后走路', 'pos': '54-58'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4537, 'conversationId': 692, 'sequenceNo': 5, 'utterance': '中午走路20分钟的话餐二会到6.5-7，之间，我就是稍微减了减食量，主要针对晚上是少吃了一些，然后中午增加了饭后走路，我这样是好了还是？，吃一大个苹果两个小时测是6.1，这样是不是可以长期吃苹果，还有一次也是吃完苹果4.7', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '苹果', 'pos': '73-75'}]}, {'act_label': 'AskHow', 'slot_values': [{'domain': '饮食', 'slot': '饮食量', 'value': '稍微减了减', 'pos': '26-31'}, {'domain': '运动', 'slot': '运动名', 'value': '饭后走路', 'pos': '54-58'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问苹果的血糖指数是多少？",
+        "你能否给我一些关于饮食和运动的建议？",
+        "我应该如何控制我的饮食和运动来控制血糖？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405643203",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQzMjAzOjQwNTY0MzIwMw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDY1NTQ=",
+      "messageId": 405646554,
+      "creationTime": 1681923539991696,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405646554",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQ2NTU0OjQwNTY0NjU1NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDY1ODE=",
+      "messageId": 405646581,
+      "creationTime": 1681923540118220,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4538, 'conversationId': 692, 'sequenceNo': 6, 'utterance': '每天吃一点', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Assure', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4538, 'conversationId': 692, 'sequenceNo': 6, 'utterance': '每天吃一点', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Assure', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405646581",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQ2NTgxOjQwNTY0NjU4MQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDY1OTE=",
+      "messageId": 405646591,
+      "creationTime": 1681923540132149,
+      "text": "{'utteranceId': 4538, 'conversationId': 692, 'sequenceNo': 6, 'utterance': '每天吃一点', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Assure', 'slot_values': [{'domain': '饮食', 'slot': '饮食建议', 'value': '少量多餐', 'pos': 'm'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4538, 'conversationId': 692, 'sequenceNo': 6, 'utterance': '每天吃一点', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Assure', 'slot_values': [{'domain': '饮食', 'slot': '饮食建议', 'value': '少量多餐', 'pos': 'm'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请为我改写一下这句话的医生说话内容。",
+        "请问您能为我修改一下这个annotation中的slot_values标注内容吗？",
+        "请问您能为我解释一下act_label的含义吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405646591",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQ2NTkxOjQwNTY0NjU5MQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDgxNjg=",
+      "messageId": 405648168,
+      "creationTime": 1681923547593485,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405648168",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQ4MTY4OjQwNTY0ODE2OA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDgxOTU=",
+      "messageId": 405648195,
+      "creationTime": 1681923547715879,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4539, 'conversationId': 692, 'sequenceNo': 7, 'utterance': '这25天减重10斤，我现在还超重50斤，但是血糖基本恢复正常前十几天空腹很正常就是餐二高近几天餐二也开始慢慢降低', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减重10斤', 'pos': '4-9'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '基本信息', 'slot': '体重', 'value': '超重50斤', 'pos': '14-19'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4539, 'conversationId': 692, 'sequenceNo': 7, 'utterance': '这25天减重10斤，我现在还超重50斤，但是血糖基本恢复正常前十几天空腹很正常就是餐二高近几天餐二也开始慢慢降低', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减重10斤', 'pos': '4-9'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '基本信息', 'slot': '体重', 'value': '超重50斤', 'pos': '14-19'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405648195",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQ4MTk1OjQwNTY0ODE5NQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NDgyMDI=",
+      "messageId": 405648202,
+      "creationTime": 1681923547729502,
+      "text": "{'utteranceId': 4539, 'conversationId': 692, 'sequenceNo': 7, 'utterance': '这25天减重10斤，我现在还超重50斤，但是血糖基本恢复正常前十几天空腹很正常就是餐二高近几天餐二也开始慢慢降低', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减重10斤', 'pos': '3-8'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '基本信息', 'slot': '体重', 'value': '超重50斤', 'pos': '14-19'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4539, 'conversationId': 692, 'sequenceNo': 7, 'utterance': '这25天减重10斤，我现在还超重50斤，但是血糖基本恢复正常前十几天空腹很正常就是餐二高近几天餐二也开始慢慢降低', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减重10斤', 'pos': '3-8'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '基本信息', 'slot': '体重', 'value': '超重50斤', 'pos': '14-19'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我想知道你对我的减重计划有什么建议吗？",
+        "你能告诉我如何控制餐二的高血糖吗？",
+        "我应该如何继续保持减重的进展？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405648202",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjQ4MjAyOjQwNTY0ODIwMg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTExNzI=",
+      "messageId": 405651172,
+      "creationTime": 1681923562150941,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405651172",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjUxMTcyOjQwNTY1MTE3Mg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTExOTg=",
+      "messageId": 405651198,
+      "creationTime": 1681923562253806,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4540, 'conversationId': 692, 'sequenceNo': 8, 'utterance': '别着急，慢慢减，每周减1斤', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4540, 'conversationId': 692, 'sequenceNo': 8, 'utterance': '别着急，慢慢减，每周减1斤', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405651198",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjUxMTk4OjQwNTY1MTE5OA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTEyOTE=",
+      "messageId": 405651291,
+      "creationTime": 1681923562370099,
+      "text": "{'utteranceId': 4540, 'conversationId': 692, 'sequenceNo': 8, 'utterance': '每周减1斤，不要着急，慢慢来。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '饮食', 'slot': '减肥速度', 'value': '每周减1斤', 'pos': '时间'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4540, 'conversationId': 692, 'sequenceNo': 8, 'utterance': '每周减1斤，不要着急，慢慢来。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '饮食', 'slot': '减肥速度', 'value': '每周减1斤', 'pos': '时间'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我可以吃什么来帮助减肥吗？",
+        "你有什么建议来帮助我保持健康的饮食习惯吗？",
+        "我可以做哪些运动来帮助减肥？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405651291",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjUxMjkxOjQwNTY1MTI5MQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTIwMzY=",
+      "messageId": 405652036,
+      "creationTime": 1681923566762843,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405652036",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjUyMDM2OjQwNTY1MjAzNg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTIwNjI=",
+      "messageId": 405652062,
+      "creationTime": 1681923566905383,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4541, 'conversationId': 692, 'sequenceNo': 9, 'utterance': '大夫我能否很多年不吃药也能这样', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '不吃药', 'pos': '8-11'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4541, 'conversationId': 692, 'sequenceNo': 9, 'utterance': '大夫我能否很多年不吃药也能这样', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '不吃药', 'pos': '8-11'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405652062",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjUyMDYyOjQwNTY1MjA2Mg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTIwODU=",
+      "messageId": 405652085,
+      "creationTime": 1681923566952630,
+      "text": "{'utteranceId': 4541, 'conversationId': 692, 'sequenceNo': 9, 'utterance': '大夫，我能不能不用吃药也可以达到这种效果？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '不吃药', 'pos': '8-11'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4541, 'conversationId': 692, 'sequenceNo': 9, 'utterance': '大夫，我能不能不用吃药也可以达到这种效果？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '不吃药', 'pos': '8-11'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我不吃药会有什么影响吗？",
+        "有没有其他方法可以达到同样的效果？",
+        "如果我不吃药，需要注意些什么？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405652085",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjUyMDg1OjQwNTY1MjA4NQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTMxODE=",
+      "messageId": 405653181,
+      "creationTime": 1681923574897346,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405653181",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjUzMTgxOjQwNTY1MzE4MQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTMyMDU=",
+      "messageId": 405653205,
+      "creationTime": 1681923575005199,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4542, 'conversationId': 692, 'sequenceNo': 10, 'utterance': '可以啊', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Assure', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4542, 'conversationId': 692, 'sequenceNo': 10, 'utterance': '可以啊', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Assure', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405653205",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjUzMjA1OjQwNTY1MzIwNQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTMyMDk=",
+      "messageId": 405653209,
+      "creationTime": 1681923575021647,
+      "text": "{'utteranceId': 4542, 'conversationId': 692, 'sequenceNo': 10, 'utterance': '可以啊', 'agentRole': '医生', 'annotation': [{'act_label': 'Assure', 'slot_values': [{'domain': 'None', 'slot': 'None', 'value': 'None', 'pos': 'None'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4542, 'conversationId': 692, 'sequenceNo': 10, 'utterance': '可以啊', 'agentRole': '医生', 'annotation': [{'act_label': 'Assure', 'slot_values': [{'domain': 'None', 'slot': 'None', 'value': 'None', 'pos': 'None'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405653209",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjUzMjA5OjQwNTY1MzIwOQ=="
+  }
+],[
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTQyNjY=",
+      "messageId": 405654266,
+      "creationTime": 1681923582205635,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4543, 'conversationId': 692, 'sequenceNo': 11, 'utterance': '谢谢大夫，有没有裸奔很多年的朋友', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4543, 'conversationId': 692, 'sequenceNo': 11, 'utterance': '谢谢大夫，有没有裸奔很多年的朋友', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405654266",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjU0MjY2OjQwNTY1NDI2Ng=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTQyODI=",
+      "messageId": 405654282,
+      "creationTime": 1681923582291786,
+      "text": "{'utteranceId': 4543, 'conversationId': 692, 'sequenceNo': 11, 'utterance': '谢谢大夫，有没有一直跑步保持健康的朋友', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '运动', 'slot': '', 'value': '跑步保持健康', 'pos': ''}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4543, 'conversationId': 692, 'sequenceNo': 11, 'utterance': '谢谢大夫，有没有一直跑步保持健康的朋友', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '运动', 'slot': '', 'value': '跑步保持健康', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我也喜欢跑步，你有什么建议吗？",
+        "你觉得什么运动最适合初学者？",
+        "你有什么推荐的健身房吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405654282",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjU0MjgyOjQwNTY1NDI4Mg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTU0NzY=",
+      "messageId": 405655476,
+      "creationTime": 1681923590359231,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405655476",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjU1NDc2OjQwNTY1NTQ3Ng=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTU0ODc=",
+      "messageId": 405655487,
+      "creationTime": 1681923590419490,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4544, 'conversationId': 692, 'sequenceNo': 12, 'utterance': '不客气，也有', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4544, 'conversationId': 692, 'sequenceNo': 12, 'utterance': '不客气，也有', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405655487",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjU1NDg3OjQwNTY1NTQ4Nw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTU0OTE=",
+      "messageId": 405655491,
+      "creationTime": 1681923590430224,
+      "text": "{'utteranceId': 4544, 'conversationId': 692, 'sequenceNo': 12, 'utterance': '也有不用客气的时候。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4544, 'conversationId': 692, 'sequenceNo': 12, 'utterance': '也有不用客气的时候。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问您需要我帮忙修改其他内容吗？",
+        "您觉得这个utterance和annotation是否已经符合您的要求了？",
+        "您需要我为您添加一些关于饮食、问题、行为、治疗、运动、基本信息的slot_values吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405655491",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjU1NDkxOjQwNTY1NTQ5MQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTYzNzg=",
+      "messageId": 405656378,
+      "creationTime": 1681923596553080,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405656378",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjU2Mzc4OjQwNTY1NjM3OA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTYzODk=",
+      "messageId": 405656389,
+      "creationTime": 1681923596648678,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4545, 'conversationId': 693, 'sequenceNo': 1, 'utterance': '大夫血糖和天气变化有没有关系，最近这几天我们这边开始变冷，血糖突然就高了很多', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4545, 'conversationId': 693, 'sequenceNo': 1, 'utterance': '大夫血糖和天气变化有没有关系，最近这几天我们这边开始变冷，血糖突然就高了很多', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405656389",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjU2Mzg5OjQwNTY1NjM4OQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTY0NDA=",
+      "messageId": 405656440,
+      "creationTime": 1681923596665565,
+      "text": "{'utteranceId': 4545, 'conversationId': 693, 'sequenceNo': 1, 'utterance': '大夫，最近这几天天气开始变冷了，我发现我的血糖突然就高了很多，这两者有没有关系呢？', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '饮食', 'slot': '血糖和天气变化关系', 'value': '有', 'pos': '血糖 突然 高 多'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4545, 'conversationId': 693, 'sequenceNo': 1, 'utterance': '大夫，最近这几天天气开始变冷了，我发现我的血糖突然就高了很多，这两者有没有关系呢？', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '饮食', 'slot': '血糖和天气变化关系', 'value': '有', 'pos': '血糖 突然 高 多'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我想知道天气变化对血糖的影响有哪些。",
+        "你能告诉我如何控制血糖吗？",
+        "我应该如何调整饮食来控制血糖？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405656440",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjU2NDQwOjQwNTY1NjQ0MA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTg1NDc=",
+      "messageId": 405658547,
+      "creationTime": 1681923607764579,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405658547",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjU4NTQ3OjQwNTY1ODU0Nw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTg1Nzk=",
+      "messageId": 405658579,
+      "creationTime": 1681923607869187,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4546, 'conversationId': 693, 'sequenceNo': 2, 'utterance': '不太清楚，您要注意保暖，我知道天冷，血压会高，所以冬天血压高患者药要加量', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '注意保暖', 'pos': '7-11'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4546, 'conversationId': 693, 'sequenceNo': 2, 'utterance': '不太清楚，您要注意保暖，我知道天冷，血压会高，所以冬天血压高患者药要加量', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '注意保暖', 'pos': '7-11'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405658579",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjU4NTc5OjQwNTY1ODU3OQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NTg1OTc=",
+      "messageId": 405658597,
+      "creationTime": 1681923607884755,
+      "text": "{'utteranceId': 4546, 'conversationId': 693, 'sequenceNo': 2, 'utterance': '建议您注意保暖，因为我知道天冷时血压会高，所以冬天血压高的患者需要加量药物。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '注意保暖', 'pos': '4-8'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4546, 'conversationId': 693, 'sequenceNo': 2, 'utterance': '建议您注意保暖，因为我知道天冷时血压会高，所以冬天血压高的患者需要加量药物。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '注意保暖', 'pos': '4-8'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "Can you tell me more about the medication for high blood pressure in winter?",
+        "What other precautions should I take to manage my blood pressure during winter?",
+        "What are some common symptoms of high blood pressure during winter?"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405658597",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjU4NTk3OjQwNTY1ODU5Nw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NjA0ODQ=",
+      "messageId": 405660484,
+      "creationTime": 1681923617307699,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405660484",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjYwNDg0OjQwNTY2MDQ4NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NjA1MTU=",
+      "messageId": 405660515,
+      "creationTime": 1681923617442729,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4547, 'conversationId': 693, 'sequenceNo': 3, 'utterance': '之前餐二一直都是8-9之间，这两天突然就到12-13了，空腹也由6。0高到8。0了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '8-9之间', 'pos': '8-13'}, {'domain': '问题', 'slot': '时间', 'value': '餐二', 'pos': '2-4'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '12-13', 'pos': '21-26'}, {'domain': '问题', 'slot': '时间', 'value': '这两天', 'pos': '14-17'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '8。0', 'pos': '37-40'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '28-30'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4547, 'conversationId': 693, 'sequenceNo': 3, 'utterance': '之前餐二一直都是8-9之间，这两天突然就到12-13了，空腹也由6。0高到8。0了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '8-9之间', 'pos': '8-13'}, {'domain': '问题', 'slot': '时间', 'value': '餐二', 'pos': '2-4'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '12-13', 'pos': '21-26'}, {'domain': '问题', 'slot': '时间', 'value': '这两天', 'pos': '14-17'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '8。0', 'pos': '37-40'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '28-30'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405660515",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjYwNTE1OjQwNTY2MDUxNQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NjA1MTg=",
+      "messageId": 405660518,
+      "creationTime": 1681923617464749,
+      "text": "{'utteranceId': 4547, 'conversationId': 693, 'sequenceNo': 3, 'utterance': '之前餐二一直都是8-9之间，这两天突然就到12-13了，空腹也由6。0高到8。0了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '8-9之间', 'pos': '8-13'}, {'domain': '问题', 'slot': '时间', 'value': '餐二', 'pos': '2-4'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '12-13', 'pos': '21-26'}, {'domain': '问题', 'slot': '时间', 'value': '这两天', 'pos': '14-17'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '8。0', 'pos': '37-40'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '28-30'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4547, 'conversationId': 693, 'sequenceNo': 3, 'utterance': '之前餐二一直都是8-9之间，这两天突然就到12-13了，空腹也由6。0高到8。0了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '8-9之间', 'pos': '8-13'}, {'domain': '问题', 'slot': '时间', 'value': '餐二', 'pos': '2-4'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '12-13', 'pos': '21-26'}, {'domain': '问题', 'slot': '时间', 'value': '这两天', 'pos': '14-17'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '8。0', 'pos': '37-40'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '28-30'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问这种情况需要注意什么吗？",
+        "有什么方法可以控制血糖值吗？",
+        "这种情况需要去看医生吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405660518",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjYwNTE4OjQwNTY2MDUxOA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NjM4NjY=",
+      "messageId": 405663866,
+      "creationTime": 1681923638769410,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405663866",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjYzODY2OjQwNTY2Mzg2Ng=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NjM4NzU=",
+      "messageId": 405663875,
+      "creationTime": 1681923638863191,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4548, 'conversationId': 693, 'sequenceNo': 4, 'utterance': '把该穿的衣裳都穿上，屋里用个电暖气等措施', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '该穿的衣裳都穿上', 'pos': '1-9'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4548, 'conversationId': 693, 'sequenceNo': 4, 'utterance': '把该穿的衣裳都穿上，屋里用个电暖气等措施', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '该穿的衣裳都穿上', 'pos': '1-9'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405663875",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjYzODc1OjQwNTY2Mzg3NQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NjM5NDk=",
+      "messageId": 405663949,
+      "creationTime": 1681923638975807,
+      "text": "{'utteranceId': 4548, 'conversationId': 693, 'sequenceNo': 4, 'utterance': '把该穿的衣裳都穿上，屋里用个电暖气等措施', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '把该穿的衣裳都穿上', 'pos': '1-9'}, {'domain': 'None', 'slot': 'None', 'value': '电暖气', 'pos': '12-14'}, {'domain': 'None', 'slot': 'None', 'value': '等措施', 'pos': '15-18'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4548, 'conversationId': 693, 'sequenceNo': 4, 'utterance': '把该穿的衣裳都穿上，屋里用个电暖气等措施', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '把该穿的衣裳都穿上', 'pos': '1-9'}, {'domain': 'None', 'slot': 'None', 'value': '电暖气', 'pos': '12-14'}, {'domain': 'None', 'slot': 'None', 'value': '等措施', 'pos': '15-18'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问还有其他建议吗？",
+        "这个建议适用于哪些情况？",
+        "能否解释一下slot_values的含义？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405663949",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjYzOTQ5OjQwNTY2Mzk0OQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NjU3Nzg=",
+      "messageId": 405665778,
+      "creationTime": 1681923652311931,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405665778",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjY1Nzc4OjQwNTY2NTc3OA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NjU3OTU=",
+      "messageId": 405665795,
+      "creationTime": 1681923652452774,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4549, 'conversationId': 693, 'sequenceNo': 5, 'utterance': '这样啊', 'agentRole': 'User', 'annotation': [{'act_label': 'Accept', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4549, 'conversationId': 693, 'sequenceNo': 5, 'utterance': '这样啊', 'agentRole': 'User', 'annotation': [{'act_label': 'Accept', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405665795",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjY1Nzk1OjQwNTY2NTc5NQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NjU4MDM=",
+      "messageId": 405665803,
+      "creationTime": 1681923652467320,
+      "text": "{'utteranceId': 4549, 'conversationId': 693, 'sequenceNo': 5, 'utterance': '好的', 'agentRole': 'User', 'annotation': [{'act_label': 'Accept', 'slot_values': [{'domain': 'None', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4549, 'conversationId': 693, 'sequenceNo': 5, 'utterance': '好的', 'agentRole': 'User', 'annotation': [{'act_label': 'Accept', 'slot_values': [{'domain': 'None', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405665803",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjY1ODAzOjQwNTY2NTgwMw=="
+  }
+],[
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NjY4NDY=",
+      "messageId": 405666846,
+      "creationTime": 1681923658996371,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4550, 'conversationId': 693, 'sequenceNo': 6, 'utterance': '所以冬天也要吃点热量高的，比如羊肉，牛肉等，来抵御寒冷', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '热量高的', 'pos': '8-12'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4550, 'conversationId': 693, 'sequenceNo': 6, 'utterance': '所以冬天也要吃点热量高的，比如羊肉，牛肉等，来抵御寒冷', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '热量高的', 'pos': '8-12'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405666846",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjY2ODQ2OjQwNTY2Njg0Ng=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NjY4NjA=",
+      "messageId": 405666860,
+      "creationTime": 1681923659036805,
+      "text": "{'utteranceId': 4550, 'conversationId': 693, 'sequenceNo': 6, 'utterance': '冬天也要多吃一些热量高的食物，比如羊肉、牛肉等，可以帮助抵御寒冷。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '热量高的食物', 'pos': '8-15'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4550, 'conversationId': 693, 'sequenceNo': 6, 'utterance': '冬天也要多吃一些热量高的食物，比如羊肉、牛肉等，可以帮助抵御寒冷。', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '饮食', 'slot': '饮食名', 'value': '热量高的食物', 'pos': '8-15'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问还有哪些食物可以帮助抵御寒冷？",
+        "除了饮食，还有哪些方法可以抵御寒冷？",
+        "请问有哪些食物可以帮助增强免疫力？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405666860",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjY2ODYwOjQwNTY2Njg2MA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Njg3NTQ=",
+      "messageId": 405668754,
+      "creationTime": 1681923668897144,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405668754",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjY4NzU0OjQwNTY2ODc1NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Njg3ODE=",
+      "messageId": 405668781,
+      "creationTime": 1681923669020950,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4551, 'conversationId': 693, 'sequenceNo': 7, 'utterance': '谢谢啊', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4551, 'conversationId': 693, 'sequenceNo': 7, 'utterance': '谢谢啊', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405668781",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjY4NzgxOjQwNTY2ODc4MQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Njg3ODc=",
+      "messageId": 405668787,
+      "creationTime": 1681923669037283,
+      "text": "{'utteranceId': 4551, 'conversationId': 693, 'sequenceNo': 7, 'utterance': '谢谢你', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '你', 'pos': ''}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4551, 'conversationId': 693, 'sequenceNo': 7, 'utterance': '谢谢你', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '你', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我有一个关于饮食的问题，你能帮我吗？",
+        "我想知道如何进行治疗，你能给我一些建议吗？",
+        "你有什么关于运动的建议吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405668787",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjY4Nzg3OjQwNTY2ODc4Nw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Njk3MTY=",
+      "messageId": 405669716,
+      "creationTime": 1681923674586777,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405669716",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjY5NzE2OjQwNTY2OTcxNg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Njk3Mjc=",
+      "messageId": 405669727,
+      "creationTime": 1681923674650995,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4552, 'conversationId': 694, 'sequenceNo': 1, 'utterance': '我查出来也一个多月了，空腹现在5.9，餐后5.6左右，这个是不是可以减药了？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.9', 'pos': '15-18'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '11-13'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.6', 'pos': '21-24'}, {'domain': '问题', 'slot': '时间', 'value': '餐后', 'pos': '19-21'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减药', 'pos': '34-36'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4552, 'conversationId': 694, 'sequenceNo': 1, 'utterance': '我查出来也一个多月了，空腹现在5.9，餐后5.6左右，这个是不是可以减药了？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.9', 'pos': '15-18'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '11-13'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.6', 'pos': '21-24'}, {'domain': '问题', 'slot': '时间', 'value': '餐后', 'pos': '19-21'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减药', 'pos': '34-36'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405669727",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjY5NzI3OjQwNTY2OTcyNw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Njk3NTQ=",
+      "messageId": 405669754,
+      "creationTime": 1681923674756557,
+      "text": "{'utteranceId': 4552, 'conversationId': 694, 'sequenceNo': 1, 'utterance': '我查出来也一个多月了，空腹现在5.9，餐后5.6左右，这个是不是可以减药了？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.9', 'pos': '15-18'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '11-13'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.6', 'pos': '21-24'}, {'domain': '问题', 'slot': '时间', 'value': '餐后', 'pos': '19-21'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减药', 'pos': '34-36'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4552, 'conversationId': 694, 'sequenceNo': 1, 'utterance': '我查出来也一个多月了，空腹现在5.9，餐后5.6左右，这个是不是可以减药了？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.9', 'pos': '15-18'}, {'domain': '问题', 'slot': '时间', 'value': '空腹', 'pos': '11-13'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.6', 'pos': '21-24'}, {'domain': '问题', 'slot': '时间', 'value': '餐后', 'pos': '19-21'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减药', 'pos': '34-36'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我应该怎么减药？",
+        "我应该注意什么饮食？",
+        "我应该怎么控制血糖？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405669754",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjY5NzU0OjQwNTY2OTc1NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzExNDU=",
+      "messageId": 405671145,
+      "creationTime": 1681923682745099,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405671145",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjcxMTQ1OjQwNTY3MTE0NQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzExNTk=",
+      "messageId": 405671159,
+      "creationTime": 1681923682833255,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4553, 'conversationId': 694, 'sequenceNo': 2, 'utterance': '您控制很好，可以在医生的指导下，逐步减量', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '逐步减量', 'pos': '16-20'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4553, 'conversationId': 694, 'sequenceNo': 2, 'utterance': '您控制很好，可以在医生的指导下，逐步减量', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '逐步减量', 'pos': '16-20'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405671159",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjcxMTU5OjQwNTY3MTE1OQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzExNzE=",
+      "messageId": 405671171,
+      "creationTime": 1681923682855939,
+      "text": "{'utteranceId': 4553, 'conversationId': 694, 'sequenceNo': 2, 'utterance': '您控制得很好，可以在医生的指导下逐步减少用药量', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '逐步减少用药量', 'pos': '16-20'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4553, 'conversationId': 694, 'sequenceNo': 2, 'utterance': '您控制得很好，可以在医生的指导下逐步减少用药量', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '逐步减少用药量', 'pos': '16-20'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问医生还有什么建议吗？",
+        "我可以在减少用药量的同时注意什么？",
+        "您能否告诉我如何更好地控制用药量？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405671171",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjcxMTcxOjQwNTY3MTE3MQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzIyOTg=",
+      "messageId": 405672298,
+      "creationTime": 1681923690589661,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405672298",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjcyMjk4OjQwNTY3MjI5OA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzIzMTU=",
+      "messageId": 405672315,
+      "creationTime": 1681923690696625,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4554, 'conversationId': 694, 'sequenceNo': 3, 'utterance': '我餐后一直比空腹低，就算我这餐吃了炸的东西或者吃汉堡可乐这样的也是5.6左右，我现在吃正常饮食没有控制，就是吃的少，我刚查出来的时候餐后25，我一直是吃药没打过针', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '25', 'pos': '68-70'}, {'domain': '问题', 'slot': '时间', 'value': '餐后', 'pos': '1-3'}, {'domain': '问题', 'slot': '时间', 'value': '刚查出来的时候', 'pos': '59-66'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4554, 'conversationId': 694, 'sequenceNo': 3, 'utterance': '我餐后一直比空腹低，就算我这餐吃了炸的东西或者吃汉堡可乐这样的也是5.6左右，我现在吃正常饮食没有控制，就是吃的少，我刚查出来的时候餐后25，我一直是吃药没打过针', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '25', 'pos': '68-70'}, {'domain': '问题', 'slot': '时间', 'value': '餐后', 'pos': '1-3'}, {'domain': '问题', 'slot': '时间', 'value': '刚查出来的时候', 'pos': '59-66'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405672315",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjcyMzE1OjQwNTY3MjMxNQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzIzMzI=",
+      "messageId": 405672332,
+      "creationTime": 1681923690766157,
+      "text": "{'utteranceId': 4554, 'conversationId': 694, 'sequenceNo': 3, 'utterance': '我餐后一直比空腹低，就算我这餐吃了炸的东西或者吃汉堡可乐这样的也是5.6左右，我现在吃正常饮食没有控制，就是吃的少，我刚查出来的时候餐后25，我一直是吃药没打过针', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '25', 'pos': '59-61'}, {'domain': '问题', 'slot': '时间', 'value': '餐后', 'pos': '1-3'}, {'domain': '问题', 'slot': '时间', 'value': '刚查出来的时候', 'pos': '52-59'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4554, 'conversationId': 694, 'sequenceNo': 3, 'utterance': '我餐后一直比空腹低，就算我这餐吃了炸的东西或者吃汉堡可乐这样的也是5.6左右，我现在吃正常饮食没有控制，就是吃的少，我刚查出来的时候餐后25，我一直是吃药没打过针', 'agentRole': 'User', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '25', 'pos': '59-61'}, {'domain': '问题', 'slot': '时间', 'value': '餐后', 'pos': '1-3'}, {'domain': '问题', 'slot': '时间', 'value': '刚查出来的时候', 'pos': '52-59'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我可以向医生咨询如何控制血糖水平吗？",
+        "你能告诉我如何更好地控制饮食吗？",
+        "我应该如何调整我的饮食以控制血糖水平？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405672332",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjcyMzMyOjQwNTY3MjMzMg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzUxNDM=",
+      "messageId": 405675143,
+      "creationTime": 1681923709693629,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405675143",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc1MTQzOjQwNTY3NTE0Mw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzUxNTg=",
+      "messageId": 405675158,
+      "creationTime": 1681923709775852,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4555, 'conversationId': 694, 'sequenceNo': 4, 'utterance': '效果不错', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4555, 'conversationId': 694, 'sequenceNo': 4, 'utterance': '效果不错', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405675158",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc1MTU4OjQwNTY3NTE1OA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzUxNjU=",
+      "messageId": 405675165,
+      "creationTime": 1681923709791000,
+      "text": "{'utteranceId': 4555, 'conversationId': 694, 'sequenceNo': 4, 'utterance': '效果还不错啊，有哪些方面比较显著呢？', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4555, 'conversationId': 694, 'sequenceNo': 4, 'utterance': '效果还不错啊，有哪些方面比较显著呢？', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问有哪些方面的效果比较显著？",
+        "您认为这种效果能持续多久呢？",
+        "您有什么建议可以让效果更好吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405675165",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc1MTY1OjQwNTY3NTE2NQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzYzMjI=",
+      "messageId": 405676322,
+      "creationTime": 1681923716870863,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405676322",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc2MzIyOjQwNTY3NjMyMg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzYzMjY=",
+      "messageId": 405676326,
+      "creationTime": 1681923716918538,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4556, 'conversationId': 694, 'sequenceNo': 5, 'utterance': '吃了一个星期的药血糖就降下来了就一直是6.多，这个月开始5.多了，我想是不是要减药了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '6.多', 'pos': '19-22'}, {'domain': '行为', 'slot': '行为名', 'value': '吃了一个星期的药血糖', 'pos': '0-10'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.多', 'pos': '28-31'}, {'domain': '问题', 'slot': '时间', 'value': '这个月', 'pos': '23-26'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4556, 'conversationId': 694, 'sequenceNo': 5, 'utterance': '吃了一个星期的药血糖就降下来了就一直是6.多，这个月开始5.多了，我想是不是要减药了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '6.多', 'pos': '19-22'}, {'domain': '行为', 'slot': '行为名', 'value': '吃了一个星期的药血糖', 'pos': '0-10'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.多', 'pos': '28-31'}, {'domain': '问题', 'slot': '时间', 'value': '这个月', 'pos': '23-26'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405676326",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc2MzI2OjQwNTY3NjMyNg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzYzMzI=",
+      "messageId": 405676332,
+      "creationTime": 1681923716946829,
+      "text": "{'utteranceId': 4556, 'conversationId': 694, 'sequenceNo': 5, 'utterance': '吃了一个星期的药血糖就降下来了就一直是6.多，这个月开始5.多了，我想是不是要减药了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '6.多', 'pos': '19-22'}, {'domain': '行为', 'slot': '行为名', 'value': '吃药', 'pos': '0-2'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.多', 'pos': '28-31'}, {'domain': '问题', 'slot': '时间', 'value': '这个月', 'pos': '23-26'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4556, 'conversationId': 694, 'sequenceNo': 5, 'utterance': '吃了一个星期的药血糖就降下来了就一直是6.多，这个月开始5.多了，我想是不是要减药了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '6.多', 'pos': '19-22'}, {'domain': '行为', 'slot': '行为名', 'value': '吃药', 'pos': '0-2'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.多', 'pos': '28-31'}, {'domain': '问题', 'slot': '时间', 'value': '这个月', 'pos': '23-26'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405676332",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc2MzMyOjQwNTY3NjMzMg=="
+  }
+],[
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzUxNTg=",
+      "messageId": 405675158,
+      "creationTime": 1681923709775852,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4555, 'conversationId': 694, 'sequenceNo': 4, 'utterance': '效果不错', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4555, 'conversationId': 694, 'sequenceNo': 4, 'utterance': '效果不错', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405675158",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc1MTU4OjQwNTY3NTE1OA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzUxNjU=",
+      "messageId": 405675165,
+      "creationTime": 1681923709791000,
+      "text": "{'utteranceId': 4555, 'conversationId': 694, 'sequenceNo': 4, 'utterance': '效果还不错啊，有哪些方面比较显著呢？', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4555, 'conversationId': 694, 'sequenceNo': 4, 'utterance': '效果还不错啊，有哪些方面比较显著呢？', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Chitchat', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问有哪些方面的效果比较显著？",
+        "您认为这种效果能持续多久呢？",
+        "您有什么建议可以让效果更好吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405675165",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc1MTY1OjQwNTY3NTE2NQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzYzMjI=",
+      "messageId": 405676322,
+      "creationTime": 1681923716870863,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405676322",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc2MzIyOjQwNTY3NjMyMg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzYzMjY=",
+      "messageId": 405676326,
+      "creationTime": 1681923716918538,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4556, 'conversationId': 694, 'sequenceNo': 5, 'utterance': '吃了一个星期的药血糖就降下来了就一直是6.多，这个月开始5.多了，我想是不是要减药了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '6.多', 'pos': '19-22'}, {'domain': '行为', 'slot': '行为名', 'value': '吃了一个星期的药血糖', 'pos': '0-10'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.多', 'pos': '28-31'}, {'domain': '问题', 'slot': '时间', 'value': '这个月', 'pos': '23-26'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4556, 'conversationId': 694, 'sequenceNo': 5, 'utterance': '吃了一个星期的药血糖就降下来了就一直是6.多，这个月开始5.多了，我想是不是要减药了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '6.多', 'pos': '19-22'}, {'domain': '行为', 'slot': '行为名', 'value': '吃了一个星期的药血糖', 'pos': '0-10'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.多', 'pos': '28-31'}, {'domain': '问题', 'slot': '时间', 'value': '这个月', 'pos': '23-26'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405676326",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc2MzI2OjQwNTY3NjMyNg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2NzYzMzI=",
+      "messageId": 405676332,
+      "creationTime": 1681923716946829,
+      "text": "{'utteranceId': 4556, 'conversationId': 694, 'sequenceNo': 5, 'utterance': '吃了一个星期的药血糖就降下来了就一直是6.多，这个月开始5.多了，我想是不是要减药了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '6.多', 'pos': '19-22'}, {'domain': '行为', 'slot': '行为名', 'value': '吃药', 'pos': '0-2'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.多', 'pos': '28-31'}, {'domain': '问题', 'slot': '时间', 'value': '这个月', 'pos': '23-26'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4556, 'conversationId': 694, 'sequenceNo': 5, 'utterance': '吃了一个星期的药血糖就降下来了就一直是6.多，这个月开始5.多了，我想是不是要减药了', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '6.多', 'pos': '19-22'}, {'domain': '行为', 'slot': '行为名', 'value': '吃药', 'pos': '0-2'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '5.多', 'pos': '28-31'}, {'domain': '问题', 'slot': '时间', 'value': '这个月', 'pos': '23-26'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我应该怎么减药呢？",
+        "药物对血糖的影响是什么？",
+        "有没有其他方法可以控制血糖？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405676332",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc2MzMyOjQwNTY3NjMzMg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Nzk0ODQ=",
+      "messageId": 405679484,
+      "creationTime": 1681923733681715,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405679484",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc5NDg0OjQwNTY3OTQ4NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Nzk1MjE=",
+      "messageId": 405679521,
+      "creationTime": 1681923733879164,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4557, 'conversationId': 694, 'sequenceNo': 6, 'utterance': '可以慢慢减', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '慢慢减', 'pos': '8-11'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4557, 'conversationId': 694, 'sequenceNo': 6, 'utterance': '可以慢慢减', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '慢慢减', 'pos': '8-11'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405679521",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc5NTIxOjQwNTY3OTUyMQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2Nzk1NDM=",
+      "messageId": 405679543,
+      "creationTime": 1681923733944548,
+      "text": "{'utteranceId': 4557, 'conversationId': 694, 'sequenceNo': 6, 'utterance': '可以逐渐降低', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '逐渐降低', 'pos': '8-11'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4557, 'conversationId': 694, 'sequenceNo': 6, 'utterance': '可以逐渐降低', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '逐渐降低', 'pos': '8-11'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问这个建议是针对什么方面的？",
+        "有没有其他的建议可以提供？",
+        "这个建议需要多久才能见效？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405679543",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njc5NTQzOjQwNTY3OTU0Mw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2ODA5OTA=",
+      "messageId": 405680990,
+      "creationTime": 1681923740924757,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405680990",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjgwOTkwOjQwNTY4MDk5MA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2ODEwMDI=",
+      "messageId": 405681002,
+      "creationTime": 1681923741005586,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4558, 'conversationId': 694, 'sequenceNo': 7, 'utterance': '我现在是随餐一粒格华止，早上随餐2粒达美康缓释片，把缓绎片减一粒还是把格华止减一顿呢？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '格华止', 'pos': '8-11'}, {'domain': '治疗', 'slot': '时间', 'value': '随餐', 'pos': '4-6'}, {'domain': '治疗', 'slot': '用药量', 'value': '一粒', 'pos': '6-8'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '达美康缓释片', 'pos': '18-24'}, {'domain': '治疗', 'slot': '用药量', 'value': '2粒', 'pos': '16-18'}, {'domain': '治疗', 'slot': '时间', 'value': '早上随餐', 'pos': '12-16'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '把缓绎片减一粒', 'pos': '25-32'}, {'domain': '行为', 'slot': '行为名', 'value': '把格华止减一顿', 'pos': '34-41'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4558, 'conversationId': 694, 'sequenceNo': 7, 'utterance': '我现在是随餐一粒格华止，早上随餐2粒达美康缓释片，把缓绎片减一粒还是把格华止减一顿呢？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '格华止', 'pos': '8-11'}, {'domain': '治疗', 'slot': '时间', 'value': '随餐', 'pos': '4-6'}, {'domain': '治疗', 'slot': '用药量', 'value': '一粒', 'pos': '6-8'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '达美康缓释片', 'pos': '18-24'}, {'domain': '治疗', 'slot': '用药量', 'value': '2粒', 'pos': '16-18'}, {'domain': '治疗', 'slot': '时间', 'value': '早上随餐', 'pos': '12-16'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '把缓绎片减一粒', 'pos': '25-32'}, {'domain': '行为', 'slot': '行为名', 'value': '把格华止减一顿', 'pos': '34-41'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405681002",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjgxMDAyOjQwNTY4MTAwMg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2ODEwMDg=",
+      "messageId": 405681008,
+      "creationTime": 1681923741016049,
+      "text": "{'utteranceId': 4558, 'conversationId': 694, 'sequenceNo': 7, 'utterance': '我现在是随餐一粒格华止，早上随餐2粒达美康缓释片，把缓绎片减一粒还是把格华止减一顿呢？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '格华止', 'pos': '8-11'}, {'domain': '治疗', 'slot': '时间', 'value': '随餐', 'pos': '4-6'}, {'domain': '治疗', 'slot': '用药量', 'value': '一粒', 'pos': '6-8'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '达美康缓释片', 'pos': '18-24'}, {'domain': '治疗', 'slot': '用药量', 'value': '2粒', 'pos': '16-18'}, {'domain': '治疗', 'slot': '时间', 'value': '早上随餐', 'pos': '12-16'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减缓释片一粒', 'pos': '25-32'}, {'domain': '行为', 'slot': '行为名', 'value': '减格华止一顿', 'pos': '34-41'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4558, 'conversationId': 694, 'sequenceNo': 7, 'utterance': '我现在是随餐一粒格华止，早上随餐2粒达美康缓释片，把缓绎片减一粒还是把格华止减一顿呢？', 'agentRole': 'User', 'annotation': [{'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '格华止', 'pos': '8-11'}, {'domain': '治疗', 'slot': '时间', 'value': '随餐', 'pos': '4-6'}, {'domain': '治疗', 'slot': '用药量', 'value': '一粒', 'pos': '6-8'}]}, {'act_label': 'Inform', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '达美康缓释片', 'pos': '18-24'}, {'domain': '治疗', 'slot': '用药量', 'value': '2粒', 'pos': '16-18'}, {'domain': '治疗', 'slot': '时间', 'value': '早上随餐', 'pos': '12-16'}]}, {'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '行为名', 'value': '减缓释片一粒', 'pos': '25-32'}, {'domain': '行为', 'slot': '行为名', 'value': '减格华止一顿', 'pos': '34-41'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问减少哪种药物对我的健康更有益？",
+        "我可以在什么时候减少药物的用量？",
+        "你能否告诉我减少药物用量的注意事项？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405681008",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjgxMDA4OjQwNTY4MTAwOA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2ODMyMzU=",
+      "messageId": 405683235,
+      "creationTime": 1681923754806847,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405683235",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjgzMjM1OjQwNTY4MzIzNQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2ODMyNDk=",
+      "messageId": 405683249,
+      "creationTime": 1681923754899095,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4559, 'conversationId': 694, 'sequenceNo': 8, 'utterance': '格华止减', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '格华止', 'pos': '0-4'}, {'domain': '治疗', 'slot': '用药量', 'value': '减', 'pos': '3-4'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4559, 'conversationId': 694, 'sequenceNo': 8, 'utterance': '格华止减', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '格华止', 'pos': '0-4'}, {'domain': '治疗', 'slot': '用药量', 'value': '减', 'pos': '3-4'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405683249",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjgzMjQ5OjQwNTY4MzI0OQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2ODMyODc=",
+      "messageId": 405683287,
+      "creationTime": 1681923755078725,
+      "text": "{'utteranceId': 4559, 'conversationId': 694, 'sequenceNo': 8, 'utterance': '格华止减', 'agentRole': '医生', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '格华止', 'pos': '0-3'}, {'domain': '治疗', 'slot': '用药量', 'value': '减', 'pos': '3-4'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4559, 'conversationId': 694, 'sequenceNo': 8, 'utterance': '格华止减', 'agentRole': '医生', 'annotation': [{'act_label': 'Advice', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '格华止', 'pos': '0-3'}, {'domain': '治疗', 'slot': '用药量', 'value': '减', 'pos': '3-4'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "请问这种药品有什么副作用吗？",
+        "这种药品需要多久才能见效？",
+        "请问这种药品需要多久服用？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405683287",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjgzMjg3OjQwNTY4MzI4Nw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2ODM4OTU=",
+      "messageId": 405683895,
+      "creationTime": 1681923759229512,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405683895",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjgzODk1OjQwNTY4Mzg5NQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2ODM5MTI=",
+      "messageId": 405683912,
+      "creationTime": 1681923759337326,
+      "text": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4560, 'conversationId': 694, 'sequenceNo': 9, 'utterance': '好的，早餐的减了？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '时间', 'value': '早餐的', 'pos': '3-6'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的患者说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4560, 'conversationId': 694, 'sequenceNo': 9, 'utterance': '好的，早餐的减了？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '时间', 'value': '早餐的', 'pos': '3-6'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405683912",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjgzOTEyOjQwNTY4MzkxMg=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2ODM5MTc=",
+      "messageId": 405683917,
+      "creationTime": 1681923759350009,
+      "text": "{'utteranceId': 4560, 'conversationId': 694, 'sequenceNo': 9, 'utterance': '好的，我减少了早餐的摄入量？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '时间', 'value': '早餐的', 'pos': '3-6'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "{'utteranceId': 4560, 'conversationId': 694, 'sequenceNo': 9, 'utterance': '好的，我减少了早餐的摄入量？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '行为', 'slot': '时间', 'value': '早餐的', 'pos': '3-6'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [
+        "我可以吃什么早餐？",
+        "我可以在早餐中减少哪些食物？",
+        "你能告诉我如何减少早餐的摄入量吗？"
+      ],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405683917",
+    "id": "TWVzc2FnZUVkZ2U6NDA1NjgzOTE3OjQwNTY4MzkxNw=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2ODUwMzU=",
+      "messageId": 405685035,
+      "creationTime": 1681923767018442,
+      "text": "",
+      "author": "chat_break",
+      "linkifiedText": "",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405685035",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njg1MDM1OjQwNTY4NTAzNQ=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2ODUwNTQ=",
+      "messageId": 405685054,
+      "creationTime": 1681923767123161,
+      "text": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4561, 'conversationId': 694, 'sequenceNo': 10, 'utterance': '看你早餐后血糖低还是午餐后', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '低', 'pos': '7-8'}, {'domain': '问题', 'slot': '时间', 'value': '早餐后', 'pos': '2-5'}, {'domain': '问题', 'slot': '时间', 'value': '午餐后', 'pos': '10-13'}]}]}",
+      "author": "human",
+      "linkifiedText": "你是一个改写和标注专家，改写utterance的医生说话内容，并用中文修改annotation中slot_values标注内容，但是不改变act_label内容。domain可以为'饮食'、'问题'、'行为'、'治疗'、'运动'、'基本信息'、'None'。只输出json结果，不用解释。\n{'utteranceId': 4561, 'conversationId': 694, 'sequenceNo': 10, 'utterance': '看你早餐后血糖低还是午餐后', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '低', 'pos': '7-8'}, {'domain': '问题', 'slot': '时间', 'value': '早餐后', 'pos': '2-5'}, {'domain': '问题', 'slot': '时间', 'value': '午餐后', 'pos': '10-13'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405685054",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njg1MDU0OjQwNTY4NTA1NA=="
+  },
+  {
+    "node": {
+      "id": "TWVzc2FnZTo0MDU2ODUxMDk=",
+      "messageId": 405685109,
+      "creationTime": 1681923767174674,
+      "text": "把utterance中的“早餐后”改为“午餐前”，annotation中的“时间”slot_values的“早餐后”改为“午餐前”：\n\n{'utteranceId': 4561, 'conversationId': 694, 'sequenceNo': 10, 'utterance': '看你午餐前血糖低还是午餐后', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '低', 'pos': '7-8'}, {'domain': '问题', 'slot': '时间', 'value': '午餐前', 'pos': '2-5'}, {'domain': '问题', 'slot': '时间', 'value': '午餐后', 'pos': '10-13'}]}]}",
+      "author": "chinchilla",
+      "linkifiedText": "把utterance中的“早餐后”改为“午餐前”，annotation中的“时间”slot_values的“早餐后”改为“午餐前”：\n\n{'utteranceId': 4561, 'conversationId': 694, 'sequenceNo': 10, 'utterance': '看你午餐前血糖低还是午餐后', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '血糖值', 'value': '低', 'pos': '7-8'}, {'domain': '问题', 'slot': '时间', 'value': '午餐前', 'pos': '2-5'}, {'domain': '问题', 'slot': '时间', 'value': '午餐后', 'pos': '10-13'}]}]}",
+      "state": "complete",
+      "contentType": "text_markdown",
+      "suggestedReplies": [],
+      "vote": null,
+      "voteReason": null,
+      "chat": {
+        "chatId": 5434399,
+        "defaultBotNickname": "chinchilla",
+        "id": "Q2hhdDo1NDM0Mzk5"
+      },
+      "__isNode": "Message",
+      "__typename": "Message"
+    },
+    "cursor": "405685109",
+    "id": "TWVzc2FnZUVkZ2U6NDA1Njg1MTA5OjQwNTY4NTEwOQ=="
+  }
+]

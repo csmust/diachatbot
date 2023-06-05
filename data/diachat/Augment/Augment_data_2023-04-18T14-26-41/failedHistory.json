@@ -1,0 +1,14 @@
+{'utteranceId': 2881, 'conversationId': 418, 'sequenceNo': 7, 'utterance': '肾有问题吗？要吃什么药吗？，c肽，和糖化有问题吗？，肾有问题吗？要吃什么药吗？c肽，和糖化有问题吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状部位', 'value': '肾', 'pos': '0-1'}, {'domain': '治疗', 'slot': '检查项', 'value': 'c肽', 'pos': '14-16'}, {'domain': '治疗', 'slot': '检查项', 'value': '糖化', 'pos': '18-20'}]}, {'act_label': 'AskFor', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '?', 'pos': ''}]}]}
+{'utteranceId': 2881, 'conversationId': 418, 'sequenceNo': 7, 'utterance': '肾有问题吗？要吃什么药吗？，c肽，和糖化有问题吗？，肾有问题吗？要吃什么药吗？c肽，和糖化有问题吗？', 'agentRole': 'User', 'annotation': [{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状部位', 'value': '肾', 'pos': '0-1'}, {'domain': '治疗', 'slot': '检查项', 'value': 'c肽', 'pos': '14-16'}, {'domain': '治疗', 'slot': '检查项', 'value': '糖化', 'pos': '18-20'}]}, {'act_label': 'AskFor', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '?', 'pos': ''}]}]}
+
+改写后：
+'肾有问题吗？需要服用何种药物？同时，c肽和糖化有问题吗？肾方面有什么建议吗？'
+
+修改后的annotation：
+[{'act_label': 'AskForSure', 'slot_values': [{'domain': '问题', 'slot': '症状部位', 'value': '肾', 'pos': '0-1'}, {'domain': '治疗', 'slot': '检查项', 'value': 'c肽', 'pos': '14-16'}, {'domain': '治疗', 'slot': '检查项', 'value': '糖化', 'pos': '18-20'}]}, {'act_label': 'AskFor', 'slot_values': [{'domain': '治疗', 'slot': '药品', 'value': '?', 'pos': ''}]}]
+{'utteranceId': 2884, 'conversationId': 418, 'sequenceNo': 10, 'utterance': '有问题，就是有尿蛋白，肾不好的初期，也可能累的', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Deny', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Explanation', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '尿蛋白', 'pos': '7-10'}, {'domain': '问题', 'slot': '疾病', 'value': '肾不好的初期', 'pos': '11-17'}]}]}
+{'utteranceId': 2884, 'conversationId': 418, 'sequenceNo': 10, 'utterance': '有问题，就是有尿蛋白，肾不好的初期，也可能累的', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Deny', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Explanation', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '尿蛋白', 'pos': '7-10'}, {'domain': '问题', 'slot': '疾病', 'value': '肾不好的初期', 'pos': '11-17'}]}]}
+
+改写后：有一个问题，就是尿蛋白含量高，可能是肾功能的早期衰退，也可能是过度疲劳。
+
+修改后的标注：{'utteranceId': 2884, 'conversationId': 418, 'sequenceNo': 10, 'utterance': '有问题，就是有尿蛋白，肾不好的初期，也可能累的', 'agentRole': 'Doctor', 'annotation': [{'act_label': 'Deny', 'slot_values': [{'domain': '', 'slot': '', 'value': '', 'pos': ''}]}, {'act_label': 'Explanation', 'slot_values': [{'domain': '问题', 'slot': '症状', 'value': '尿蛋白含量高', 'pos': '7-10'}, {'domain': '问题', 'slot': '疾病', 'value': '肾功能的早期衰退', 'pos': '11-17'}]}]}

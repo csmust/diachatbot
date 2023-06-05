@@ -251,7 +251,7 @@ class Intent_Dec(nn.Module):
                             batch_first=True,
                             num_layers=1)
         self.device = device
-        self.dropouts = clones(nn.Dropout(DROPOUT),2)
+        self.dropouts = clones(nn.Dropout(DROPOUTINTENT),2)
     def forward(self, x, hs, real_len):
         """
         x:
@@ -307,10 +307,10 @@ class JointBERTCRFLSTM(nn.Module):
         self.intent_weight = intent_weight if intent_weight is not None else torch.tensor([1.] * intent_dim)
         self.max_seq_len = max_sen_len + 2
         self.max_context_len = max_context_len # 这个不用加
-        print(model_config['pretrained_weights'])
+        # print(model_config['pretrained_weights'])
         self.bert = BertModel.from_pretrained( model_config['pretrained_weights'])
-        print("bert", self.bert)
-        print(self.bert.config)
+        # print("bert", self.bert)
+        # print(self.bert.config)
         # self.sublayers_1 = SublayerConnection(size=self.bert.config.hidden_size,dropout=0.1 )  #子层为intent和slot 的 ENCODER 和 decoder
         if USELSTM:
             self.enc_i = Intent_Enc(in_size= self.bert.config.hidden_size , lstm_hidden_size = LSTM_HIDDEN_SIZE ) #  LSTM_HIDDEN_SIZE=512
@@ -406,7 +406,7 @@ class JointBERTCRFLSTM(nn.Module):
         '''
         sequence_output = torch.cat((bert_sequence_output,bimodel_slot_output),dim=-1) # 8 51 1024
         pooled_output = torch.cat((bert_pooled_output,bimodel_intent_output),dim=-1) # 8 1024
-        pass
+        
         #slot相关
         
 
