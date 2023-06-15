@@ -305,7 +305,7 @@ class JointBERTCRFLSTM(nn.Module):
         self.hidden_units = model_config['hidden_units']   # hidden_units = 768*2
         self.batch_size = model_config['batch_size']
         self.intent_weight = intent_weight if intent_weight is not None else torch.tensor([1.] * intent_dim)
-        self.max_seq_len = max_sen_len + 2
+        self.max_seq_len = 60+2
         self.max_context_len = max_context_len # 这个不用加
         # print(model_config['pretrained_weights'])
         self.bert = BertModel.from_pretrained( model_config['pretrained_weights'])
@@ -544,14 +544,14 @@ if __name__ == "__main__":
     # print(os.path.abspath(__file__))
     # print(os.getcwd())
     cur_dir = os.path.dirname(os.path.abspath(__file__))
-    config_file = os.path.join(cur_dir, 'configs/crosswoz_all_context.json')
+    config_file = os.path.join(cur_dir, 'config/all_context.json')
     # print(config_file)
     conf = json.load(open(config_file))
     model_conf = conf["model"]
     # print(model_conf)
-    device="cuda:0" 
+    device="cuda:1" 
     model = JointBERTCRFLSTM(model_conf, device, 470, 58 ,51,60)
-    model.to("cuda:0" )
+    model.to("cuda:1" )
     # summary(model(),(8,51))
 
     # TODO crf这个包 不能以0打头

@@ -12,7 +12,7 @@ import zipfile
 import torch
 from transformers import AdamW, get_linear_schedule_with_warmup
 from dataloader import Dataloader
-
+from jointBERT_CRF import JointBERTCRFLSTM
 from datetime import datetime
 from convlab2.nlu.mylogger import Logger
 

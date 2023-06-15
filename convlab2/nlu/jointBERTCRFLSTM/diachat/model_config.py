@@ -6,4 +6,5 @@ LSTM_HIDDEN_SIZE = 512
 USE_LOSSGATE = False
 DROPOUT=0.1
 DROPOUTINTENT=0.2
-from convlab2.nlu.jointBERTCRFLSTM.diachat.jointBERT_CRF import JointBERTCRFLSTM
+
+from model_cnn0 import JointBERTCRFLSTM

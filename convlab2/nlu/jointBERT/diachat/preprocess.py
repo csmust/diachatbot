@@ -42,7 +42,7 @@ def preprocess(mode,tokenizerpath,CROSS_TRAIN=False):
     all_domain=[]
     all_slot=[]
 
-    context_size = 3
+    context_size = 2
 
     if tokenizerpath:
         try:
@@ -185,5 +185,5 @@ if __name__ == '__main__':
     if len(sys.argv)>1:
         path=sys.argv[1]
     # preprocess('User',path)
-    preprocess('All',path,True)
+    preprocess('All',path,False)
     # preprocess('Doctor',path)

@@ -12,7 +12,7 @@ from convlab2.nlu.jointBERT.diachat.preprocess import preprocess
 
 
 class BERTNLU(NLU):
-    def __init__(self, mode='All', config_file='all.json'):
+    def __init__(self, mode='All', config_file='all_context.json'):
         assert mode == 'All' or mode == 'User' or mode == 'Doctor'
         current_dir = os.path.dirname(os.path.abspath(__file__))
         config_file = os.path.join(current_dir, 'config/{}'.format(config_file))
@@ -73,11 +73,18 @@ class BERTNLU(NLU):
 
 
 if __name__ == '__main__':
-    nlu = BERTNLU(mode='All', config_file='all_remote108.json',
+    nlu = BERTNLU(mode='All', config_file='all_context.json',
                   )
     print(nlu.predict("我吃莲藕排骨还喝汤，血糖升高，是不是不能喝呀？"))
     print(nlu.predict("血糖又高了，是不是我又吃多了"))
     print(nlu.predict("我有凌晨三点测过也是7点多到8点的样子"))
+    
+    print(nlu.predict("格列吡嗪片和瑞格列奈片，一天三次，列一陪瑞两片"))
+    print(nlu.predict("格列吡嗪片一天三次"))
+    
+    print(nlu.predict("请哪位朋友给讲一下，我空腹7.8，餐后2小时8.3怎么回事"))
+    print(nlu.predict("维生素B1会升血糖吗"))
+    
     '''
         输出形式为
     [['Inform', '饮食', '饮食名', '莲藕排骨'], ['AskForSure', '行为', '行为名', '喝'], ['Inform', '饮食', '饮食名', '汤'], ['Inform', '问题', '血糖值', '升高']]

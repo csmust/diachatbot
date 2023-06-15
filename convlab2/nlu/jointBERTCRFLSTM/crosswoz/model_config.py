@@ -7,4 +7,3 @@ USE_LOSSGATE = False
 DROPOUT=0.1
 
 
-from jointBERT_CRF import JointBERTCRFLSTM

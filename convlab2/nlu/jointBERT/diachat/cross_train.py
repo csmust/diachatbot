@@ -67,6 +67,10 @@ def cross_train(k_fold=10,filename="annotations_state_20220627_2.json",bertfile=
         train_data, test_data=next(gk)
         dumpdata(train_data, test_data)
         preprocess('All',bertfile,CROSS_TRAIN=True)
+        if k !=1:
+            continue
+        if k==1:
+            exit()
         best_val_F1_list = train(True,best_val_F1_list,args)
 
     

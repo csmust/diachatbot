@@ -8,14 +8,24 @@ import zipfile
 import random
 import torch
 import os
+import numpy    
 
 from convlab2.nlu.jointBERTCRFLSTM.diachat.preprocess import preprocess
 from convlab2.nlu.jointBERTCRFLSTM.diachat.train import train 
 from sklearn.model_selection import RepeatedKFold
 
 def set_seed(seed):
+
     random.seed(seed)
+    numpy.random.seed(seed)
     torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    os.environ['CUBLAS_WORKSPACE_CONFIG']=':4096:8'
+    torch.use_deterministic_algorithms(True)
     
 
 

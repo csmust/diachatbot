@@ -16,6 +16,7 @@ from convlab2.nlu.jointBERT.diachat.jointBERT import JointBERT
 from datetime import datetime
 from mylogger import Logger
 
+
 cross_best_f1=0
 
 def set_seed(seed):
