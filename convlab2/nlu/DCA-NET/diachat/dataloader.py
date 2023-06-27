@@ -183,6 +183,7 @@ len():
         tag_mask_tensor = torch.zeros((batch_size, max_seq_len), dtype=torch.long)
         tag_seq_tensor = torch.zeros((batch_size, max_seq_len), dtype=torch.long)
         intent_tensor = torch.zeros((batch_size, self.intent_dim), dtype=torch.float)
+        # context_max_seq_len = max([len(x[-5]) for x in batch_data])
         context_max_seq_len = max([len(x[-5]) for x in batch_data])
         context_mask_tensor = torch.zeros((batch_size, context_max_seq_len), dtype=torch.long)
         context_seq_tensor = torch.zeros((batch_size, context_max_seq_len), dtype=torch.long)

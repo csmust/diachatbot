@@ -7,4 +7,4 @@ USE_LOSSGATE = False
 DROPOUT=0.1
 DROPOUTINTENT=0.2
 
-from model_cnn0 import JointBERTCRFLSTM
+from model_cnn_jiaohu import JointBERTCRFLSTM

@@ -29,7 +29,7 @@ if __name__ == '__main__':
     set_seed(config['seed'])
 
     print('-' * 20 + 'data' + '-' * 20)
-    from convlab2.nlu.jointBERTCRFLSTM.diachat.postprocess import is_slot_da, calculateF1, recover_intent
+    from postprocess import is_slot_da, calculateF1, recover_intent
 
     intent_vocab = json.load(open(os.path.join(data_dir, 'intent_vocab.json'),encoding='utf-8'))
     tag_vocab = json.load(open(os.path.join(data_dir, 'tag_vocab.json'),encoding='utf-8'))
@@ -47,7 +47,7 @@ if __name__ == '__main__':
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
 
-    model = JointBERTCRFLSTM(config['model'], DEVICE, dataloader.tag_dim, dataloader.intent_dim,dataloader.max_sen_len,dataloader.max_context_len)
+    model = Joint_model(config['model'], DEVICE, dataloader.tag_dim, dataloader.intent_dim,dataloader.max_sen_len,dataloader.max_context_len)
     model.load_state_dict(torch.load(os.path.join(output_dir, 'pytorch_model.bin'), DEVICE))
     model.to(DEVICE)
     model.eval()

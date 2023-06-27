@@ -43,7 +43,7 @@ class DynamicLSTM(nn.Module):
                 bias=bias, batch_first=batch_first, dropout=dropout, bidirectional=bidirectional)
         
 
-    def forward(self, x, x_len):
+    def forward(self, x, x_len,total_length = 62):
         """
         :param x: sequence embedding vectors
         :param x_len: numpy/tensor list
@@ -71,7 +71,7 @@ class DynamicLSTM(nn.Module):
             return ht
         else:
             # unpack - out
-            out = torch.nn.utils.rnn.pad_packed_sequence(out_pack, batch_first=self.batch_first, total_length =62)
+            out = torch.nn.utils.rnn.pad_packed_sequence(out_pack, batch_first=self.batch_first, total_length=total_length)
             out = out[0]
             out = out[x_unsort_idx]
             # unsort - out / c

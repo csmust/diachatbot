@@ -151,10 +151,10 @@
             "act_label": "Chitchat",
             "slot_values": [
               {
-                "domain": "问题",
-                "slot": "是否会有眼睛并发症",
-                "value": "经常在黑暗处看书",
-                "pos": "经常/频率+在哪里/地点+做什么/行为"
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
               }
             ]
           }
@@ -171,7 +171,7 @@
             "act_label": "Chitchat",
             "slot_values": [
               {
-                "domain": "饮食",
+                "domain": "",
                 "slot": "",
                 "value": "",
                 "pos": ""
@@ -1751,10 +1751,10 @@
             "act_label": "Chitchat",
             "slot_values": [
               {
-                "domain": "饮食",
-                "slot": "饮食建议",
-                "value": "忌空腹吃药",
-                "pos": "没吃饭"
+                "domain": "",
+                "slot": "",
+                "value": "",
+                "pos": ""
               }
             ]
           }

@@ -22,9 +22,17 @@ from model_config import *
 cross_best_f1=0
 
 def set_seed(seed):
+
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    os.environ['CUBLAS_WORKSPACE_CONFIG']=':4096:8'
+    torch.use_deterministic_algorithms(True)
 def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
 
     TIMESTAMP = "{0:%Y-%m-%dT%H-%M-%S/}".format(datetime.now())
@@ -72,10 +80,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
     writer = SummaryWriter(log_dir)
     model = JointBERTCRFLSTM(config['model'], DEVICE, dataloader.tag_dim, dataloader.intent_dim ,dataloader.max_sen_len,dataloader.max_context_len,  dataloader.intent_weight )
 
-    # for name, para in  model.named_parameters():
-    #     '''打印模型结构'''
-    #     print(name)
-    #     print("是否被训练: ",para.requires_grad)
+
     model.to(DEVICE)
     awl = AutomaticWeightedLoss(2)
     if config['model']['finetune']:
@@ -85,7 +90,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
         "myMultiattention.k_proj.weight","myMultiattention.q_proj.weight",
         "myattention.output_proj.weight","myattention.input_proj.weight","lstm.weight"]
         # ,"_conv.weight","dec_s.atte"
-        attention = ["_conv.weight","dec_s.atte"]
+        attention = ["_conv.weight","newselfattention1.k.weight","newselfattention1.q.weight","newselfattention1.v.weight","newselfattention2.k.weight","newselfattention2.q.weight","newselfattention2.v.weight"]
         no_decay_and_crf =no_decay + crf +lstm + attention
         optimizer_grouped_parameters = [
             {'params': [p for n, p in model.named_parameters() if
@@ -106,6 +111,11 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
             # ,{'params': awl.parameters(), 'weight_decay': 0}
              
         ]
+        # for name, para in  model.named_parameters():
+        #     '''打印模型结构'''
+        #     print(name)
+        #     print("是否被训练: ",para.requires_grad)
+        # exit()
         # print(optimizer_grouped_parameters.name)
         optimizer = AdamW(optimizer_grouped_parameters, lr=config['model']['learning_rate'],
                           eps=config['model']['adam_epsilon'])

@@ -17,7 +17,7 @@ class Joint_model(nn.Module):
     # def __init__(self, _, hidden_dim, batch_size, max_length, n_class, n_tag, embedding_matrix):
     def __init__(self, model_config,device, n_tag, n_class,max_length,max_context_len, intent_weight=None):
         super(Joint_model, self).__init__()
-        
+        self.config=model_config
         self.batch_size = model_config['batch_size']
         self.device=device
         self.max_length = 60+2
@@ -29,6 +29,9 @@ class Joint_model(nn.Module):
         self.hidden_dim = config.HIDENSIZE
         self.LayerNorm = LayerNorm(self.hidden_dim,eps=1e-12)
         
+        self.LayerNorm2 = LayerNorm(self.hidden_dim,eps=1e-12)
+        self.LayerNorm3 = LayerNorm(self.hidden_dim,eps=1e-12)
+        # layer_norm = nn.LayerNorm(embedding_dim)
         self.emb_dim=self.bert.config.hidden_size
         self.emb_drop = nn.Dropout(0.8)
         # self.embed = nn.Embedding.from_pretrained(torch.tensor(embedding_matrix, dtype=torch.float), padding_idx=0)
@@ -39,6 +42,11 @@ class Joint_model(nn.Module):
         self.intent_fc = nn.Linear(self.hidden_dim, self.n_class)
         self.slot_fc = nn.Linear(self.hidden_dim, self.n_tag)
 
+        # if self.config["context"]:
+        #     self.intent_fc = nn.Linear(self.hidden_dim*2, self.n_class)
+        #     self.slot_fc = nn.Linear(self.hidden_dim*2, self.n_tag)
+            
+
         self.I_S_Emb = Label_Attention(self.intent_fc, self.slot_fc)
 
         self.T_block1 = I_S_Block(self.intent_fc, self.slot_fc, self.hidden_dim)
@@ -47,21 +55,25 @@ class Joint_model(nn.Module):
         self.crflayer = CRF(self.n_tag)
         self.criterion = nn.BCEWithLogitsLoss(pos_weight=self.intent_weight)
 
-    def forward_logit(self, x, mask):
+    def forward_logit(self, x, mask,total_length=62):
         # x, x_char = x
         x_len = torch.sum(x != 0, dim=-1)
         # x_emb = self.emb_drop(self.embed(x))
         x_emb=self.bert(input_ids=x,attention_mask=mask)[0]
 
-        H, (_, _) = self.biLSTM(x_emb, x_len)
+        H, (_, _) = self.biLSTM(x_emb, x_len, total_length=total_length)
+                
         H_I, H_S = self.I_S_Emb(H, H, mask)
         H_I, H_S = self.T_block1(H_I + H, H_S + H, mask)
         H_I_1, H_S_1 = self.I_S_Emb(H_I, H_S, mask)
         H_I, H_S = self.T_block2(H_I + H_I_1, H_S + H_S_1, mask)
 
         intent_input = F.max_pool1d((H_I + H).transpose(1, 2), H_I.size(1)).squeeze(2)
+        return intent_input, H_S + H
+
+    def _cal_logit(self,intent_input,slot_input):
         logits_intent = self.intent_fc(intent_input)
-        logits_slot = self.slot_fc(H_S + H)
+        logits_slot = self.slot_fc(slot_input)
 
         return logits_intent, logits_slot
 
@@ -81,8 +93,29 @@ class Joint_model(nn.Module):
     def forward(self,x, word_mask, slot_label, slot_mask,intent_label,context_seq,context_mask):
          # word_mask 1是token位置  0是padding位置  cls算1
         
-        logits_intent, logits_slot = self.forward_logit(x, mask=word_mask)
+        intent_input,slot_input=self.forward_logit(x, mask=word_mask , total_length=x.size(1))
+
+        if context_seq is not None and context_mask is not None:
+            # print("context_seq is not None and context_mask is not None")
+            # print("context_seq",context_seq.size())
+            # print("context_mask",context_mask.size())
+            
+
+            c_intent_input, c_slot_input = self.forward_logit(context_seq, mask=context_mask,total_length=context_seq.size(1))
+            # print("c_intent_input",c_intent_input.size())
+            
+            # intent_input = torch.cat((c_intent_input,intent_input),dim=-1)
+            intent_input = self.LayerNorm2 (c_intent_input)+intent_input
+            slot_input = self.LayerNorm3( c_intent_input.unsqueeze(1).repeat(1, slot_input.size(1), 1))+slot_input
+
+        
+        logits_intent, logits_slot = self._cal_logit(intent_input,slot_input)
+
+        
+        
+        
         loss_intent, loss_slot = self.loss1(logits_intent, logits_slot, intent_label, slot_label, mask=word_mask,slot_mask=slot_mask)
+
         pred_slot = self.pred_intent_slot(logits_slot, mask=word_mask)
 
         return pred_slot,logits_intent,loss_slot,loss_intent
@@ -211,6 +244,9 @@ class Label_Attention(nn.Module):
         self.W_slot_emb = slot_emb.weight
 
     def forward(self, input_intent, input_slot, mask):
+        # print("input_intent size=", input_intent.size())
+        # print("input_slot size=", input_slot.size())
+        # print("W_intent_emb size=", self.W_intent_emb.size())
         intent_score = torch.matmul(input_intent, self.W_intent_emb.t())
         slot_score = torch.matmul(input_slot, self.W_slot_emb.t())
         intent_probs = nn.Softmax(dim=-1)(intent_score)

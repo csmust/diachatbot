@@ -71,54 +71,6 @@ class PositionalEncoding(nn.Module):
         x = x + Variable(self.pe[:, :x.size(1)], requires_grad=False)
         return self.dropout(x)
 
-class AttentionLayer(nn.Module):
-
-    def __init__(selfu, input_size, key_dim, value_dim, bias=False):
-        """
-        可用于LSTM2LSTM的序列到序列模型的decode过程中，该attention是在decode过程中根据上一个step的hidden计算对encoder结果的attention
-
-        :param int input_size: 输入的大小
-        :param int key_dim: 一般就是encoder_output输出的维度
-        :param int value_dim: 输出的大小维度, 一般就是decoder hidden的大小
-        :param bias:
-        """
-        super().__init__()
-
-        selfu.input_proj = nn.Linear(input_size, key_dim, bias=bias)
-        selfu.output_proj = nn.Linear(input_size + key_dim,
-                                      value_dim,
-                                      bias=bias)
-
-    def forward(self, input, encode_outputs, encode_mask):
-        """
-        :param input: batch_size x input_size
-        :param encode_outputs: batch_size x max_len x key_dim
-        :param encode_mask: batch_size x max_len, 为0的地方为padding
-        :return: hidden: batch_size x value_dim, scores: batch_size x max_len, normalized过的
-        """
-
-        # x: bsz x encode_hidden_size
-        x = self.input_proj(input)
-
-        # compute attention
-        attn_scores = torch.matmul(encode_outputs,
-                                   x.unsqueeze(-1)).squeeze(-1)  # b x max_len
-
-        # don't attend over padding
-        if encode_mask is not None:
-            attn_scores = attn_scores.float().masked_fill_(
-                encode_mask.eq(0), float('-inf')).type_as(
-                    attn_scores)  # FP16 support: cast to float and back
-
-        attn_scores = F.softmax(attn_scores, dim=-1)  # srclen x bsz
-
-        # sum weighted sources
-        x = torch.matmul(attn_scores.unsqueeze(1),
-                         encode_outputs).squeeze(1)  # b x encode_hidden_size
-
-        x = torch.tanh(self.output_proj(torch.cat((x, input), dim=1)))
-        return x, attn_scores
-
 
 class Slot_Enc(nn.Module):
 
@@ -333,8 +285,8 @@ class JointBERTCRFLSTM(nn.Module):
                 self.slot_classifier = nn.Linear(self.hidden_units,self.slot_num_labels)
 
             else:
-                self.intent_hidden = nn.Linear(self.bert.config.hidden_size,self.hidden_units)
-                self.slot_hidden = nn.Linear(self.bert.config.hidden_size,self.hidden_units)
+                self.intent_hidden = nn.Linear((self.bert.config.hidden_size + LSTM_HIDDEN_SIZE) , self.hidden_units)
+                self.slot_hidden = nn.Linear((self.bert.config.hidden_size + LSTM_HIDDEN_SIZE),self.hidden_units)
                 self.intent_classifier = nn.Linear(self.hidden_units,self.intent_num_labels)
                 self.slot_classifier = nn.Linear(self.hidden_units,self.slot_num_labels)
             nn.init.xavier_uniform_(self.intent_hidden.weight)
@@ -364,7 +316,6 @@ class JointBERTCRFLSTM(nn.Module):
         else:
             print("请使用CRF")
             exit()
-
     def forward(
         self,
         word_seq_tensor,
@@ -454,6 +405,7 @@ class JointBERTCRFLSTM(nn.Module):
                                       dim=-1)  # [8,1536]
             # print(sequence_output.shape)
             # print(pooled_output.size())
+
         if self.hidden_units > 0:
             sequence_output = nn.functional.relu(
                 self.slot_hidden(
@@ -544,14 +496,14 @@ if __name__ == "__main__":
     # print(os.path.abspath(__file__))
     # print(os.getcwd())
     cur_dir = os.path.dirname(os.path.abspath(__file__))
-    config_file = os.path.join(cur_dir, 'config/all_context.json')
+    config_file = os.path.join(cur_dir, 'config/all.json')
     # print(config_file)
     conf = json.load(open(config_file))
     model_conf = conf["model"]
     # print(model_conf)
-    device="cuda:1" 
+    device="cuda:0" 
     model = JointBERTCRFLSTM(model_conf, device, 470, 58 ,51,60)
-    model.to("cuda:1" )
+    model.to("cuda:0" )
     # summary(model(),(8,51))
 
     # TODO crf这个包 不能以0打头

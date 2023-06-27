@@ -132,7 +132,7 @@ class Slot_Enc(nn.Module):
 
     def __init__(self, in_size, lstm_hidden_size) -> None:
         super().__init__()
-        self.lstm = nn.LSTM(input_size=in_size,
+        self.lstm = nn.GRU(input_size=in_size,
                             hidden_size=lstm_hidden_size,
                             num_layers=2,
                             bidirectional=True,
@@ -171,7 +171,7 @@ class Slot_Dec(nn.Module):
     def __init__(self, lstm_hidden_size, device) -> None:
         super().__init__()
         self.hidden_size = lstm_hidden_size
-        self.lstm = nn.LSTM(input_size=lstm_hidden_size * 5,
+        self.lstm = nn.GRU(input_size=lstm_hidden_size * 5,
                             hidden_size=lstm_hidden_size,
                             num_layers=1)
         self.device = device
@@ -186,8 +186,8 @@ class Slot_Dec(nn.Module):
         batch = x.size(0)
         seqlenth = x.size(1)
         dec_init_out = torch.zeros(batch, 1, self.hidden_size).to(self.device)
-        hidden_state = (torch.zeros(1, 1, self.hidden_size).to(self.device),
-                        torch.zeros(1, 1, self.hidden_size).to(self.device))
+        hidden_state = torch.zeros(1, 1, self.hidden_size).to(self.device)
+
         
         # print("hi.size=",hi.size())  #8,51,1024   
         # exit(0)
@@ -216,7 +216,7 @@ class Intent_Enc(nn.Module):
 
     def __init__(self, in_size, lstm_hidden_size) -> None:
         super().__init__()
-        self.lstm = nn.LSTM(input_size=in_size,
+        self.lstm = nn.GRU(input_size=in_size,
                             hidden_size=lstm_hidden_size,
                             num_layers=2,
                             bidirectional=True,
@@ -260,7 +260,7 @@ class Intent_Dec(nn.Module):
         device 
         """
         super().__init__()
-        self.lstm = nn.LSTM(input_size=lstm_hidden_size * 4, 
+        self.lstm = nn.GRU(input_size=lstm_hidden_size * 4, 
                             hidden_size=lstm_hidden_size,
                             batch_first=True,
                             num_layers=1)
@@ -371,8 +371,8 @@ class JointBERTCRFLSTM(nn.Module):
                 self.slot_classifier = nn.Linear(self.hidden_units,self.slot_num_labels)
 
             else:
-                self.intent_hidden = nn.Linear((self.bert.config.hidden_size + LSTM_HIDDEN_SIZE) , self.hidden_units)
-                self.slot_hidden = nn.Linear((self.bert.config.hidden_size + LSTM_HIDDEN_SIZE),self.hidden_units)
+                self.intent_hidden = nn.Linear(self.bert.config.hidden_size,self.hidden_units)
+                self.slot_hidden = nn.Linear(self.bert.config.hidden_size,self.hidden_units)
                 self.intent_classifier = nn.Linear(self.hidden_units,self.intent_num_labels)
                 self.slot_classifier = nn.Linear(self.hidden_units,self.slot_num_labels)
             nn.init.xavier_uniform_(self.intent_hidden.weight)
