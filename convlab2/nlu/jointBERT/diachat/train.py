@@ -11,18 +11,26 @@ import numpy as np
 import zipfile
 import torch
 from transformers import AdamW, get_linear_schedule_with_warmup
-from convlab2.nlu.jointBERT.diachat.dataloader import Dataloader
-from convlab2.nlu.jointBERT.diachat.jointBERT import JointBERT
+from dataloader import Dataloader
+from jointBERT import JointBERT
 from datetime import datetime
 from mylogger import Logger
-
+from postprocess import is_slot_da, calculateF1, recover_intent
 
 cross_best_f1=0
 
 def set_seed(seed):
+
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    os.environ['CUBLAS_WORKSPACE_CONFIG']=':4096:8'
+    torch.use_deterministic_algorithms(True)
 
 
 
@@ -47,7 +55,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
     set_seed(config['seed'])
 
     print('-' * 20 + 'data' + '-' * 20)
-    from convlab2.nlu.jointBERT.diachat.postprocess import is_slot_da, calculateF1, recover_intent
+    
 
     intent_vocab = json.load(open(os.path.join(data_dir, 'intent_vocab.json'),encoding='utf-8'))
     tag_vocab = json.load(open(os.path.join(data_dir, 'tag_vocab.json'),encoding='utf-8'))
