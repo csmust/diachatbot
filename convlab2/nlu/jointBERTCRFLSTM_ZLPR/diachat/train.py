@@ -129,8 +129,8 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
     writer.add_text('config', json.dumps(config))
     stime = time.time()
 
-    alpha = 0.5
-    lr=config['model']['learning_rate']
+    # alpha = 0.5
+    # lr=config['model']['learning_rate']
     for step in range(1, max_step + 1):
         start_time = time.time()
         model.train()
@@ -150,20 +150,10 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
 
         else:
             optimizer.zero_grad()
-
             train_slot_loss += slot_loss.item()
             train_intent_loss += intent_loss.item()
-            
-            # loss = alpha * slot_loss + (1-alpha) * intent_loss
-            # loss.backward()
-
-            # tmp = torch.Tensor([slot_loss,intent_loss])/ (batch_size ** 0.5)
-            # tmpl=F.softmax(tmp,dim=-1)
-
-            # alpha = alpha - lr * (tmpl[0].item()-tmpl[1].item())
             loss_sum = awl(slot_loss, intent_loss)
             # backward
-            
             loss_sum.backward()
             
 

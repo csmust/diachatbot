@@ -56,7 +56,9 @@ def tag2das(word_seq, tag_seq):
     while i < len(tag_seq):
         tag = tag_seq[i]
         if tag.startswith('B'):
-            intent, domain, slot = tag[2:].split('+')
+            slot = tag[2:].split('-')[-1]
+            intent=""
+            domain=""
             value = word_seq[i]
             j = i + 1
             while j < len(tag_seq):
@@ -94,10 +96,10 @@ def recover_intent(dataloader, intent_logits, tag_seq_id, tag_mask_tensor, ori_w
     # print(tag_seq_id)
     # exit()
     das = []
-    for j in range(dataloader.intent_dim):
-        if intent_logits[j] > 0:
-            intent, domain, slot, value = re.split('\+', dataloader.id2intent[j])
-            das.append([intent, domain, slot, value])
+    j=torch.argmax(intent_logits).item()
+
+    intent, domain, slot, value = re.split('\+', dataloader.id2intent[j])
+    das.append([intent, domain, slot, value])
     tags = []
     for j in range(len(tag_seq_id)):
             tags.append(dataloader.id2tag[tag_seq_id[j]])            

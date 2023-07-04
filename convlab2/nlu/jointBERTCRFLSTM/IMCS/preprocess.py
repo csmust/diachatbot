@@ -130,7 +130,7 @@ def preprocess(mode,tokenizerpath,CROSS_TRAIN=False):
     for key in data_key:
         processed_data[key] = []
         for pid ,sess in data[key].items():
-            print("pid:",pid)
+            # print("pid:",pid)
             context = []
             for turn in sess['dialogue']:
                 if mode == 'User' and turn['speaker'] == '医生':

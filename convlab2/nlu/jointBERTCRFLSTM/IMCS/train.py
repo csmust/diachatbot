@@ -18,7 +18,7 @@ from datetime import datetime
 from mylogger import Logger
 from AutomaticWeightedLoss import AutomaticWeightedLoss
 from model_config import *
-
+from tqdm import tqdm,trange
 cross_best_f1=0
 
 def set_seed(seed):
@@ -141,7 +141,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
 
     alpha = 0.5
     lr=config['model']['learning_rate']
-    for step in range(1, max_step + 1):
+    for step in trange(1, max_step + 1):
         start_time = time.time()
         model.train()
         batched_data = dataloader.get_train_batch(batch_size)
