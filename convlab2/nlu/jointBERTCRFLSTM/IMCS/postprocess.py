@@ -17,6 +17,7 @@ def is_slot_da(da):
 def calculateF1(predict_golden):
     TP, FP, FN = 0, 0, 0
     accnum=0
+    TP_pre=0
     for item in predict_golden:
         predicts = item['predict']
         labels = item['golden']
@@ -43,8 +44,10 @@ def calculateF1(predict_golden):
                         item["FN"]=[ele]
                     else :
                         item["FN"].append(ele)
-        if TP==len(predicts) and TP==len(labels):
+        
+        if TP-TP_pre==len(predicts) and TP-TP_pre==len(labels):
             accnum+=1  # 整句话的预测都对了
+        TP_pre=TP
     acc=accnum/len(predict_golden)
     # print(TP, FP, FN)
     precision = 1.0 * TP / (TP + FP) if TP + FP else 0.
