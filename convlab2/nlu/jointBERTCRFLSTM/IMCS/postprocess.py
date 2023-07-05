@@ -7,7 +7,7 @@ def is_slot_da(da):
     区分四元组是slot标注出来的还是intent分类出来的
     '''
     # if j['value'] is not None and j['value'] != '' and j['value'] != '？' and j['value'] != '?':
-    if da[3] is not None and da[3] != '' and da[3] != '?' and da[3] != '？':
+    if da[3] != '':
         # print(da[3])
         # 如果value有值就是tag标注
         return True
@@ -16,6 +16,7 @@ def is_slot_da(da):
 
 def calculateF1(predict_golden):
     TP, FP, FN = 0, 0, 0
+    accnum=0
     for item in predict_golden:
         predicts = item['predict']
         labels = item['golden']
@@ -42,11 +43,14 @@ def calculateF1(predict_golden):
                         item["FN"]=[ele]
                     else :
                         item["FN"].append(ele)
+        if TP==len(predicts) and TP==len(labels):
+            accnum+=1  # 整句话的预测都对了
+    acc=accnum/len(predict_golden)
     # print(TP, FP, FN)
     precision = 1.0 * TP / (TP + FP) if TP + FP else 0.
     recall = 1.0 * TP / (TP + FN) if TP + FN else 0.
     F1 = 2.0 * precision * recall / (precision + recall) if precision + recall else 0.
-    return precision, recall, F1
+    return precision, recall, F1, acc
 
 
 def tag2das(word_seq, tag_seq):

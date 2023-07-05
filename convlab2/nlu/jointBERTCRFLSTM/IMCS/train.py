@@ -239,15 +239,17 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
             writer.add_scalar('slot_loss/val', val_slot_loss, global_step=step)
 
             for x in ['intent', 'slot', 'overall']:
-                precision, recall, F1 = calculateF1(predict_golden[x])
+                precision, recall, F1 ,acc= calculateF1(predict_golden[x])
                 print('-' * 20 + x + '-' * 20)
                 print('\t Precision: %.2f' % (100 * precision))
                 print('\t Recall: %.2f' % (100 * recall))
                 print('\t F1: %.2f' % (100 * F1))
+                print('\t acc: %.2f' % (100 * acc))
 
                 writer.add_scalar('val_{}/precision'.format(x), precision, global_step=step)
                 writer.add_scalar('val_{}/recall'.format(x), recall, global_step=step)
                 writer.add_scalar('val_{}/F1'.format(x), F1, global_step=step)
+                writer.add_scalar('val_{}/acc'.format(x), acc, global_step=step)
 
             if F1 > best_val_f1:
                 best_val_f1 = F1

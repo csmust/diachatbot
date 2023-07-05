@@ -109,11 +109,12 @@ if __name__ == '__main__':
     print('\t intent loss:', intent_loss)
 
     for x in ['intent', 'slot', 'overall']:
-        precision, recall, F1 = calculateF1(predict_golden[x])
+        precision, recall, F1 ,acc= calculateF1(predict_golden[x])
         print('-' * 20 + x + '-' * 20)
         print('\t Precision: %.2f' % (100 * precision))
         print('\t Recall: %.2f' % (100 * recall))
         print('\t F1: %.2f' % (100 * F1))
+        print('\t acc: %.2f' % (100 * acc))
 
     output_file = os.path.join(output_dir, 'output.json')
     json.dump(predict_golden['overall'], open(output_file, 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
