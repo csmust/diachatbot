@@ -10,16 +10,15 @@ import random
 import numpy as np
 import zipfile
 import torch
+import  torch.nn.functional as F
 from transformers import AdamW, get_linear_schedule_with_warmup
-from convlab2.nlu.jointBERT_CRF.diachat.dataloader import Dataloader
-from convlab2.nlu.jointBERT_CRF.diachat.jointBERT_CRF import JointBERT_CRF
+from dataloader import Dataloader
+
 from datetime import datetime
 from mylogger import Logger
-
+from AutomaticWeightedLoss import AutomaticWeightedLoss
 from model_config import *
-import torch 
-import  torch.nn.functional as F
-
+from tqdm import tqdm,trange
 cross_best_f1=0
 
 def set_seed(seed):
@@ -35,8 +34,6 @@ def set_seed(seed):
     os.environ['CUBLAS_WORKSPACE_CONFIG']=':4096:8'
     torch.use_deterministic_algorithms(True)
 def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
-    
-    # print("use lossgate")
 
     TIMESTAMP = "{0:%Y-%m-%dT%H-%M-%S/}".format(datetime.now())
     config = json.load(open(args.config_path))
@@ -53,11 +50,13 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
         os.makedirs(log_dir)
     sys.stdout=Logger(filename=os.path.join(log_dir,'train.log'),stream=sys.stdout)
     print(config)
+    print("USE_LOSSGATE= ",USE_LOSSGATE)
+    print( "LAST_ADD_CRF=", LAST_ADD_CRF, "CRF_LEARNING_RATE= ",CRF_LEARNING_RATE)
 
     set_seed(config['seed'])
 
     print('-' * 20 + 'data' + '-' * 20)
-    from convlab2.nlu.jointBERT_CRF.diachat.postprocess import is_slot_da, calculateF1, recover_intent
+    from postprocess import is_slot_da, calculateF1, recover_intent
 
     intent_vocab = json.load(open(os.path.join(data_dir, 'intent_vocab.json'),encoding='utf-8'))
     tag_vocab = json.load(open(os.path.join(data_dir, 'tag_vocab.json'),encoding='utf-8'))
@@ -79,14 +78,11 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
 
 
     writer = SummaryWriter(log_dir)
-    model = JointBERT_CRF(config['model'], DEVICE, dataloader.tag_dim, dataloader.intent_dim, dataloader.intent_weight)
+    model = JointBERT_CRF(config['model'], DEVICE, dataloader.tag_dim, dataloader.intent_dim , dataloader.intent_weight )
 
-    # for name, para in  model.named_parameters():
-    #     '''打印模型结构'''
-    #     print(name)
-    #     print("是否被训练: ",para.requires_grad)
+
     model.to(DEVICE)
-    #TODO 参考BERT NER 分别设置CRF和bert学习率
+    awl = AutomaticWeightedLoss(2)
     if config['model']['finetune']:
         no_decay = ['bias', 'LayerNorm.weight']
         crf = ["crf"]
@@ -101,6 +97,16 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
                         any(nd in n for nd in crf) and p.requires_grad],
              'weight_decay': config['model']['weight_decay'],"lr":CRF_LEARNING_RATE},
         ]
+            
+            # ,{'params': awl.parameters(), 'weight_decay': 0}
+             
+        
+        # for name, para in  model.named_parameters():
+        #     '''打印模型结构'''
+        #     print(name)
+        #     print("是否被训练: ",para.requires_grad)
+        # exit()
+        # print(optimizer_grouped_parameters.name)
         optimizer = AdamW(optimizer_grouped_parameters, lr=config['model']['learning_rate'],
                           eps=config['model']['adam_epsilon'])
         scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=config['model']['warmup_steps'],
@@ -116,6 +122,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
     check_step = config['model']['check_step']
     batch_size = config['model']['batch_size']
     model.zero_grad()
+    # optimizer.zero_grad()
     train_slot_loss, train_intent_loss = 0, 0
     best_val_f1 = 0.
 
@@ -124,8 +131,8 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
 
     alpha = 0.5
     lr=config['model']['learning_rate']
-    for step in range(1, max_step + 1):
-
+    for step in trange(1, max_step + 1):
+        start_time = time.time()
         model.train()
         batched_data = dataloader.get_train_batch(batch_size)
         batched_data = tuple(t.to(DEVICE) for t in batched_data)
@@ -135,7 +142,6 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
             context_seq_tensor, context_mask_tensor = None, None
         _, _, slot_loss, intent_loss = model.forward(word_seq_tensor, word_mask_tensor, tag_seq_tensor, tag_mask_tensor,
                                                      intent_tensor, context_seq_tensor, context_mask_tensor)
-        
         # # non-lossgate:
         if USE_LOSSGATE==False:
             train_slot_loss += slot_loss.item()
@@ -146,22 +152,16 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
         else:
             train_slot_loss += slot_loss.item()
             train_intent_loss += intent_loss.item()
-            
-            loss = alpha * slot_loss + (1-alpha) * intent_loss
-            loss.backward()
-
-            tmp = torch.Tensor([slot_loss,intent_loss])/ (batch_size ** 0.5)
-            tmpl=F.softmax(tmp,dim=-1)
-
-            alpha = alpha - lr * (tmpl[0].item()-tmpl[1].item())
-
-        
+            loss_sum = awl(slot_loss, intent_loss)
+            # optimizer.zero_grad()  # 梯度清零1
+            loss_sum.backward()
         # print("end_time - start_time",end_time - start_time)
         torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
         optimizer.step()
         if config['model']['finetune']:
             scheduler.step()  # Update learning rate schedule
         model.zero_grad()
+        # optimizer.zero_grad()  # 梯度清零2
         if step % check_step == 0:
             train_slot_loss = train_slot_loss / check_step
             train_intent_loss = train_intent_loss / check_step
@@ -229,15 +229,17 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
             writer.add_scalar('slot_loss/val', val_slot_loss, global_step=step)
 
             for x in ['intent', 'slot', 'overall']:
-                precision, recall, F1 = calculateF1(predict_golden[x])
+                precision, recall, F1 ,acc= calculateF1(predict_golden[x])
                 print('-' * 20 + x + '-' * 20)
                 print('\t Precision: %.2f' % (100 * precision))
                 print('\t Recall: %.2f' % (100 * recall))
                 print('\t F1: %.2f' % (100 * F1))
+                print('\t acc: %.2f' % (100 * acc))
 
                 writer.add_scalar('val_{}/precision'.format(x), precision, global_step=step)
                 writer.add_scalar('val_{}/recall'.format(x), recall, global_step=step)
                 writer.add_scalar('val_{}/F1'.format(x), F1, global_step=step)
+                writer.add_scalar('val_{}/acc'.format(x), acc, global_step=step)
 
             if F1 > best_val_f1:
                 best_val_f1 = F1
