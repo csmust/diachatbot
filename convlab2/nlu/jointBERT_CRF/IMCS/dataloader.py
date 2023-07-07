@@ -42,9 +42,10 @@ class Dataloader:
             self.max_sen_len = max(self.max_sen_len, len(d[0]))
             sen_len.append(len(d[0]))
             # d = (tokens, tags, intents, da2triples(turn["dialog_act"], context(list of str))
+
             if cut_sen_len > 0:
-                d[0] = d[0][:cut_sen_len]
-                d[1] = d[1][:cut_sen_len]
+                # d[0] = d[0][:cut_sen_len]
+                # d[1] = d[1][:cut_sen_len]
                 d[4] = [' '.join(s.split()[:cut_sen_len]) for s in d[4]]
 
             d[4] = self.tokenizer.encode('[CLS] ' + ' [SEP] '.join(d[4]))

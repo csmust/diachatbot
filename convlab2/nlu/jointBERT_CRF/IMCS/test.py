@@ -47,7 +47,7 @@ if __name__ == '__main__':
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
 
-    model = JointBERT_CRF(config['model'], DEVICE, dataloader.tag_dim, dataloader.intent_dim,dataloader.max_sen_len,dataloader.max_context_len)
+    model = JointBERT_CRF(config['model'], DEVICE, dataloader.tag_dim, dataloader.intent_dim)
     model.load_state_dict(torch.load(os.path.join(output_dir, 'pytorch_model.bin'), DEVICE), strict=False)
     model.to(DEVICE)
     model.eval()
