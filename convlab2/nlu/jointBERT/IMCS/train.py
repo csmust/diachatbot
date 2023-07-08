@@ -78,39 +78,29 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
 
 
     writer = SummaryWriter(log_dir)
-    model = JointBERTCRFLSTM(config['model'], DEVICE, dataloader.tag_dim, dataloader.intent_dim ,dataloader.max_sen_len,dataloader.max_context_len,  dataloader.intent_weight )
+    model = JointBERT(config['model'], DEVICE, dataloader.tag_dim, dataloader.intent_dim , dataloader.intent_weight )
 
 
     model.to(DEVICE)
     awl = AutomaticWeightedLoss(2)
     if config['model']['finetune']:
-        no_decay = ["bias", 'LayerNorm.weight']
+        no_decay = ['bias', 'LayerNorm.weight']
         crf = ["crf"]
-        lstm = ["myMultiattention.out_proj.weight","myMultiattention.v_proj.weight",
-        "myMultiattention.k_proj.weight","myMultiattention.q_proj.weight",
-        "myattention.output_proj.weight","myattention.input_proj.weight","lstm.weight"]
-        # ,"_conv.weight","dec_s.atte"
-        attention = ["_conv.weight","newselfattention1.k.weight","newselfattention1.q.weight","newselfattention1.v.weight","newselfattention2.k.weight","newselfattention2.q.weight","newselfattention2.v.weight"]
-        no_decay_and_crf =no_decay + crf +lstm + attention
+        no_decay_and_crf =no_decay + crf
         optimizer_grouped_parameters = [
             {'params': [p for n, p in model.named_parameters() if
                         not any(nd in n for nd in no_decay_and_crf) and  p.requires_grad],
              'weight_decay': config['model']['weight_decay']},
             {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay) and p.requires_grad],
              'weight_decay': 0.0},
-
-            {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in crf) and p.requires_grad],
+            {'params': [p for n, p in model.named_parameters() if
+                        any(nd in n for nd in crf) and p.requires_grad],
              'weight_decay': config['model']['weight_decay'],"lr":CRF_LEARNING_RATE},
-            
-            {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in lstm) and p.requires_grad],
-             'weight_decay': config['model']['weight_decay'],"lr":LSTM_LEARNING_RATE},
-            
-            {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in attention) and p.requires_grad],
-             'weight_decay': config['model']['weight_decay'],"lr":2e-2}
+        ]
             
             # ,{'params': awl.parameters(), 'weight_decay': 0}
              
-        ]
+        
         # for name, para in  model.named_parameters():
         #     '''打印模型结构'''
         #     print(name)
@@ -193,7 +183,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
                 if not config['model']['context']:
                     context_seq_tensor, context_mask_tensor = None, None
                 with torch.no_grad():
-                    tag_seq_id, intent_logits, slot_loss, intent_loss = model.forward(word_seq_tensor,
+                    slot_logits, intent_logits, slot_loss, intent_loss = model.forward(word_seq_tensor,
                                                                                        word_mask_tensor,
                                                                                        tag_seq_tensor,
                                                                                        tag_mask_tensor,
@@ -203,7 +193,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
                 val_slot_loss += slot_loss.item() * real_batch_size
                 val_intent_loss += intent_loss.item() * real_batch_size
                 for j in range(real_batch_size):
-                    predicts = recover_intent(dataloader, intent_logits[j], tag_seq_id[j], tag_mask_tensor[j],
+                    predicts = recover_intent(dataloader, intent_logits[j], slot_logits[j], tag_mask_tensor[j],
                                               ori_batch[j][0], ori_batch[j][-4])
                     labels = ori_batch[j][3]
 

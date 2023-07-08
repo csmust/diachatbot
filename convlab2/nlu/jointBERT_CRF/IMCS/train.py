@@ -292,4 +292,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # train(args=args)
-    train(args=args,CROSS_TRAIN=True)
+    train(args=args,CROSS_TRAIN=False)

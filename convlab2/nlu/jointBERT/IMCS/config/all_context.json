@@ -1,0 +1,25 @@
+{
+  "data_dir": "data/All_data",
+  "output_dir": "output/all",
+  "zipped_model_path": "output/all/bert_all.zip",
+  "log_dir": "log/all",
+  "DEVICE": "cuda:0",
+  "seed": 6,
+  "cut_sen_len": 60,
+  "use_bert_tokenizer": false,
+  "model": {
+    "finetune": true,
+    "context": true,
+    "context_grad": true,
+    "pretrained_weights": "bert-base-chinese",
+    "check_step": 1000,
+    "max_step": 50000,
+    "batch_size": 12,
+    "learning_rate": 1e-5,
+    "adam_epsilon": 1e-8,
+    "warmup_steps": 0,
+    "weight_decay": 0.0,
+    "dropout": 0.1,
+    "hidden_units": 1536
+  }
+}
