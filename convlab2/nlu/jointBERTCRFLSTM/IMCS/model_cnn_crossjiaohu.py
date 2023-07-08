@@ -462,11 +462,11 @@ class JointBERTCRFLSTM(nn.Module):
                 chs = self.enc_s(bert_context_seqout)
                 self.share_memory_cs = chs.clone()
                 chi = self.enc_i(bert_context_seqout)
-                # self.share_memory_ci = chi.clone()
+                self.share_memory_ci = chi.clone()
                 # bcso = self.dec_s( chs ,self.share_memory_ci.detach())
                 active_len_context = context_mask_tensor.sum(dim=-1)
                 self.posembedding2 = PositionalEncoding(LSTM_HIDDEN_SIZE*2, 0.0, chi.size(1)).to(self.device)
-                bcio = self.dec_i(chi , self.newselfattention2(self.posembedding2(self.share_memory_cs.detach())) ,active_len_context)
+                bcio = self.dec_i(chi , self.newselfattention2(self.posembedding2(self.share_memory_cs.detach()),self.posembedding2(self.share_memory_ci.detach())) ,active_len_context)
                 context_output = torch.cat((bert_context_poolout,bcio),dim=-1)
             sequence_output = torch.cat(
                 # context_output.unsqueeze(1) torch.Size([8, 1, 768]) # .repeat(通道的重复倍数1, 行的重复倍数sequence_output.size(1), 列的重复倍数1) 后torch.Size([8, 51, 768])
