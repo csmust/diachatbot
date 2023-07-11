@@ -79,6 +79,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
 
     writer = SummaryWriter(log_dir)
     model = JointBERTCRFLSTM(config['model'], DEVICE, dataloader.tag_dim, dataloader.intent_dim ,dataloader.max_sen_len,dataloader.max_context_len,  dataloader.intent_weight )
+    # model.load_state_dict(torch.load(os.path.join(output_dir, 'pytorch_model.bin'), DEVICE), strict=False)
 
 
     model.to(DEVICE)
@@ -90,7 +91,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
         "myMultiattention.k_proj.weight","myMultiattention.q_proj.weight",
         "myattention.output_proj.weight","myattention.input_proj.weight","lstm.weight"]
         # ,"_conv.weight","dec_s.atte"
-        attention = ["_conv.weight","newselfattention1.k.weight","newselfattention1.q.weight","newselfattention1.v.weight","newselfattention2.k.weight","newselfattention2.q.weight","newselfattention2.v.weight"]
+        attention = ["unflatselfattention.weight","_conv.weight","newselfattention1.k.weight","newselfattention1.q.weight","newselfattention1.v.weight","newselfattention2.k.weight","newselfattention2.q.weight","newselfattention2.v.weight"]
         no_decay_and_crf =no_decay + crf +lstm + attention
         optimizer_grouped_parameters = [
             {'params': [p for n, p in model.named_parameters() if
@@ -141,8 +142,10 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
 
     alpha = 0.5
     lr=config['model']['learning_rate']
+    # start_time = time.time()
+    runtime=0
     for step in trange(1, max_step + 1):
-        start_time = time.time()
+        
         model.train()
         batched_data = dataloader.get_train_batch(batch_size)
         batched_data = tuple(t.to(DEVICE) for t in batched_data)
@@ -181,7 +184,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
             #by yangjinfeng
             etime = time.time()
             print('%d step  consume time %f'%(step,etime-stime))
-            stime = etime
+            runtime=runtime+etime-stime
 
             predict_golden = {'intent': [], 'slot': [], 'overall': []}
 
@@ -258,10 +261,15 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
                 print('save on', output_dir)
 
             train_slot_loss, train_intent_loss = 0, 0
+            stime = etime
 
     writer.add_text('val overall F1', '%.2f' % (100 * best_val_f1))
     writer.close()
     print("best_val_f1 = ", best_val_f1)
+    # end_time = time.time()
+    print("训练迭代时间，不含保存等时间:%.2f秒"%(runtime))
+    print("训练迭代时间，不含保存等时间:%.2f分钟"%(runtime/60))
+    print("训练迭代时间，不含保存等时间:%.2f小时"%(runtime/3600))
     
     global cross_best_f1
     if CROSS_TRAIN==True:
@@ -296,6 +304,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
 
 #--config_path config\all.json  
 if __name__ == '__main__':
+
     parser = argparse.ArgumentParser(description="Train a model.")
     parser.add_argument('--config_path',
                     help='path to config file')
@@ -303,3 +312,4 @@ if __name__ == '__main__':
 
     # train(args=args)
     train(args=args,CROSS_TRAIN=False)
+

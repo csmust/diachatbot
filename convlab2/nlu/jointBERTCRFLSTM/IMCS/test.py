@@ -6,6 +6,8 @@ import numpy as np
 import torch
 from dataloader import Dataloader
 from model_config import *
+from mylogger import Logger
+import sys
 
 def set_seed(seed):
     random.seed(seed)
@@ -46,7 +48,7 @@ if __name__ == '__main__':
         os.makedirs(output_dir)
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
-
+    sys.stdout=Logger(filename=os.path.join(log_dir,'test.log'),stream=sys.stdout)
     model = JointBERTCRFLSTM(config['model'], DEVICE, dataloader.tag_dim, dataloader.intent_dim,dataloader.max_sen_len,dataloader.max_context_len)
     model.load_state_dict(torch.load(os.path.join(output_dir, 'pytorch_model.bin'), DEVICE), strict=False)
     model.to(DEVICE)
@@ -107,7 +109,7 @@ if __name__ == '__main__':
     print('%d samples %s' % (total, data_key))
     print('\t slot loss:', slot_loss)
     print('\t intent loss:', intent_loss)
-
+    
     for x in ['intent', 'slot', 'overall']:
         precision, recall, F1 ,acc= calculateF1(predict_golden[x])
         print('-' * 20 + x + '-' * 20)
@@ -116,5 +118,21 @@ if __name__ == '__main__':
         print('\t F1: %.2f' % (100 * F1))
         print('\t acc: %.2f' % (100 * acc))
 
+
     output_file = os.path.join(output_dir, 'output.json')
     json.dump(predict_golden['overall'], open(output_file, 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
+    
+    # python脚本示例
+    import requests
+    headers = {"Authorization": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjExODgzLCJ1dWlkIjoiMTczM2I5ZjYtYjk0YS00OWU4LWI0ZDYtMWFjMjIxZWUzN2Y3IiwiaXNfYWRtaW4iOmZhbHNlLCJpc19zdXBlcl9hZG1pbiI6ZmFsc2UsInN1Yl9uYW1lIjoiIiwidGVuYW50IjoiYXV0b2RsIiwidXBrIjoiIn0.ClcRp5unEd_SHlj9NfQgeof5XuOCKA9SzqboYVfrmG_gMkx0xj22Ypdm3_CtoDqyLG-lqEpsWsr7-PFpcMa6xQ"}
+
+    resp = requests.post("https://www.autodl.com/api/v1/wechat/message/send",
+                     json={
+                         "title": "eg. 来自我的程序",
+                         "name": f"eg. 我的ImageNet实验",
+                         "content": "eg. Epoch=100. Acc=90.2"
+                     }, headers = headers)
+    print(resp.content.decode())
+
+
+    
