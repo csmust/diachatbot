@@ -246,6 +246,8 @@ class Intent_Dec(nn.Module):
         hs:
         return： state real长度最后一时刻输出 (batch , lstm_hidden_size)
         """
+        # print(real_len) #tensor([11, 23, 50,  7,  7, 17, 14, 11, 16, 11, 14, 13], device='cuda:0')
+        # exit()
         batch = x.size(0)
         # real_len = torch.tensor(real_len).to(self.device)
         x = torch.cat((x, hs), dim=-1)
