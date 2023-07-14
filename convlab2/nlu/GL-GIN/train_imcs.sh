@@ -1,0 +1,1 @@
+python train.py -g -bs=16 -dd=./data/IMCS -sd=./save/IMCS -nh=8 -wed=64 -ied=128 -ehd=256 -sdhd=128 -dghd=128 -nldg=2 -sgw=1 -ne=20 >> imcs.log
