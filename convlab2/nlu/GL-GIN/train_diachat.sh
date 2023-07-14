@@ -1,0 +1,1 @@
+python train.py -g -bs=8 -dd=./data/diachat  -sd=./save/diachat -nh=8 -wed=64 -ied=128 -ehd=256 -sdhd=128 -dghd=128 -nldg=2 -sgw=1 -ne=100 >>diachat.log
