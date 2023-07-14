@@ -78,7 +78,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
 
 
     writer = SummaryWriter(log_dir)
-    model = JointBERTCRFLSTM(config['model'], DEVICE, dataloader.tag_dim, dataloader.intent_dim ,dataloader.max_sen_len,dataloader.max_context_len,  dataloader.intent_weight )
+    model = Joint_model(config['model'], DEVICE, dataloader.tag_dim, dataloader.intent_dim ,dataloader.max_sen_len,dataloader.max_context_len,  dataloader.intent_weight )
     # model.load_state_dict(torch.load(os.path.join(output_dir, 'pytorch_model.bin'), DEVICE), strict=False)
 
 

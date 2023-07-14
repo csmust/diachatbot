@@ -116,7 +116,7 @@ class Joint_model(nn.Module):
         
         loss_intent, loss_slot = self.loss1(logits_intent, logits_slot, intent_label, slot_label, mask=word_mask,slot_mask=slot_mask)
 
-        pred_slot = self.pred_intent_slot(logits_slot, mask=word_mask)
+        pred_slot = self.pred_intent_slot(logits_slot, mask=word_mask)#torch.Size([8, 62, 473])   torch.Size([8, 62])
 
         return pred_slot,logits_intent,loss_slot,loss_intent
 
@@ -136,7 +136,7 @@ class Joint_model(nn.Module):
         mask = mask.transpose(1, 0)
         logits_slot = logits_slot.transpose(1, 0)
         # pred_intent = torch.max(logits_intent, 1)[1]
-        pred_slot = self.crflayer.decode(logits_slot, mask=mask)
+        pred_slot = self.crflayer.decode(logits_slot, mask=mask) #torch.Size([62, 8, 473])  #torch.Size([62, 8])
         for i in range(len(pred_slot)):
             pred_slot[i] = [x.tolist() for x in pred_slot[i]]
         return pred_slot

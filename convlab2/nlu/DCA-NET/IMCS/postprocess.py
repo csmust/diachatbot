@@ -108,6 +108,7 @@ def recover_intent(dataloader, intent_logits, tag_seq_id, tag_mask_tensor, ori_w
     intent, domain, slot, value = re.split('\+', dataloader.id2intent[j])
     das.append([intent, domain, slot, value])
     tags = []
+    tag_seq_id=tag_seq_id[1:-1]
     for j in range(len(tag_seq_id)):
             tags.append(dataloader.id2tag[tag_seq_id[j]])            
     tag_intent = tag2das(ori_word_seq, tags)

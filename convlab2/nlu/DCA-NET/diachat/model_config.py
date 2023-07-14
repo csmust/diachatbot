@@ -7,7 +7,7 @@ USE_LOSSGATE = False
 DROPOUT=0.1
 DROPOUTINTENT=0.2
 from dca_jointmodel import Joint_model
-device="cuda:1"
+device="cuda:0"
 HIDENSIZE = 128 #768
 LSTM_DROPOUT = 0.5
 attention_dropout = 0.1
