@@ -26,6 +26,8 @@ for key in srcdate_key:
                 break
             word=zipdata[i][0]
             tag=zipdata[i][1]
+            if tag!="O":
+                tag=tag[:1]+"-"+tag[2:]
             f.write(word+" "+tag+"\n")
         f.write(intent+"\n"+"\n")
         # f.write(str(zipdata)+"\t"+intent+"\n")
