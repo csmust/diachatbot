@@ -254,8 +254,8 @@ class JointBERTCRFLSTM(nn.Module):
             #     key_dim=self.bert.config.hidden_size,
             #     value_dim=self.bert.config.hidden_size)
         # self.myMultiattention = MultiHeadAttention(self.bert.config.hidden_size)
-        # self.intent_loss_fct = torch.nn.BCEWithLogitsLoss(pos_weight=self.intent_weight)
-        self.intent_loss_fct = torch.nn.CrossEntropyLoss()
+        self.intent_loss_fct = torch.nn.BCEWithLogitsLoss(pos_weight=self.intent_weight)
+        # self.intent_loss_fct = torch.nn.CrossEntropyLoss()
         if LAST_ADD_CRF:
             print("----BERT+CRF------")
             print("----请注意核对后处理.py 以及 train.py的model.forward()使用-------")
@@ -265,7 +265,7 @@ class JointBERTCRFLSTM(nn.Module):
             print("请使用CRF")
             exit()
         
-        self.newselfattention1 = Self_Attention_Muti_Head(self.transformerdim, self.transformerdim, self.transformerdim, 1)
+        self.newselfattention1 = Self_Attention_Muti_Head(self.transformerdim, self.transformerdim, self.transformerdim, 4)
         self.newselfattention2 = Self_Attention_Muti_Head(self.transformerdim, self.transformerdim, self.transformerdim, 4)
         self.leakyrelu = nn.LeakyReLU(0.2)
     def forward(

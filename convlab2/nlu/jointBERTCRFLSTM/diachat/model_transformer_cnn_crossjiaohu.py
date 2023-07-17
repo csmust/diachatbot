@@ -396,6 +396,7 @@ class JointBERTCRFLSTM(nn.Module):
         self.LayerNorm_i = LayerNorm(self.bert.config.hidden_size,eps=1e-12)
         self.LayerNorm_s = LayerNorm(self.bert.config.hidden_size,eps=1e-12)
         self.LayerNorm_c = LayerNorm(self.bert.config.hidden_size,eps=1e-12)
+        self.LayerNorm_o = LayerNorm(self.bert.config.hidden_size,eps=1e-12)
         self.ffd_i = FeedForward(self.transformerdim)
         self.ffd_s = FeedForward(self.transformerdim)
         self.dropout = nn.Dropout(model_config['dropout'])
@@ -405,10 +406,10 @@ class JointBERTCRFLSTM(nn.Module):
             if self.context:
                 # self.intent_hidden = nn.Linear(2 * (self.bert.config.hidden_size ) , self.hidden_units)
                 # self.slot_hidden = nn.Linear(2 * (self.bert.config.hidden_size ),self.hidden_units)
-                self.intent_hidden = nn.Linear(2 *self.bert.config.hidden_size, self.hidden_units)
-                self.slot_hidden = nn.Linear(2 *self.bert.config.hidden_size ,self.hidden_units)
-                self.intent_classifier = nn.Linear(self.hidden_units,self.intent_num_labels)
-                self.slot_classifier = nn.Linear(self.hidden_units,self.slot_num_labels)
+                self.intent_hidden = nn.Linear(self.bert.config.hidden_size, self.hidden_units//2)
+                self.slot_hidden = nn.Linear(2 *self.bert.config.hidden_size ,self.hidden_units//2)
+                self.intent_classifier = nn.Linear(self.hidden_units//2,self.intent_num_labels)
+                self.slot_classifier = nn.Linear(self.hidden_units//2,self.slot_num_labels)
 
             else:
                 self.intent_hidden = nn.Linear((self.bert.config.hidden_size + LSTM_HIDDEN_SIZE) , self.hidden_units)
@@ -432,8 +433,8 @@ class JointBERTCRFLSTM(nn.Module):
             #     key_dim=self.bert.config.hidden_size,
             #     value_dim=self.bert.config.hidden_size)
         # self.myMultiattention = MultiHeadAttention(self.bert.config.hidden_size)
-        # self.intent_loss_fct = torch.nn.BCEWithLogitsLoss(pos_weight=self.intent_weight)
-        self.intent_loss_fct = torch.nn.CrossEntropyLoss()
+        self.intent_loss_fct = torch.nn.BCEWithLogitsLoss(pos_weight=self.intent_weight)
+        # self.intent_loss_fct = torch.nn.CrossEntropyLoss()
         if LAST_ADD_CRF:
             print("----BERT+CRF------")
             print("----请注意核对后处理.py 以及 train.py的model.forward()使用-------")
@@ -443,7 +444,7 @@ class JointBERTCRFLSTM(nn.Module):
             print("请使用CRF")
             exit()
         
-        self.newselfattention1 = Self_Attention_Muti_Head(self.transformerdim, self.transformerdim, self.transformerdim, 1)
+        self.newselfattention1 = Self_Attention_Muti_Head(self.transformerdim, self.transformerdim, self.transformerdim, 4)
         self.newselfattention2 = Self_Attention_Muti_Head(self.transformerdim, self.transformerdim, self.transformerdim, 4)
         self.leakyrelu = nn.LeakyReLU(0.2)
     def forward(
@@ -474,21 +475,21 @@ class JointBERTCRFLSTM(nn.Module):
 
         #CNN_NLP
         bert_sequence_output=self.CNN_NLP(bert_sequence_output)
-
-        hs = self.enc_s(bert_sequence_output)
+        self.posembedding0 = PositionalEncoding(self.transformerdim, 0.0, bert_sequence_output.size(1)).to(self.device)
+        hs = self.enc_s(self.posembedding0(bert_sequence_output))
         self.share_memory_s = hs.clone()
-        hi = self.enc_i(bert_sequence_output)
+        hi = self.enc_i(self.posembedding0(bert_sequence_output))
         self.share_memory_i = hi.clone()
         self.posembedding1 = PositionalEncoding(self.transformerdim, 0.0, hi.size(1)).to(self.device)
 
         # self.newselfattention1(self.share_memory_i.detach())
         # self.newselfattention1(self.share_memory_s.detach())
         # bimodel_slot_output = self.dec_s(hs , self.share_memory_i.detach())   # [batch, seqlen, lstm_hidden_size]
-        bimodel_slot_output = self.newselfattention1(self.posembedding1(self.share_memory_i.detach()),self.posembedding1(self.share_memory_s.detach()))
+        bimodel_slot_output = self.newselfattention1(self.posembedding1(hi),self.posembedding1(hs))
         # print(bimodel_slot_output.size())
         active_len_seq = word_mask_tensor.sum(dim=-1)  # 尝试：含cls 和 seq TODO 另一种做法不含
         # print(active_len_seq)
-        bimodel_intent_output = self.unflatselfattention1(self.newselfattention2(self.posembedding1(self.share_memory_s.detach()),self.posembedding1(self.share_memory_i.detach())),active_len_seq) # [batch , lstm_hidden_size]
+        bimodel_intent_output = self.unflatselfattention1(self.newselfattention2(self.posembedding1(hs),self.posembedding1(hi)),active_len_seq) # [batch , lstm_hidden_size]
         # print(bimodel_intent_output.shape)
         '''
         拼接法
@@ -548,8 +549,8 @@ class JointBERTCRFLSTM(nn.Module):
                     sequence_output
                 ],
                 dim=-1)  # torch.Size([8, 51, 1536])
-            pooled_output = torch.cat([context_output, pooled_output],
-                                      dim=-1)  # [8,1536]
+            # pooled_output = torch.cat([context_output, pooled_output],dim=-1)  # [8,1536]
+            pooled_output = self.LayerNorm_o(context_output+pooled_output)
             # print(sequence_output.shape)
             # print(pooled_output.size())
 
