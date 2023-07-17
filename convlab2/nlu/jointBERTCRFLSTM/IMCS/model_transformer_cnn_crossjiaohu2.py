@@ -373,8 +373,8 @@ class JointBERTCRFLSTM(nn.Module):
                 dim=-1)  # torch.Size([8, 51, 1536])
             pooled_output = torch.cat([context_output, pooled_output],
                                       dim=-1)  # [8,1536]
-            print(sequence_output.shape)
-            print(pooled_output.size())
+            # print(sequence_output.shape)
+            # print(pooled_output.size())
 
         if self.hidden_units > 0:
             sequence_output = nn.functional.relu(
