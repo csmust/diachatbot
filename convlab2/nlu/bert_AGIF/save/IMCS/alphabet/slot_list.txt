@@ -1,0 +1,11 @@
+O	10639
+I-Symptom	516
+B-Symptom	318
+I-Medical_Examination	164
+I-Drug	146
+B-Medical_Examination	89
+I-Drug_Category	64
+B-Drug	43
+B-Drug_Category	29
+I-Operation	27
+B-Operation	20

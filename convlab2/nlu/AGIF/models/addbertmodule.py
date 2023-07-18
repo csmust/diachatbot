@@ -136,11 +136,11 @@ class ModelManager(nn.Module):
         self.__args = args
 
         # Initialize an embedding object.
-        self.__embedding = nn.Embedding(
-            self.__num_word,
-            self.__args.word_embedding_dim
-        )
-
+        # self.__embedding = nn.Embedding(
+        #     self.__num_word,
+        #     self.__args.word_embedding_dim
+        # )
+        self.__embedding = BertModel.from_pretrained("bert-base-chinese")
         self.G_encoder = Encoder(args)
         # Initialize an Decoder object for intent.
         self.__intent_decoder = nn.Sequential(

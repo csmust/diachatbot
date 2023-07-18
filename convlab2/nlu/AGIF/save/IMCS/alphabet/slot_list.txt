@@ -1,0 +1,11 @@
+O	1402252
+I-Symptom	53780
+B-Symptom	37327
+I-Drug	23699
+I-Medical_Examination	15585
+I-Drug_Category	12350
+B-Medical_Examination	10726
+B-Drug	7278
+B-Drug_Category	5936
+I-Operation	3480
+B-Operation	2535

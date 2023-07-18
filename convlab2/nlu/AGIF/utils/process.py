@@ -56,7 +56,7 @@ def normalize_adj(mx):
 class Processor(object):
 
     def __init__(self, dataset, model, args):
-        self.__dataset = dataset
+        self.__dataset = dataset  # 3种dataset
         self.__model = model
         self.args = args
         self.__batch_size = args.batch_size
@@ -96,11 +96,11 @@ class Processor(object):
 
             for text_batch, slot_batch, intent_batch in tqdm(dataloader, ncols=50):
                 padded_text, [sorted_slot, sorted_intent], seq_lens = self.__dataset.add_padding(
-                    text_batch, [(slot_batch, True), (intent_batch, False)])
+                    text_batch, [(slot_batch, True), (intent_batch, False)])#padding
                 sorted_intent = [multilabel2one_hot(intents, len(self.__dataset.intent_alphabet)) for intents in
-                                 sorted_intent]
+                                 sorted_intent]  #将intent转化为one-hot形式，可以处理多意图 例如一句话的意图需要表示成[11,3]
                 text_var = torch.LongTensor(padded_text)
-                slot_var = torch.LongTensor(sorted_slot)
+                slot_var = torch.LongTensor(sorted_slot) # [16,24] 含padding
                 intent_var = torch.Tensor(sorted_intent)
                 max_len = np.max(seq_lens)
 
@@ -110,14 +110,14 @@ class Processor(object):
                     intent_var = intent_var.cuda()
 
                 random_slot, random_intent = random.random(), random.random()
-                if random_slot < self.__dataset.slot_forcing_rate:
-                    slot_out, intent_out = self.__model(text_var, seq_lens, forced_slot=slot_var)
+                if random_slot < self.__dataset.slot_forcing_rate: #一定概率强制使用真实的slot
+                    slot_out, intent_out = self.__model(text_var, seq_lens, forced_slot=slot_var) # 调用ModelManager的 forward
                 else:
                     slot_out, intent_out = self.__model(text_var, seq_lens)
 
-                slot_var = torch.cat([slot_var[i][:seq_lens[i]] for i in range(0, len(seq_lens))], dim=0)
-                slot_loss = self.__criterion(slot_out, slot_var)
-                intent_loss = self.__criterion_intent(intent_out, intent_var)
+                slot_var = torch.cat([slot_var[i][:seq_lens[i]] for i in range(0, len(seq_lens))], dim=0) #真实的slot [207] 标签无padding
+                slot_loss = self.__criterion(slot_out, slot_var) #torch.Size([207, 11]) torch.Size([207])
+                intent_loss = self.__criterion_intent(intent_out, intent_var)  #torch.Size([16, 16]) torch.Size([16, 16])   
                 batch_loss = slot_loss + intent_loss
 
                 self.__optimizer.zero_grad()
@@ -280,19 +280,19 @@ class Processor(object):
                 else:
                     real_intent.append([intents])
 
-            digit_text = dataset.word_alphabet.get_index(padded_text)
-            var_text = torch.LongTensor(digit_text)
+            digit_text = dataset.word_alphabet.get_index(padded_text) #将含有"<pad>"的文本序列化[['医', '生', '：', '你', '好', '，', '咳', '嗽', '是', ...], ['医', '生', '：', '如', '果', '没', '有', '这', '个', ...], ['医', '生', '：', '磨', '牙', '，', '晚', '上', '翻', ...], ['医', '生', '：', '大', '便', '怎', '么', '样', '？', ...], ['医', '生', '：', '现', '在', '可', '以', '吃', '点', ...], ['患', '者', '：', '大', '便', '经', '常', '干', "'", ...], ['医', '生', '：', '益', '生', '菌', '也', '可', '以', ...], ['患', '者', '：', '没', '发', '烧', '，', '也', '没', ...], ['医', '生', '：', '有', '没', '什', '么', '过', '敏', ...], ['医', '生', '：', '以', '前', '有', '气', '喘', '吗', ...], ['医', '生', '：', '咳', '嗽', '有', '几', '天', '了', ...], ['医', '生', '：', '可', '能', '有', '点', '积', '食', ...], ['医', '生', '：', '有', '发', '热', '过', '吗', '？', ...], ['患', '者', '：', '那', '该', '总', '么', '办', '<PAD>', ...], ...]
+            var_text = torch.LongTensor(digit_text) #将序列化的转为tensor
             max_len = np.max(seq_lens)
             if args.gpu:
                 var_text = var_text.cuda()
-            slot_idx, intent_idx = model(var_text, seq_lens, n_predicts=1)
+            slot_idx, intent_idx = model(var_text, seq_lens, n_predicts=1)  # 传入model
             nested_slot = Evaluator.nested_list([list(Evaluator.expand_list(slot_idx))], seq_lens)[0]
             pred_slot.extend(dataset.slot_alphabet.get_instance(nested_slot))
             intent_idx_ = [[] for i in range(len(digit_text))]
             for item in intent_idx:
                 intent_idx_[item[0]].append(item[1])
             intent_idx = intent_idx_
-            pred_intent.extend(dataset.intent_alphabet.get_instance(intent_idx))
+            pred_intent.extend(dataset.intent_alphabet.get_instance(intent_idx)) # 单意图 也会预测出多意图
         # if 'MixSNIPS' in args.data_dir or 'MixATIS' in args.data_dir or 'DSTC' in args.data_dir:
         [p_intent.sort() for p_intent in pred_intent]
         [r_intent.sort() for r_intent in real_intent]

@@ -1,0 +1,11 @@
+O	0
+B-Symptom	1
+I-Symptom	2
+B-Medical_Examination	3
+I-Medical_Examination	4
+B-Drug	5
+I-Drug	6
+B-Operation	7
+I-Operation	8
+B-Drug_Category	9
+I-Drug_Category	10

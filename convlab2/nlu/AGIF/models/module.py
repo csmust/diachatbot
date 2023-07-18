@@ -182,9 +182,9 @@ class ModelManager(nn.Module):
         print('\nEnd of parameters show. Now training begins.\n\n')
 
     def generate_adj_gat(self, index, batch):
-        intent_idx_ = [[torch.tensor(0)] for i in range(batch)]
+        intent_idx_ = [[torch.tensor(0)] for i in range(batch)] #初始化
         for item in index:
-            intent_idx_[item[0]].append(item[1] + 1)
+            intent_idx_[item[0]].append(item[1] + 1) # 第item[0]个句子可能包含的意图有item[1] + 1
         intent_idx = intent_idx_
         adj = torch.cat([torch.eye(self.__num_intent + 1).unsqueeze(0) for i in range(batch)])
         for i in range(batch):
@@ -197,10 +197,10 @@ class ModelManager(nn.Module):
         return adj
 
     def forward(self, text, seq_lens, n_predicts=None, forced_slot=None, forced_intent=None):
-        word_tensor = self.__embedding(text)
+        word_tensor = self.__embedding(text) #text: [batch, max_len]  word_tensor: [batch, max_len, word_embedding_dim]
         g_hiddens, g_c = self.G_encoder(word_tensor, seq_lens)
-        pred_intent = self.__intent_decoder(g_c)
-        intent_index = (torch.sigmoid(pred_intent) > self.__args.threshold).nonzero()
+        pred_intent = self.__intent_decoder(g_c) #pred_intent: [16, 16]
+        intent_index = (torch.sigmoid(pred_intent) > self.__args.threshold).nonzero()  #intent_index.shape=torch.Size([110, 2]) #换句话说，这段代码找到了预测的意图中概率值大于阈值的元素的索引。
         adj = self.generate_adj_gat(intent_index, len(pred_intent))        # 用预测的矩阵生成相连的边
 
         pred_slot = self.__slot_decoder(
@@ -210,11 +210,11 @@ class ModelManager(nn.Module):
             intent_embedding=self.__intent_embedding
         )
 
-        if n_predicts is None:
+        if n_predicts is None: 
             return F.log_softmax(pred_slot, dim=1), pred_intent
         else:
-            _, slot_index = pred_slot.topk(n_predicts, dim=1)
-            intent_index = (torch.sigmoid(pred_intent) > self.__args.threshold).nonzero()
+            _, slot_index = pred_slot.topk(n_predicts, dim=1)  #pred_slot shape:torch.Size([226, 11])  #slot_index=shape:torch.Size([226, 1])
+            intent_index = (torch.sigmoid(pred_intent) > self.__args.threshold).nonzero() #torch.Size([59, 2])
 
             return slot_index.cpu().data.numpy().tolist(), intent_index.cpu().data.numpy().tolist()
 

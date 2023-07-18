@@ -1,0 +1,16 @@
+Other	204
+Inform-Symptom	70
+Request-Symptom	47
+Inform-Existing_Examination_and_Treatment	42
+Inform-Drug_Recommendation	38
+Inform-Precautions	36
+Inform-Basic_Information	30
+Inform-Medical_Advice	28
+Request-Existing_Examination_and_Treatment	26
+Request-Basic_Information	23
+Request-Drug_Recommendation	22
+Diagnose	16
+Inform-Etiology	13
+Request-Medical_Advice	12
+Request-Precautions	8
+Request-Etiology	6

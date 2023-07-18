@@ -12,7 +12,8 @@ if __name__ == "__main__":
 
     # Save training and model parameters.
     if not os.path.exists(args.save_dir):
-        os.system("mkdir -p " + args.save_dir)
+        # os.system("mkdir -p " + args.save_dir)
+        os.makedirs(args.save_dir)
 
     log_path = os.path.join(args.save_dir, "param.json")
     with open(log_path, "w", encoding="utf8") as fw:

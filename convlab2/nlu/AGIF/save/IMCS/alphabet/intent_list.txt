@@ -1,0 +1,16 @@
+Other	33363
+Inform-Symptom	13001
+Request-Symptom	8871
+Inform-Drug_Recommendation	6712
+Inform-Existing_Examination_and_Treatment	5953
+Inform-Precautions	4906
+Inform-Basic_Information	4787
+Request-Existing_Examination_and_Treatment	3986
+Inform-Medical_Advice	3770
+Request-Drug_Recommendation	3325
+Request-Basic_Information	3056
+Diagnose	2261
+Inform-Etiology	1498
+Request-Medical_Advice	1219
+Request-Etiology	917
+Request-Precautions	904
