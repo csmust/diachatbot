@@ -107,7 +107,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
              'weight_decay': config['model']['weight_decay'],"lr":LSTM_LEARNING_RATE},
             
             {'params': [p for n, p in model.named_parameters() if any(nd in n for nd in attention) and p.requires_grad],
-             'weight_decay': config['model']['weight_decay'],"lr":2e-2}
+             'weight_decay': config['model']['weight_decay'],"lr":4e-3}
             
             # ,{'params': awl.parameters(), 'weight_decay': 0}
              
