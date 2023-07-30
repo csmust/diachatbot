@@ -196,8 +196,8 @@ class ModelManager(nn.Module):
 
     def forward(self, text, seq_lens, n_predicts=None, forced_slot=None, forced_intent=None):
         self.bert.eval()
-        with torch.no_grad():
-            bert_outputs = self.bert(text) #text: [batch, max_len]  word_tensor: [batch, max_len, word_embedding_dim]
+        # with torch.no_grad():
+        bert_outputs = self.bert(text) #text: [batch, max_len]  word_tensor: [batch, max_len, word_embedding_dim]
 
         word_tensor = bert_outputs[0] 
         g_hiddens, g_c = self.G_encoder(word_tensor, seq_lens)
