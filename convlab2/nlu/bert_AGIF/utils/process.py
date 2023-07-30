@@ -93,7 +93,7 @@ class Processor(object):
             total_slot_loss, total_intent_loss = 0.0, 0.0
             time_start = time.time()
             self.__model.train()
-
+            
             for text_batch, slot_batch, intent_batch in tqdm(dataloader, ncols=50):
                 padded_text, [sorted_slot, sorted_intent], seq_lens = self.__dataset.add_padding(
                     text_batch, [(slot_batch, True), (intent_batch, False)])#padding
@@ -114,7 +114,6 @@ class Processor(object):
                     slot_out, intent_out = self.__model(text_var, seq_lens, forced_slot=slot_var) # 调用ModelManager的 forward
                 else:
                     slot_out, intent_out = self.__model(text_var, seq_lens)
-
                 slot_var = torch.cat([slot_var[i][:seq_lens[i]] for i in range(0, len(seq_lens))], dim=0) #真实的slot [207] 标签无padding
                 slot_loss = self.__criterion(slot_out, slot_var) #torch.Size([207, 11]) torch.Size([207])
                 intent_loss = self.__criterion_intent(intent_out, intent_var)  #torch.Size([16, 16]) torch.Size([16, 16])   
@@ -272,8 +271,9 @@ class Processor(object):
                 text_batch, [(slot_batch, False), (intent_batch, False)],
                 digital=False
             )
-            real_slot.extend(sorted_slot)
-            all_token.extend([pt[1:seq_lens[idx]-2] for idx, pt in enumerate(padded_text)])
+            sorted_slot=[["O"]+ss+["O"] for ss in sorted_slot]
+            real_slot.extend(sorted_slot) #['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-Medical_Examination', 'I-Medical_Examination', 'I-Medical_Examination', 'O', ...]
+            all_token.extend([pt[:seq_lens[idx]] for idx, pt in enumerate(padded_text)]) #['医', '生', '：', '是', '的', '，', '从', '宝', '宝', '的', '血', '常', '规', '来', ...]
             for intents in list(Evaluator.expand_list(sorted_intent)):
                 if '#' in intents:
                     real_intent.append(intents.split('#'))
@@ -286,12 +286,20 @@ class Processor(object):
             if args.gpu:
                 var_text = var_text.cuda()
             slot_idx, intent_idx = model(var_text, seq_lens, n_predicts=1)  # 传入model
-            nested_slot = Evaluator.nested_list([list(Evaluator.expand_list(slot_idx))], seq_lens)[0]
+            # print(intent_idx)
+            nested_slot = Evaluator.nested_list([list(Evaluator.expand_list(slot_idx))],seq_lens )[0]
             pred_slot.extend(dataset.slot_alphabet.get_instance(nested_slot))
+            # print("seq_lens:",seq_lens[0])
+            # print("all_token:",all_token[0])
+            # print("all_token:",len(all_token[0]))
+            # print("pred_slot:",len(pred_slot[0]))
+            # print("real_slot:",len(real_slot[0]))
+            # exit()
             intent_idx_ = [[] for i in range(len(digit_text))]
             for item in intent_idx:
                 intent_idx_[item[0]].append(item[1])
             intent_idx = intent_idx_
+            # print(intent_idx)
             pred_intent.extend(dataset.intent_alphabet.get_instance(intent_idx)) # 单意图 也会预测出多意图
         # if 'MixSNIPS' in args.data_dir or 'MixATIS' in args.data_dir or 'DSTC' in args.data_dir:
         [p_intent.sort() for p_intent in pred_intent]
