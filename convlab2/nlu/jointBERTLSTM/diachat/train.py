@@ -196,7 +196,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
                 if not config['model']['context']:
                     context_seq_tensor, context_mask_tensor = None, None
                 with torch.no_grad():
-                    tag_seq_id, intent_logits, slot_loss, intent_loss = model.forward(word_seq_tensor,
+                    slot_logits, intent_logits, slot_loss, intent_loss = model.forward(word_seq_tensor,
                                                                                        word_mask_tensor,
                                                                                        tag_seq_tensor,
                                                                                        tag_mask_tensor,
@@ -206,7 +206,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
                 val_slot_loss += slot_loss.item() * real_batch_size
                 val_intent_loss += intent_loss.item() * real_batch_size
                 for j in range(real_batch_size):
-                    predicts = recover_intent(dataloader, intent_logits[j], tag_seq_id[j], tag_mask_tensor[j],
+                    predicts = recover_intent(dataloader, intent_logits[j], slot_logits[j], tag_mask_tensor[j],
                                               ori_batch[j][0], ori_batch[j][-4])
                     labels = ori_batch[j][3]
 

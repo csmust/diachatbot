@@ -10,50 +10,6 @@ import torch.nn.functional as F
 # from fastNLP.models.torch.sequence_labeling import *
 import math
 
-# def softmax_one(x, dim=None, _stacklevel=3, dtype=None):
-#     #subtract the max for stability
-#     x = x - x.max(dim=dim, keepdim=True).values
-#     #compute exponentials
-#     exp_x = torch.exp(x)
-#     #compute softmax values and add on in the denominator
-#     return exp_x / (1 + exp_x.sum(dim=dim, keepdim=True))
-
-class Self_Attention_Muti_Head(nn.Module):
-    # input : batch_size * seq_len * input_dim
-    # q : batch_size * input_dim * dim_k
-    # k : batch_size * input_dim * dim_k
-    # v : batch_size * input_dim * dim_v
-    def __init__(self,input_dim,dim_k,dim_v,nums_head):
-        super(Self_Attention_Muti_Head,self).__init__()
-        assert dim_k % nums_head == 0
-        assert dim_v % nums_head == 0
-        self.q = nn.Linear(input_dim,dim_k)
-        self.k = nn.Linear(input_dim,dim_k)
-        self.v = nn.Linear(input_dim,dim_v)
-        
-        self.nums_head = nums_head
-        self.dim_k = dim_k
-        self.dim_v = dim_v
-        self._norm_fact = 1 / math.sqrt(dim_k)
-        for p in self.parameters():
-            if p.dim() > 1:
-                nn.init.xavier_uniform_(p)
-        self.drop_layer = nn.Dropout(p=0.1)
-
-        
-    
-    def forward(self,x):
-        Q = self.q(x).reshape(-1,x.shape[0],x.shape[1],self.dim_k // self.nums_head) 
-        K = self.k(x).reshape(-1,x.shape[0],x.shape[1],self.dim_k // self.nums_head) 
-        V = self.v(x).reshape(-1,x.shape[0],x.shape[1],self.dim_v // self.nums_head)
-        # print(x.shape)
-        # print(Q.size())
-
-        atten = nn.Softmax(dim=-1)(torch.matmul(Q,K.permute(0,1,3,2))) # Q * K.T() # batch_size * seq_len * seq_len
-        # atten = softmax(torch.matmul(Q,K.permute(0,1,3,2)),dim=-1) # Q * K.T() # batch_size * seq_len * seq_len       
-        output = torch.matmul(atten,V).reshape(x.shape[0],x.shape[1],-1) # Q * K.T() * V # batch_size * seq_len * dim_v
-        output = self.drop_layer(output)
-        return output
 
 # 定义一个clones函数，来更方便的将某个结构复制若干份
 def clones(module, N):
@@ -264,43 +220,22 @@ class Intent_Dec(nn.Module):
         index = torch.arange(batch).long().to(self.device)  # 0-15 
         # 表示第一个维度取index的 第二个维度取real_len-1的，第三个取满足前两个条件的所有数， 
         # 表示real长度的最后一时刻输出
-        state = x[index, 0, :]    # (batch , lstm_hidden_size)
+        state = x[index, real_len-1, :]    # (batch , lstm_hidden_size)
         return state 
-    
-class CNN_NLP(nn.Module):
-    """An 1D Convulational Neural Network for Sentence Classification."""
-    def __init__(self,
-                #  pretrained_embedding=None,
-                #  freeze_embedding=False,
-                #  vocab_size=None,
-                 embed_dim=768,
-                 filter_sizes=[1, 3, 5],
-                 num_filters=[256, 256, 256],
-                #  num_classes=2,
-                #  dropout=0.5
-                 ):
 
+# class Intent(nn.Module):
+#     def __init__(self):
+#         super(Intent, self).__init__()
+#         self.enc = Intent_Enc(cfg.embedding_size, cfg.lstm_hidden_size).to(device) # 300 ,200
+#         self.dec = Intent_Dec(cfg.lstm_hidden_size).to(device)  #200
+#         self.share_memory = torch.zeros(cfg.batch, cfg.max_len, cfg.lstm_hidden_size * 2).to(device)
 
-        super(CNN_NLP, self).__init__()
-        # set_seed()
-
-        self.embed_dim = embed_dim
-        self.conv1d_list = nn.ModuleList([
-            nn.Conv1d(in_channels=self.embed_dim,
-                      out_channels=num_filters[i],
-                      kernel_size=filter_sizes[i],
-                      padding="same"
-                      )
-            for i in range(len(filter_sizes))
-        ])
-        for i in range(len(filter_sizes)):
-            nn.init.kaiming_normal_(self.conv1d_list[i].weight.data)
-            nn.init.constant_(self.conv1d_list[i].bias.data,0.3)
-    def forward(self, x_embed):
-        x_reshaped = x_embed.permute(0, 2, 1)
-        x_conv_list = [F.relu(conv1d(x_reshaped)) for conv1d in self.conv1d_list]
-
-        return sum(x_conv_list).permute(0, 2, 1)
+# class Slot(nn.Module):
+#     def __init__(self):
+#         super(Slot, self).__init__()
+#         self.enc = Slot_Enc(cfg.embedding_size, cfg.lstm_hidden_size).to(device)  # embedding_size=300 ,lstm_hidden_size=200
+#         self.dec = Slot_Dec(cfg.lstm_hidden_size).to(device)
+#         self.share_memory = torch.zeros(cfg.batch, cfg.max_len, cfg.lstm_hidden_size * 2).to(device)  #batch=16  ,max_len=50,lstm_hidden_size=200
 class JointBERTCRFLSTM(nn.Module):
 
     def __init__(self,
@@ -326,7 +261,6 @@ class JointBERTCRFLSTM(nn.Module):
         self.max_context_len = max_context_len # 这个不用加
         # print(model_config['pretrained_weights'])
         self.bert = BertModel.from_pretrained( model_config['pretrained_weights'])
-        self.CNN_NLP= CNN_NLP(embed_dim=self.bert.config.hidden_size,num_filters=[self.bert.config.hidden_size]*3)
         # print("bert", self.bert)
         # print(self.bert.config)
         # self.sublayers_1 = SublayerConnection(size=self.bert.config.hidden_size,dropout=0.1 )  #子层为intent和slot 的 ENCODER 和 decoder
@@ -372,20 +306,10 @@ class JointBERTCRFLSTM(nn.Module):
             #     key_dim=self.bert.config.hidden_size,
             #     value_dim=self.bert.config.hidden_size)
         # self.myMultiattention = MultiHeadAttention(self.bert.config.hidden_size)
-        self.intent_loss_fct = torch.nn.BCEWithLogitsLoss(pos_weight=self.intent_weight)
+        # self.intent_loss_fct = torch.nn.BCEWithLogitsLoss(pos_weight=self.intent_weight)
+        self.intent_loss_fct = torch.nn.CrossEntropyLoss()
+        self.slot_loss_fct = torch.nn.CrossEntropyLoss()
 
-        if LAST_ADD_CRF:
-            print("----BERT+CRF------")
-            print("----请注意核对后处理.py 以及 train.py的model.forward()使用-------")
-            self.crf = CRF(self.slot_num_labels, batch_first=True)
-            # self.slot_loss_fct = self.crf.forward
-        else:
-            print("请使用CRF")
-            exit()
-        
-        self.newselfattention1 = Self_Attention_Muti_Head(LSTM_HIDDEN_SIZE*2, LSTM_HIDDEN_SIZE*2, LSTM_HIDDEN_SIZE*2, 1)
-        self.newselfattention2 = Self_Attention_Muti_Head(LSTM_HIDDEN_SIZE*2, LSTM_HIDDEN_SIZE*2, LSTM_HIDDEN_SIZE*2, 4)
-        self.leakyrelu = nn.LeakyReLU(0.2)
     def forward(
         self,
         word_seq_tensor,
@@ -412,23 +336,15 @@ class JointBERTCRFLSTM(nn.Module):
         bert_sequence_output = outputs[0]  # [8 ，51， 768]  [batch_size , seq_len, bert_hiddensize]
         bert_pooled_output = outputs[1]  # [8,768]    [batch_size, bert_hiddensize]
 
-        #CNN_NLP
-        bert_sequence_output=self.CNN_NLP(bert_sequence_output)
-
         hs = self.enc_s(bert_sequence_output)
         self.share_memory_s = hs.clone()
         hi = self.enc_i(bert_sequence_output)
         self.share_memory_i = hi.clone()
-        self.posembedding1 = PositionalEncoding(LSTM_HIDDEN_SIZE*2, 0.0, hi.size(1)).to(self.device)
-
-        # self.newselfattention1(self.share_memory_i.detach())
-        # self.newselfattention1(self.share_memory_s.detach())
-        # bimodel_slot_output = self.dec_s(hs , self.share_memory_i.detach())   # [batch, seqlen, lstm_hidden_size]
-        bimodel_slot_output = self.dec_s(hs ,  self.newselfattention1(self.posembedding1(self.share_memory_i.detach())))
+        bimodel_slot_output = self.dec_s(hs , self.share_memory_i.detach())   # [batch, seqlen, lstm_hidden_size]
         # print(bimodel_slot_output.size())
         active_len_seq = word_mask_tensor.sum(dim=-1)  # 尝试：含cls 和 seq TODO 另一种做法不含
         # print(active_len_seq)
-        bimodel_intent_output = self.dec_i(hi , self.newselfattention2(self.posembedding1(self.share_memory_s.detach())) ,active_len_seq )   # [batch , lstm_hidden_size]
+        bimodel_intent_output = self.dec_i(hi , self.share_memory_s.detach() ,active_len_seq )   # [batch , lstm_hidden_size]
         # print(bimodel_intent_output.shape)
         '''
         拼接法
@@ -463,18 +379,13 @@ class JointBERTCRFLSTM(nn.Module):
             else:
                 outputs=self.bert(input_ids=context_seq_tensor,attention_mask=context_mask_tensor)
                 bert_context_seqout , bert_context_poolout =outputs[0],outputs[1]   # 取【1位置】[8,768]
-
-                                #CNN_NLP
-                bert_context_seqout=self.CNN_NLP(bert_context_seqout)
-                
                 chs = self.enc_s(bert_context_seqout)
                 self.share_memory_cs = chs.clone()
                 chi = self.enc_i(bert_context_seqout)
                 # self.share_memory_ci = chi.clone()
                 # bcso = self.dec_s( chs ,self.share_memory_ci.detach())
                 active_len_context = context_mask_tensor.sum(dim=-1)
-                self.posembedding2 = PositionalEncoding(LSTM_HIDDEN_SIZE*2, 0.0, chi.size(1)).to(self.device)
-                bcio = self.dec_i(chi , self.newselfattention2(self.posembedding2(self.share_memory_cs.detach())) ,active_len_context)
+                bcio = self.dec_i(chi , self.share_memory_cs.detach() ,active_len_context)
                 context_output = torch.cat((bert_context_poolout,bcio),dim=-1)
             sequence_output = torch.cat(
                 # context_output.unsqueeze(1) torch.Size([8, 1, 768]) # .repeat(通道的重复倍数1, 行的重复倍数sequence_output.size(1), 列的重复倍数1) 后torch.Size([8, 51, 768])
@@ -496,80 +407,36 @@ class JointBERTCRFLSTM(nn.Module):
             pooled_output = nn.functional.relu(
                 self.intent_hidden(self.dropout(pooled_output)))  # [8,1536]
 
-        sequence_output = self.dropout(sequence_output)  # [8, 51, 1536]
-        """
-        crf 尝试：
-            #val时:
-             # tag_logits = [sequence_length, tag_dim]
-             # intent_logits = [intent_dim]
-             # tag_mask_tensor = [sequence_length]
-        """
-        if LAST_ADD_CRF:
-            '''
-            如果BERT+CRF
-            '''
-            # # 1、计算slot_logits后处理取得tag_seq或者此处直接返回tag_seq
-            # slot_logits = self.slot_classifier(sequence_output)  # [8,51,470]
-            # crf_pred_mask = copy.deepcopy(tag_mask_tensor == 1)
-            # # print(crf_pred_mask)
-            # #  处理方式1：mask首位置CLS的mask 置1  否则会报错，后处理忽略掉CLS，TODO
-            # # 首位置CLS的mask是0 ，但这样会报错，
-            # crf_pred_mask[:, 0] = True
-            # # print(crf_pred_mask)
-            # crf_seq = self.crf.decode(slot_logits, crf_pred_mask)
-            # print(crf_seq)
-            # outputs = (crf_seq,)``
-
-            # 1、计算slot_logits后处理取得tag_seq或者此处直接返回tag_seq
-            slot_logits = self.slot_classifier(
-                sequence_output)[:, 1:, :]  # [8,51,470] -> ([8, 50, 470])
-            if tag_mask_tensor is not None:
-                crf_pred_mask = copy.deepcopy(tag_mask_tensor == 1)[:, 1:]  # copy.deepcopy(tag_mask_tensor == 1) [8,51]
-                            # print(crf_pred_mask)   # [8,50]
-            #  处理方式2：截掉CLS位置从下个位置开始 TODO
-            # 首位置CLS的mask是0 ，但这样会报错，
-
-                crf_pred_mask[:, 0] = True
-                            # print(crf_pred_mask)
-                crf_seq = self.crf.decode(slot_logits, crf_pred_mask)
-            else:
-                crf_pred_mask=(word_mask_tensor==1)[:,1:]
-                crf_pred_mask[:,-1] = False
-
-                crf_seq = self.crf.decode(slot_logits,crf_pred_mask)
-                
+            
+        sequence_output = self.dropout(sequence_output)   # [8, 51, 1536]
+        slot_logits = self.slot_classifier(sequence_output)  # [8,51,470]
+        outputs = (slot_logits,)
 
 
+        # 2、计算intent_logits 后处理取得intent
+        pooled_output = self.dropout(pooled_output)
+        intent_logits = self.intent_classifier(pooled_output)
+        outputs = outputs + (intent_logits, )
 
-            # print(crf_seq)
-            outputs = (crf_seq, )
+        # 3、计算slot损失
+        if tag_seq_tensor is not None:
+            active_tag_loss = tag_mask_tensor.view(-1) == 1  # [压缩成一个维度 比如408] [True  or  False]
+            active_tag_logits = slot_logits.view(-1, self.slot_num_labels)[active_tag_loss]  #slot_logits.view(-1, self.slot_num_labels)【408,470】 #active_tag_logits【164,470】
+            active_tag_labels = tag_seq_tensor.view(-1)[active_tag_loss]  # tag seq tensor 是准确的 tag
+            slot_loss = self.slot_loss_fct(active_tag_logits, active_tag_labels)
 
-            # 2、计算intent_logits 后处理取得intent
-            pooled_output = self.dropout(pooled_output)
-            intent_logits = self.intent_classifier(pooled_output)
-            outputs = outputs + (intent_logits, )
+            outputs = outputs + (slot_loss,)
 
-            # 3、计算slot损失
-            if tag_seq_tensor is not None:
-                crf_slot_loss = (-1) * self.crf(slot_logits,
-                                                tag_seq_tensor[:, 1:],
-                                                crf_pred_mask,
-                                                reduction='token_mean')
-                outputs = outputs + (crf_slot_loss, )
+        # 4、计算intent损失
+        if intent_tensor is not None:
+            intent_loss = self.intent_loss_fct(intent_logits,
+                                                intent_tensor)
+            outputs = outputs + (intent_loss, )
 
-            # 4、计算intent损失
-            if intent_tensor is not None:
-                intent_loss = self.intent_loss_fct(intent_logits,
-                                                   intent_tensor)
-                outputs = outputs + (intent_loss, )
-        else:
-            # 如果不接CRF
-            print("请先使用接CRF，LAST_ADD_CRF=True")
-            exit(0)
 
-        # print(outputs)
-        # tag_seq_id, intent_logits, (crf_slot_loss), (intent_loss),
-        # print("run")
+    # print(outputs)
+    # tag_seq_id, intent_logits, (crf_slot_loss), (intent_loss),
+    # print("run")
         return outputs
 
 
@@ -579,7 +446,7 @@ if __name__ == "__main__":
     # print(os.path.abspath(__file__))
     # print(os.getcwd())
     cur_dir = os.path.dirname(os.path.abspath(__file__))
-    config_file = os.path.join(cur_dir, 'config/all.json')
+    config_file = os.path.join(cur_dir, 'config/all_context.json')
     # print(config_file)
     conf = json.load(open(config_file))
     model_conf = conf["model"]
