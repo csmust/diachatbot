@@ -195,7 +195,7 @@ class ModelManager(nn.Module):
         return adj
 
     def forward(self, text, seq_lens, n_predicts=None, forced_slot=None, forced_intent=None):
-        self.bert.eval()
+        # self.bert.eval()
         # with torch.no_grad():
         bert_outputs = self.bert(text) #text: [batch, max_len]  word_tensor: [batch, max_len, word_embedding_dim]
 
