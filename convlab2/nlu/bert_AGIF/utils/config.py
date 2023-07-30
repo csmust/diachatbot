@@ -17,7 +17,7 @@ parser.add_argument('--gpu', '-g', action='store_true', help='use gpu', required
 parser.add_argument('--num_epoch', '-ne', type=int, default=50)
 parser.add_argument('--batch_size', '-bs', type=int, default=64)
 parser.add_argument('--l2_penalty', '-lp', type=float, default=1e-6)
-parser.add_argument("--learning_rate", '-lr', type=float, default=0.001)
+parser.add_argument("--learning_rate", '-lr', type=float, default=3e-5)
 parser.add_argument('--dropout_rate', '-dr', type=float, default=0.4)
 parser.add_argument('--gat_dropout_rate', '-gdr', type=float, default=0.4)
 parser.add_argument('--slot_forcing_rate', '-sfr', type=float, default=0.9)

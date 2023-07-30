@@ -1,1 +1,1 @@
-python train.py -g -bs=16 -ne=20 -dd=./data/IMCS -lod=./log/IMCS -sd=./save/IMCS -nh=8 -wed=64 -ied=64 -sdhd=64 -ln=IMCS.txt >> imcs.log
+python train.py -g -bs=64 -ne=20 -dd=./data/IMCS -lod=./log/IMCS -sd=./save/IMCS -nh=8 -wed=64 -ied=64 -sdhd=64 -ln=IMCS.tx

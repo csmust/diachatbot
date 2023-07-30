@@ -406,7 +406,7 @@ class DatasetManager(object):
                 trans_texts[-1].extend([0] * (max_len - len_list[index]))
                 seq_lens.append(deepcopy(len_list[index]))
             else:
-                trans_texts[-1]=["CLS"]+trans_texts[-1]+["SEP"]
+                trans_texts[-1]=['[CLS]']+trans_texts[-1]+['[SEP]']
                 trans_texts[-1].extend(['[PAD]'] * (max_len- 2 - len_list[index]))
                 seq_lens.append(deepcopy(len_list[index])+2)
                 # assert len(trans_items[0])==seq_lens[0]
@@ -418,7 +418,7 @@ class DatasetManager(object):
                         if digital:
                             item[-1].extend([0] * (max_len - len_list[index]))
                         else:
-                            item[-1]=["CLS"]+item[-1]+["SEP"]
+                            item[-1]=['[CLS]']+item[-1]+['[SEP]']
                             item[-1].extend(['[PAD]'] * (max_len-2 - len_list[index]))
         
         # torch.LongTensor(trans_items[0]) 
