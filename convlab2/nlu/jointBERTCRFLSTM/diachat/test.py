@@ -4,7 +4,7 @@ import json
 import random
 import numpy as np
 import torch
-from convlab2.nlu.jointBERTCRFLSTM.diachat.dataloader import Dataloader
+from dataloader import Dataloader
 from model_config import *
 
 def set_seed(seed):
