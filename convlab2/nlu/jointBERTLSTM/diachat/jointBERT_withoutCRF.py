@@ -306,8 +306,8 @@ class JointBERTCRFLSTM(nn.Module):
             #     key_dim=self.bert.config.hidden_size,
             #     value_dim=self.bert.config.hidden_size)
         # self.myMultiattention = MultiHeadAttention(self.bert.config.hidden_size)
-        # self.intent_loss_fct = torch.nn.BCEWithLogitsLoss(pos_weight=self.intent_weight)
-        self.intent_loss_fct = torch.nn.CrossEntropyLoss()
+        self.intent_loss_fct = torch.nn.BCEWithLogitsLoss(pos_weight=self.intent_weight)
+        # self.intent_loss_fct = torch.nn.CrossEntropyLoss()
         self.slot_loss_fct = torch.nn.CrossEntropyLoss()
 
     def forward(
