@@ -11,8 +11,8 @@ import numpy as np
 import zipfile
 import torch
 from transformers import AdamW, get_linear_schedule_with_warmup
-from convlab2.nlu.jointBERT_CRF.diachat.dataloader import Dataloader
-from convlab2.nlu.jointBERT_CRF.diachat.jointBERT_CRF import JointBERT_CRF
+from dataloader import Dataloader
+from jointBERT_CRF import JointBERT_CRF
 from datetime import datetime
 from mylogger import Logger
 
@@ -57,7 +57,7 @@ def train(CROSS_TRAIN=False,best_val_F1_list=[],args=None):
     set_seed(config['seed'])
 
     print('-' * 20 + 'data' + '-' * 20)
-    from convlab2.nlu.jointBERT_CRF.diachat.postprocess import is_slot_da, calculateF1, recover_intent
+    from postprocess import is_slot_da, calculateF1, recover_intent
 
     intent_vocab = json.load(open(os.path.join(data_dir, 'intent_vocab.json'),encoding='utf-8'))
     tag_vocab = json.load(open(os.path.join(data_dir, 'tag_vocab.json'),encoding='utf-8'))
@@ -290,4 +290,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # train(args=args)
-    train(args=args,CROSS_TRAIN=True)
+    train(args=args,CROSS_TRAIN=False)
